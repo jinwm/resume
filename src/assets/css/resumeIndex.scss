@@ -9,7 +9,7 @@
   box-sizing: border-box;
   transition: all .3s;
 
-  .main{
+  .main {
     position: relative;
     margin: 0 auto;
     width: 10rem;
@@ -56,20 +56,24 @@
         top: 0;
         display: flex;
 
-        &:nth-child(2){
+        &:nth-child(2) {
           left: 2.75rem;
         }
-        &:nth-child(3){
+
+        &:nth-child(3) {
           left: 5.8rem;
         }
-        &:nth-child(4){
+
+        &:nth-child(4) {
           top: 0.5rem;
         }
-        &:nth-child(5){
+
+        &:nth-child(5) {
           top: 0.5rem;
           left: 2.75rem;
         }
-        &:nth-child(6){
+
+        &:nth-child(6) {
           top: 0.5rem;
           left: 5.8rem;
         }
@@ -77,6 +81,11 @@
         span {
           color: #000;
           font-size: .2rem;
+          overflow: hidden;
+
+          &:nth-child(2) {
+            flex: 1;
+          }
         }
 
         a {
@@ -102,6 +111,8 @@
         height: 100%;
         display: block;
         object-fit: cover;
+        user-select: none;
+        pointer-events: none;
       }
     }
   }
@@ -147,7 +158,7 @@
         .line-box {
           margin-bottom: .35rem;
 
-          &:last-child{
+          &:last-child {
             margin-bottom: 0;
           }
 
@@ -172,32 +183,33 @@
           .detail-info {
             width: 100%;
 
-            .item{
+            .item {
               width: 100%;
               margin-bottom: .2rem;
-              .label{
+
+              .label {
                 font-size: 0.2rem;
                 color: #000;
                 font-weight: bold;
                 margin-bottom: .2rem;
               }
-  
-              .value{
+
+              .value {
                 text-indent: 2em;
                 font-size: 0.2rem;
                 color: #000;
               }
 
-              .list{
+              .list {
                 width: 100%;
 
-                .value{
+                .value {
                   padding-left: .32rem;
                   position: relative;
                   text-indent: 0;
                   margin-bottom: 0.2rem;
 
-                  &::before{
+                  &::before {
                     content: '';
                     position: absolute;
                     left: 0.04rem;
