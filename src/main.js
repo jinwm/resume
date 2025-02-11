@@ -1,8 +1,8 @@
 import { createApp } from 'vue';
 import App from './App.vue';
 import router from './router';
-import { useResize } from './js/reszie';
 import { dblClick } from './js/directive';
+import { useResize } from './js/utils';
 
 useResize();
 

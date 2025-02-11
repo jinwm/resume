@@ -200,11 +200,37 @@
                 color: #000;
               }
 
+              .sub-box{
+                .sub-label{
+                  font-size: 0.2rem;
+                color: #000;
+                padding-left: .25rem;
+                margin-bottom: .1rem;
+                position: relative;
+                font-weight: bold;
+
+                &::before {
+                  content: '';
+                  position: absolute;
+                  left: 0.08rem;
+                  top: .11rem;
+                  transform: translate(-50%, 0%) rotate(45deg);
+                  background: #000;
+                  width: .07rem;
+                  height: .07rem;
+                }
+                }
+                .list{
+                  padding-left: 0.35rem;
+                  box-sizing: border-box;
+                }
+              }
+
               .list {
                 width: 100%;
 
                 .value {
-                  padding-left: .32rem;
+                  padding-left: .25rem;
                   position: relative;
                   text-indent: 0;
                   margin-bottom: 0.2rem;
@@ -218,6 +244,7 @@
                     background: #000;
                     width: .07rem;
                     height: .07rem;
+                  border-radius: 50%;
                   }
                 }
               }

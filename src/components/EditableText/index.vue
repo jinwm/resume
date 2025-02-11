@@ -1,10 +1,11 @@
 <template>
   <div class="editableText-container">
-    <div v-show="isShowInput" class="input-area" :style="`height:${textHeight}px;`">
-      <textarea :style="textStyleString" ref="textarea" :value="text" placeholder="请输入内容" @blur="handleBlur"></textarea>
+    <div v-show="isShowInput" class="input-area" :style="`width:${textWidth + 0.5}px;height:${textHeight}px;`">
+      <textarea :style="textStyleString" ref="textarea" :value="text" :placeholder="value"
+        @blur="handleBlur"></textarea>
     </div>
     <div v-show="!isShowInput" ref="displayArea" v-dblclick="handleDblclick" class="display-area">
-      <p :style="textStyleString">{{ text }}</p>
+      <p :style="textStyleString" title="双击可编辑">{{ text }}</p>
     </div>
   </div>
 </template>
@@ -26,13 +27,14 @@ export default {
   data() {
     return {
       isShowInput: false,
+      textWidth: 0,
       textHeight: 0,
       text: this.value
     }
   },
   mounted() {
+    this.textWidth = this.$refs.displayArea.offsetWidth;
     this.textHeight = this.$refs.displayArea.offsetHeight;
-    console.log(this.textStyleString);
   },
   computed: {
     textStyleString() {
@@ -53,6 +55,7 @@ export default {
           this.$emit('blur', text);
         }
         this.$nextTick(() => {
+          this.textWidth = this.$refs.displayArea.offsetWidth;
           this.textHeight = this.$refs.displayArea.offsetHeight;
         })
       }
@@ -97,6 +100,7 @@ export default {
       padding: 0 !important;
       box-sizing: border-box;
       font-size: .3rem;
+      font-family: initial;
       resize: none;
       color: #000;
       overflow: hidden;
@@ -104,7 +108,7 @@ export default {
   }
 
   .display-area {
-    cursor: text;
+    cursor: default;
 
     p {
       margin: 0;
