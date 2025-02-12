@@ -93,7 +93,7 @@ onMounted(() => {
 </script>
 
 <style lang="scss">
-@import url('./assets/css/base.scss');
+@import url('./assets/css/common.scss');
 
 .app-cover {
   min-width: 100%;

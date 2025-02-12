@@ -33,7 +33,7 @@
           <div class="line-box">
             <div class="top-info">
               <p class="name">《燕云十六声》官方小程序</p>
-              <p class="date">2023年3月 - 至今</p>
+              <p class="date">2024年4月 - 至今</p>
             </div>
             <div class="detail-info">
               <div class="item">
@@ -43,104 +43,59 @@
                 </div>
               </div>
               <div class="item">
+                <p class="label">项目描述：</p>
+                <div class="list">
+                  <p class="value not-point">
+                    从0到1独立搭建小程序核心功能，完成首页、活动列表页、帖子页等10+核心页面的开发与上线，支撑日均10万+用户互动。后续主导部分功能迭代，并为团队提供技术支持与代码审查，确保项目质量和一致性。
+                  </p>
+                </div>
+              </div>
+              <div class="item">
                 <p class="label">核心贡献：</p>
+
                 <div class="sub-box">
-                  <p class="sub-label">动态数据海报生成系统</p>
+                  <p class="sub-label">动态数据海报生成</p>
                   <div class="list">
-                    <p class="value">设计通用Canvas绘制引擎，支持角色属性/装备/探索度等20+类游戏数据的动态渲染</p>
-                    <p class="value">封装drawImage/drawText/drawBgColor等基础方法，实现图片圆角裁剪、文字自动换行、渐变背景等高级特性</p>
-                    <p class="value">开发布局自适应算法，精准计算160+个UI元素的坐标位置，保障不同分辨率设备显示一致性</p>
-                    <p class="value">实现海报生成状态机管理，通过loading状态锁防止重复点击，异常场景自动降级提示</p>
+                    <p class="value">设计通用Canvas绘制引擎，封装drawImage、drawText等方法，支持图片圆角裁剪、文字自动换行、渐变背景等高级特性。</p>
+                    <p class="value">采用离屏Canvas和图片缓存方案，将海报生成耗时从3.3s优化至0.3s，性能提升90%。</p>
+                    <p class="value">开发二维码合成模块，支持动态嵌入用户专属分享标识。</p>
                   </div>
                 </div>
+
                 <div class="sub-box">
-                  <p class="sub-label">高性能分享体系</p>
+                  <p class="sub-label">富文本解析与社交功能</p>
                   <div class="list">
-                    <p class="value">采用离屏Canvas+图片缓存方案，重复生成相同海报的耗时从3.3s降低至0.3s</p>
-                    <p class="value">开发二维码合成模块，支持动态嵌入用户专属分享标识</p>
+                    <p class="value">基于wxParse实现富文本解析，支持图片预览、超链接智能跳转（H5/小程序页面/外部小程序）。</p>
+                    <p class="value">实现点赞、评论、分享等社交功能，提升用户互动体验。</p>
                   </div>
                 </div>
-                <!-- <div class="sub-box">
-                  <p class="sub-label">工程化改进</p>
-                  <div class="list">
-                    <p class="value">抽象社交名片/角色卡牌等6类模板，相似需求开发效率提升70%</p>
-                    <p class="value">制定Canvas绘制规范，降低团队成员接入成本</p>
-                  </div>
-                </div> -->
-
-                <!--
-                  建立全局埋点上报模块，使用小程序uuid（后端userinfo接口返回）作为用户标识，支持页面显示上报和自定义上报字段（用户点击等）
-                  
-                  因为进入某个小程序页面就要自动执行页面显示上报，但上报的前提是用户已经登录（获取到uuid后），自动上报页面显示执行顺序是： 未登录->调用wx.login获取code后调用后端login接口获取用户token，使用这个token调用userinfo接口获取用户信息（包含uuid）->获取到用户信息后执行页面显示上报，再次期间会有接口同时被多次调用的情况（因为小程序入口一定会结果app.js，然后才是小程序页面的js,所以就有可能多个地方同时去执行同一个流程），因此我使用了类似这种方式去规避这个问题。并在获取uuid的途中请求失败时自动重试，在一定程度上避免uuid获取不到而导致页面显示上报数据的缺失。自定义埋点也是一样的，需要在获取到uuid后才能进行上报，因此也做了类似的处理，为了方便管理，有个disct.js导出一个变量来存储全局全部的自定义上报字段信息，通过一个固定的自定义上报方法，传入需要上报的字段名字符串，这个方法会用传入的字符串去匹配disct列表项，有则上报
-                  const getJson = (item) => {
-  if (!item.getPromise) {
-    item.getPromise = new Promise((resolve, reject) => {
-      wx.request({
-        url: xxx,
-        success: (res) => {
-          item.getPromise = null;
-          resolve(res.data);
-        },
-        fail: (err) => {
-          item.getPromise = null;
-          wx.showModal({
-            title: '提示',
-            content: '网络异常，请稍后重试',
-          });
-          reject(err);
-        },
-      });
-    });
-  }
-  return item.getPromise;
-};
-
-                -->
-
-
-                <!-- 第一版 -->
-                <!-- 数据埋点与上报系统
-
-设计全局埋点上报模块，使用小程序UUID作为用户标识，支持页面显示上报和自定义事件上报
-
-实现登录态依赖管理，通过Promise锁机制避免wx.login和userinfo接口重复调用
-
-开发自动重试策略，在网络异常时保障UUID获取成功率，减少数据上报丢失
-
-封装统一上报方法，支持通过字段名匹配预定义上报内容，提升埋点开发效率 -->
-
                 <div class="sub-box">
                   <p class="sub-label">数据埋点与上报系统</p>
                   <div class="list">
-                    <p class="value">设计全局埋点上报模块，使用小程序UUID作为用户标识，支持页面显示上报和自定义事件上报</p>
-                    <p class="value">实现登录态依赖管理，通过Promise锁机制避免wx.login和userinfo接口重复调用</p>
-                    <p class="value">开发自动重试策略，在网络异常时保障UUID获取成功率，减少数据上报丢失</p>
-                    <p class="value">封装统一上报方法，支持通过字段名匹配预定义上报内容，提升埋点开发效率</p>
+                    <p class="value">设计全局埋点上报模块，使用小程序UUID作为用户标识，支持页面显示上报和自定义事件上报。</p>
+                    <p class="value">实现登录态依赖管理，通过Promise锁机制避免wx.login和userinfo接口重复调用。</p>
+                    <p class="value">开发自动重试策略，在网络异常时保障UUID获取成功率，减少数据上报丢失。</p>
+                    <p class="value">封装统一上报方法，支持通过字段名匹配预定义上报内容，提升埋点开发和维护效率。</p>
+                  </div>
+                </div>
+
+                <div class="sub-box">
+                  <p class="sub-label">工程化与性能优化</p>
+                  <div class="list">
+                    <p class="value">封装全局请求方法，支持自动携带Token、登录失效重试、Loading状态管理。</p>
+                    <p class="value">制定代码复用规范，降低团队成员接入成本。</p>
                   </div>
                 </div>
 
               </div>
-
-              <!-- <div class="item">
-                <p class="label">项目概述：</p>
-                <p class="value">游戏社区核心功能载体，包含帖子Feed流、用户互动、活动运营等高频场景</p>
-              </div>
               <div class="item">
-                <p class="label">技术突破：</p>
+                <p class="label">项目成果：</p>
                 <div class="list">
-                  <p class="value">开发富文本跳转路由系统，解析后台配置链接自动匹配小程序页面跳转/网页跳转/外部小程序跳转</p>
-                  <p class="value">实现楼中楼评论结构，通过动态节点复用+分页加载策略优化长列表滚动性能</p>
-                  <p class="value">设计公共跳转方法封装，统一处理wx.navigateTo/wx.navigateToMiniProgram等API调用</p>
-                  <p class="value">参与新功能灰度测试流程，通过白名单机制验证功能稳定性</p>
+                  <p class="value">成功上线并稳定运行，日均用户互动量超过10万次。</p>
+                  <p class="value">通过技术优化，海报生成时间减少90%，显著提升用户体验。</p>
+                  <p class="value">数据埋点系统有效支持了用户行为分析和产品优化决策。</p>
                 </div>
               </div>
-              <div class="item">
-                <p class="label">技术栈：</p>
-                <div class="list">
-                  <p class="value">微信小程序原生开发、wxParse富文本解析、Canvas动效</p>
-                </div>
-              </div> -->
-
             </div>
           </div>
 

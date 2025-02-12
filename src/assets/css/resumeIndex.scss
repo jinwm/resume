@@ -191,7 +191,7 @@
                 font-size: 0.2rem;
                 color: #000;
                 font-weight: bold;
-                margin-bottom: .2rem;
+                margin-bottom: .15rem;
               }
 
               .value {
@@ -223,6 +223,14 @@
                 .list{
                   padding-left: 0.35rem;
                   box-sizing: border-box;
+
+                  .value{
+                    &.not-point{
+                        &::before{
+                          display: none !important;
+                        }
+                    }
+                  }
                 }
               }
 
@@ -234,6 +242,12 @@
                   position: relative;
                   text-indent: 0;
                   margin-bottom: 0.2rem;
+
+                  &.not-point{
+                      &::before{
+                        display: none !important;
+                    }
+                  }
 
                   &::before {
                     content: '';
