@@ -103,7 +103,7 @@
           <div class="line-box">
             <div class="top-info">
               <p class="name">网易游戏营销专题开发</p>
-              <p class="date">2021年7月 - 2023年2月</p>
+              <p class="date">2022年4月 - 至今</p>
             </div>
             <div class="detail-info">
               <div class="item">
