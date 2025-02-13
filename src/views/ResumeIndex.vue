@@ -107,29 +107,31 @@
             </div>
             <div class="detail-info">
               <div class="item">
-                <p class="label">项目概述：</p>
-                <p class="value">为《蛋仔派对》《第五人格》等游戏提供活动落地页，年均开发40+个营销页面</p>
+                <p class="label">技术栈：</p>
+                <div class="list">
+                  <p class="value">Vue2/Vue3+TypeScript、jQuery、Swiper、HTML2Canvas、QRCode.js</p>
+                </div>
+              </div>
+              <div class="item">
+                <p class="label">核心贡献：</p>
+                <div class="list">
+                  <p class="value">独立承接需求，年均交付40+个营销页面（PC/移动端/H5活动），单项目平均交付周期3-10天</p>
+                  <p class="value">使用CSS Animation实现常见动画效果，满足多样化设计需求</p>
+                  <p class="value">基于HTML2Canvas+QRCode.js实现分享图生成功能，支持动态嵌入用户二维码</p>
+                  <p class="value">采用Swiper快速搭建轮播组件，配合CSS样式实现设计稿高还原度</p>
+                </div>
               </div>
               <div class="item">
                 <p class="label">技术亮点：</p>
                 <div class="list">
-                  <p class="value">使用GSAP实现视差滚动等复杂动画效果，确保多机型流畅运行</p>
-                  <p class="value">开发通用型Canvas动效模板，复用相似活动需求开发周期缩短50%</p>
-                  <p class="value">采用Swiper+CSS Animation组合方案实现高性能轮播组件</p>
-                  <p class="value">通过Webpack分包策略优化首屏资源加载速度</p>
-                </div>
-              </div>
-              <div class="item">
-                <p class="label">技术栈：</p>
-                <div class="list">
-                  <p class="value">Vue3+TypeScript、jQuery、GSAP、Canvas、Swiper</p>
+                  <p class="value">建立个人开发流程规范，通过工具复用将相似需求开发效率提升50%</p>
+                  <p class="value">沉淀高频插件配置模板（Swiper/HTML2Canvas等），降低重复配置时间成本</p>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-
 
       <div class="info-part">
         <div class="label">技术能力</div>
