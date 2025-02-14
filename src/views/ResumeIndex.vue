@@ -56,8 +56,8 @@
                 <div class="sub-box">
                   <p class="sub-label">动态数据海报生成</p>
                   <div class="list">
-                    <p class="value">设计通用Canvas绘制引擎，封装drawImage、drawText等方法，支持图片圆角裁剪、文字自动换行、渐变背景等高级特性。</p>
-                    <p class="value">采用离屏Canvas和图片缓存方案，将海报生成耗时从3.3s优化至0.3s，性能提升90%。</p>
+                    <p class="value">封装drawImage与drawText方法，支持圆角裁剪、图片尺寸自定义、动态位置设置、文字自动换行，通过async/await逐步渲染，最终导出图片。</p>
+                    <p class="value">采用图片预加载与缓存方案，优化海报生成性能，耗时从3.3s降低至0.3s，性能提升90%。</p>
                     <p class="value">开发二维码合成模块，支持动态嵌入用户专属分享标识。</p>
                   </div>
                 </div>
@@ -109,7 +109,7 @@
               <div class="item">
                 <p class="label">技术栈：</p>
                 <div class="list">
-                  <p class="value">Vue2/Vue3+TypeScript、jQuery、Swiper、HTML2Canvas、QRCode.js</p>
+                  <p class="value">Vue2/Vue3+TypeScript、jQuery、Swiper、HTML2Canvas、QRCode.js、Preloader</p>
                 </div>
               </div>
               <div class="item">
@@ -139,28 +139,15 @@
           <div class="line-box">
             <p class="item">
               <span class="title">核心开发：</span>
-              <span class="value">Vue2/3工程化开发、微信小程序架构、Canvas动效体系</span>
+              <span class="value">Vue2/3工程化开发、微信小程序架构、Canvas图片生成</span>
             </p>
             <p class="item">
-              <span class="title">性能专项：</span>
-              <span class="value">接口缓存设计、虚拟滚动、资源分级加载、内存泄漏排查</span>
-            </p>
-            <p class="item">
-              <span class="title">质量保障：</span>
-              <span class="value">灰度发布机制、AB实验埋点、异常监控体系</span>
-            </p>
-
-            <p class="item">
-              <span class="title">图形化开发：</span>
-              <span class="value">Canvas高性能渲染、动态布局计算、微信原生图片处理</span>
+              <span class="title">性能优化：</span>
+              <span class="value">接口缓存设计、资源预加载、图片资源缓存映射（重复生成耗时↓90%）</span>
             </p>
             <p class="item">
               <span class="title">工程架构：</span>
-              <span class="value">绘制引擎设计、组件模板抽象、异常降级方案</span>
-            </p>
-            <p class="item">
-              <span class="title">性能专项：</span>
-              <span class="value">离屏渲染、资源预加载、内存泄漏防控</span>
+              <span class="value">全局请求封装、组件模板复用、AB实验埋点</span>
             </p>
           </div>
         </div>
