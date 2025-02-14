@@ -1,5 +1,6 @@
 <template>
   <div ref="resumeContainer" class="container">
+    <i class="icon"><img src="@/assets/img/icon.png"></i>
     <div class="main">
       <div class="slogan-title">个人简历</div>
       <div class="intention">求职意向：Web前端开发</div>
@@ -109,7 +110,7 @@
               <div class="item">
                 <p class="label">技术栈：</p>
                 <div class="list">
-                  <p class="value">Vue2、Vue3、TypeScript、jQuery、Swiper、HTML2Canvas、QRCode.js、Preloader</p>
+                  <p class="value">Vue2/3、TypeScript、jQuery、Swiper、HTML2Canvas、QRCode.js、Preloader</p>
                 </div>
               </div>
               <div class="item">
@@ -196,7 +197,7 @@ const workExperience = ref([
 
 let pictureSrc = require('@/assets/img/picture.jpg');
 
-const showPrivacy = ref(false);
+const showPrivacy = ref(true);
 
 if (!showPrivacy.value) {
   pictureSrc = null;
