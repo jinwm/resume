@@ -26,6 +26,23 @@ span {
   margin: 0;
   padding: 0;
   line-height: .3rem;
+  word-break: break-word;
+  color: #333333;
+  font-size: inherit;
+}
+
+.bold{
+  font-weight: bold;
+}
+
+.high{
+  font-weight: bold !important;
+  color:#333333 !important;
+}
+
+hr{
+  display: none;
+  margin: 0.2rem auto;
 }
 
 /*滚动条的宽度*/

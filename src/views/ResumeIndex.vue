@@ -24,23 +24,22 @@
             </div>
           </div>
         </div>
-      </div>
 
+        <hr>
 
-      <div class="info-part">
-        <div class="label">项目经历</div>
         <div class="content content-xmjl">
           <!-- 项目1：燕云小程序 -->
           <div class="line-box">
             <div class="top-info">
-              <p class="name">《燕云十六声》官方小程序</p>
+              <p class="name" style="margin-left: -0.1rem;">《燕云十六声》官方小程序</p>
               <p class="date">2024年4月 - 至今</p>
             </div>
             <div class="detail-info">
               <div class="item">
                 <p class="label">技术栈：</p>
                 <div class="list">
-                  <p class="value">微信小程序原生框架、Canvas、wxParse富文本解析</p>
+                  <p class="value"><span class="high">微信小程序原生框架</span>、<span class="high">Canvas</span>、<span
+                      class="high">wxParse富文本解析</span></p>
                 </div>
               </div>
               <div class="item">
@@ -55,33 +54,34 @@
                 <p class="label">核心贡献：</p>
 
                 <div class="sub-box">
-                  <p class="sub-label">动态数据海报生成</p>
+                  <p class="sub-label"><span class="high">动态数据海报生成</span></p>
                   <div class="list">
-                    <p class="value">基于Canvas封装动态渲染模块，支持图片/文字自定义布局与异步渲染，性能提升90%。</p>
-                    <p class="value">采用图片预加载与缓存方案，优化海报生成性能，耗时从3.3s降低至0.3s，性能提升90%。</p>
+                    <p class="value">基于<span class="high">Canvas</span>封装动态渲染模块，支持图片/文字自定义布局，性能提升90%。</p>
+                    <p class="value">采用<span class="high">图片预加载</span>与<span
+                        class="high">缓存方案</span>，优化海报生成性能，耗时从3.3s降低至0.3s。</p>
                     <p class="value">开发二维码合成模块，支持动态嵌入用户专属分享标识。</p>
                   </div>
                 </div>
 
                 <div class="sub-box">
-                  <p class="sub-label">富文本解析与社交功能</p>
+                  <p class="sub-label"><span class="high">富文本解析</span>与社交功能</p>
                   <div class="list">
-                    <p class="value">基于wxParse实现富文本解析，支持图片预览、超链接智能跳转（H5/小程序页面/外部小程序）。</p>
+                    <p class="value">基于<span class="high">wxParse</span>实现富文本解析，支持图片预览、超链接智能跳转（H5/小程序页面/外部小程序）。</p>
                     <p class="value">实现点赞、评论、分享等社交功能，提升用户互动体验。</p>
                   </div>
                 </div>
                 <div class="sub-box">
-                  <p class="sub-label">数据埋点与上报模块</p>
+                  <p class="sub-label"><span class="high">数据埋点与上报模块</span></p>
                   <div class="list">
                     <p class="value">设计全局埋点上报模块，使用小程序UUID作为用户标识，支持页面显示上报和自定义事件上报。</p>
-                    <p class="value">实现登录态依赖管理，通过Promise锁机制避免wx.login和userinfo接口重复调用。</p>
+                    <p class="value">实现登录态依赖管理，通过<span class="high">Promise锁机制</span>避免wx.login和userinfo接口重复调用。</p>
                     <p class="value">开发自动重试策略，在网络异常时保障UUID获取成功率，减少数据上报丢失。</p>
                     <p class="value">封装统一上报方法，支持通过字段名匹配预定义上报内容，提升埋点开发和维护效率。</p>
                   </div>
                 </div>
 
                 <div class="sub-box">
-                  <p class="sub-label">工程化与性能优化</p>
+                  <p class="sub-label"><span class="high">工程化与性能优化</span></p>
                   <div class="list">
                     <p class="value">封装全局请求方法，支持自动携带Token、登录失效重试、Loading状态管理。</p>
                     <p class="value">制定代码复用规范，降低团队成员接入成本。</p>
@@ -99,7 +99,7 @@
               </div>
             </div>
           </div>
-
+          <hr>
           <!-- 项目2：网易专题页集群 -->
           <div class="line-box">
             <div class="top-info">
@@ -110,23 +110,55 @@
               <div class="item">
                 <p class="label">技术栈：</p>
                 <div class="list">
-                  <p class="value">Vue2/3、TypeScript、jQuery、Swiper、HTML2Canvas、QRCode.js、Preloader</p>
+                  <p class="value"><span class="high">Vue3</span>、<span class="high">TypeScript</span>、<span
+                      class="high">Swiper</span>、<span class="high">HTML2Canvas</span>、<span
+                      class="high">QRCode</span>、<span class="high">Echarts</span></p>
+                </div>
+              </div>
+              <div class="item">
+                <p class="label">项目描述：</p>
+                <div class="list">
+                  <p class="value not-point">
+                    主导开发《蛋仔派对》《第五人格》等热门游戏的移动端H5营销活动页，支持单日峰值UV超50万，平均交付周期6天。
+                  </p>
                 </div>
               </div>
               <div class="item">
                 <p class="label">核心贡献：</p>
-                <div class="list">
-                  <p class="value">独立承接需求，年均交付45+个营销页面（PC/移动端/H5活动），单项目平均交付周期3-10天。</p>
-                  <p class="value">使用CSS Animation实现常见动画效果，满足多样化设计需求。</p>
-                  <p class="value">基于HTML2Canvas+QRCode.js实现分享图生成功能，支持动态嵌入用户二维码。</p>
-                  <p class="value">采用Swiper快速搭建轮播组件，配合CSS样式实现设计稿高还原度。</p>
+
+                <div class="sub-box">
+                  <p class="sub-label"><span class="high">功能开发</span></p>
+                  <div class="list">
+                    <p class="value">实现用户授权登录（微信、QQ等平台）、抽奖、助力领奖等互动功能，记录用户行为数据以支持运营优化。</p>
+                    <p class="value">开发动态海报生成功能，基于<span class="high">HTML2Canvas</span>+<span
+                        class="high">QRCode</span>实现用户专属二维码嵌入与实时渲染，提升分享转化率。</p>
+                  </div>
                 </div>
+
+                <div class="sub-box">
+                  <p class="sub-label"><span class="high">性能优化</span></p>
+                  <div class="list">
+                    <p class="value">通过<span class="high">资源预加载</span>与<span
+                        class="high">CDN分发</span>，活动页首屏加载时间从2.5s降至1.2s，有效降低用户的跳出率。</p>
+                    <p class="value">设计用户行为数据缓存方案，减少服务器接口调用频率，并发场景下响应速度得到一定提升。</p>
+                  </div>
+                </div>
+
+                <div class="sub-box">
+                  <p class="sub-label"><span class="high">工程化提效</span></p>
+                  <div class="list">
+                    <p class="value">沉淀<span class="high">Swiper</span>单屏轮播模板、Screen适配、移动端竖屏提示、Loading蒙层等工具链，减少重复开发工作量。
+                    </p>
+                    <p class="value">推动团队代码复用规范，提升多人协作效率。</p>
+                  </div>
+                </div>
+
               </div>
               <div class="item">
-                <p class="label">技术亮点：</p>
+                <p class="label">项目成果：</p>
                 <div class="list">
-                  <p class="value">建立个人开发流程规范，通过工具复用将相似需求开发效率提升50%。</p>
-                  <p class="value">沉淀高频插件配置模板（Swiper/HTML2Canvas等），降低重复配置时间成本。</p>
+                  <p class="value">春节活动页上线后，用户互动量显著提升，页面加载速度优化，提升用户体验。</p>
+                  <p class="value">技术方案被团队采纳并应用于后续项目，提升团队开发效率。</p>
                 </div>
               </div>
             </div>
@@ -138,18 +170,50 @@
         <div class="label">技术能力</div>
         <div class="content content-grys">
           <div class="line-box">
-            <p class="item">
-              <span class="title">核心开发：</span>
-              <span class="value">Vue2/3工程化开发、微信小程序架构、Canvas图片生成</span>
-            </p>
-            <p class="item">
-              <span class="title">性能优化：</span>
-              <span class="value">接口缓存设计、资源预加载、图片资源缓存映射（重复生成耗时↓90%）</span>
-            </p>
-            <p class="item">
-              <span class="title">工程架构：</span>
-              <span class="value">全局请求封装、组件模板复用、AB实验埋点</span>
-            </p>
+            <div class="detail-info">
+              <div class="item">
+                <p class="label">熟练：</p>
+                <div class="sub-box">
+                  <div class="list">
+                    <p class="value">
+                      <span class="high">Vue2/3工程化开发</span>：掌握<span class="high">组件化开发</span>、<span
+                        class="high">Vuex状态管理</span>、<span class="high">Vue Router</span>路由设计，熟悉<span class="high">Vue3
+                        Composition API</span>。基于<span class="high">Vue CLI</span>搭建项目脚手架，推动团队代码规范与工程化流程。
+                    </p>
+                    <p class="value">
+                      <span class="high">原生微信小程序开发</span>：熟练使用<span class="high">WXML/WXSS</span>、<span
+                        class="high">自定义组件</span>、<span class="high">Canvas渲染</span>，优化小程序性能（<span
+                        class="high">分包加载</span>、<span class="high">本地缓存</span>），支持日均10万+用户访问。
+                    </p>
+                    <p class="value"><span class="high">资源预加载</span>、<span class="high">懒加载</span>、<span
+                        class="high">本地缓存（LocalStorage）</span>、<span class="high">CDN预解析</span>，首屏加载时间降低70%，用户跳出率减少20%。
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="item">
+                <p class="label">了解：</p>
+                <div class="sub-box">
+                  <div class="list">
+                    <p class="value"><span class="high">React</span>（<span class="high">组件化开发</span>、<span
+                        class="high">JSX</span>、<span class="high">Hooks基础</span>）、<span
+                        class="high">TypeScript</span>、<span class="high">Echarts</span>（数据可视化）。</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="item">
+                <p class="label">工具：</p>
+                <div class="sub-box">
+                  <div class="list">
+                    <p class="value"><span class="high">Swiper</span>（轮播组件开发）、<span
+                        class="high">HTML2Canvas</span>（动态海报生成）、<span class="high">QRCode</span>（二维码生成）、<span
+                        class="high">Git</span>（版本控制）、<span class="high">Beyond Compare</span>（代码差异化对比）。</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
