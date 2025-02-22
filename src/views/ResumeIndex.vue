@@ -111,15 +111,16 @@
                 <p class="label">技术栈：</p>
                 <div class="list">
                   <p class="value"><span class="high">Vue3</span>、<span class="high">TypeScript</span>、<span
-                      class="high">Swiper</span>、<span class="high">HTML2Canvas</span>、<span
-                      class="high">QRCode</span>、<span class="high">Echarts</span></p>
+                      class="high">jQuery</span>、<span class="high">Swiper</span>、<span
+                      class="high">HTML2Canvas</span>、<span class="high">QRCode</span>、<span class="high">Echarts</span>
+                  </p>
                 </div>
               </div>
               <div class="item">
                 <p class="label">项目描述：</p>
                 <div class="list">
                   <p class="value not-point">
-                    主导开发《蛋仔派对》《第五人格》等热门游戏的移动端H5营销活动页，支持单日峰值UV超50万，平均交付周期6天。
+                    主导开发《蛋仔派对》《第五人格》等游戏的活动页（PC端/移动端H5），单日峰值UV超50万，平均交付周期6天。
                   </p>
                 </div>
               </div>
@@ -138,8 +139,7 @@
                 <div class="sub-box">
                   <p class="sub-label"><span class="high">性能优化</span></p>
                   <div class="list">
-                    <p class="value">通过<span class="high">资源预加载</span>与<span
-                        class="high">CDN分发</span>，活动页首屏加载时间从2.5s降至1.2s，有效降低用户的跳出率。</p>
+                    <p class="value">通过<span class="high">静态资源优化（资源压缩、合并与缓存）</span>，使首屏加载时间从3.5s降至1.5s，有效降低用户的跳出率。</p>
                     <p class="value">设计用户行为数据缓存方案，减少服务器接口调用频率，并发场景下响应速度得到一定提升。</p>
                   </div>
                 </div>
@@ -147,7 +147,7 @@
                 <div class="sub-box">
                   <p class="sub-label"><span class="high">工程化提效</span></p>
                   <div class="list">
-                    <p class="value">沉淀<span class="high">Swiper</span>单屏轮播模板、Screen适配、移动端竖屏提示、Loading蒙层等工具链，减少重复开发工作量。
+                    <p class="value">沉淀<span class="high">Swiper</span>单屏模板、Screen适配、移动端旋转提示、Loading蒙层等工具链，减少重复开发工作量。
                     </p>
                     <p class="value">推动团队代码复用规范，提升多人协作效率。</p>
                   </div>
@@ -157,8 +157,8 @@
               <div class="item">
                 <p class="label">项目成果：</p>
                 <div class="list">
-                  <p class="value">春节活动页上线后，用户互动量显著提升，页面加载速度优化，提升用户体验。</p>
-                  <p class="value">技术方案被团队采纳并应用于后续项目，提升团队开发效率。</p>
+                  <p class="value">项目代码质量高，bug率低于团队平均水平，多个活动页稳定支持峰值UV 50万+，用户体验反馈优秀。</p>
+                  <p class="value">通过工具链沉淀与代码复用规范，团队开发效率有效提升，相似需求开发时间明显缩短。</p>
                 </div>
               </div>
             </div>
@@ -182,11 +182,11 @@
                     </p>
                     <p class="value">
                       <span class="high">原生微信小程序开发</span>：熟练使用<span class="high">WXML/WXSS</span>、<span
-                        class="high">自定义组件</span>、<span class="high">Canvas渲染</span>，优化小程序性能（<span
-                        class="high">分包加载</span>、<span class="high">本地缓存</span>），支持日均10万+用户访问。
+                        class="high">自定义组件</span>、<span class="high">Canvas渲染</span>，通过<span
+                        class="high">分包加载</span>与<span class="high">本地缓存</span>优化小程序性能，支持日均10万+用户访问。
                     </p>
                     <p class="value"><span class="high">资源预加载</span>、<span class="high">懒加载</span>、<span
-                        class="high">本地缓存（LocalStorage）</span>、<span class="high">CDN预解析</span>，首屏加载时间降低70%，用户跳出率减少20%。
+                        class="high">本地缓存（LocalStorage）</span>、<span class="high">DNS预解析</span>等减少白屏时间，有效降低用户跳出率。
                     </p>
                   </div>
                 </div>
@@ -208,8 +208,9 @@
                 <div class="sub-box">
                   <div class="list">
                     <p class="value"><span class="high">Swiper</span>（轮播组件开发）、<span
-                        class="high">HTML2Canvas</span>（动态海报生成）、<span class="high">QRCode</span>（二维码生成）、<span
-                        class="high">Git</span>（版本控制）、<span class="high">Beyond Compare</span>（代码差异化对比）。</p>
+                        class="high">HTML2Canvas</span>（动态海报生成）、<span class="high">jQuery</span>（开发效率）、<span
+                        class="high">QRCode</span>（二维码生成）、<span class="high">Git</span>（版本控制）、<span class="high">Beyond
+                        Compare</span>（代码差异化对比）。</p>
                   </div>
                 </div>
               </div>
@@ -256,7 +257,7 @@ const basicInfo = ref([
 ])
 
 const workExperience = ref([
-  ['杭州鑫烨科技有限公司（网易合作供应商）', '文娱部 - 前端开发工程师', '2022年4月 - 至今']
+  ['杭州鑫烨科技有限公司（网易合作供应商）', '前端开发工程师', '2022年4月 - 至今']
 ])
 
 let pictureSrc = require('@/assets/img/picture.jpg');

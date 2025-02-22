@@ -112,8 +112,8 @@
       position: absolute;
       right: 0;
       bottom: 0;
-      width: 1.4rem;
-      height: 1.9rem;
+      width: 1.25rem;
+      height: 1.75rem;
       border-radius: .07rem;
       overflow: hidden;
       background: #888;
@@ -228,7 +228,7 @@
           margin-bottom: 0.4rem;
 
           .item {
-            font-size: 0.2rem;
+            font-size: 0.18rem;
             color: #333333;
           }
         }
@@ -260,6 +260,7 @@
 
             .date{
               color: #666666;
+              font-size: 0.18rem;
             }
           }
         }
