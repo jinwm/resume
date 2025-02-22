@@ -176,7 +176,7 @@
                 <div class="sub-box">
                   <div class="list">
                     <p class="value">
-                      <span class="high">Vue2/3工程化开发</span>：掌握<span class="high">组件化开发</span>与Vue3特新 <span
+                      <span class="high">Vue2/3工程化开发</span>：掌握<span class="high">组件化开发</span>与Vue3特性 <span
                         class="high">Composition API</span>，熟悉状态管理（<span class="high">Vuex</span>）与路由管理（<span
                         class="high">Vue Router</span>）。基于<span class="high">Vue CLI</span>搭建标准化项目，推动团队工程化流程。
                     </p>
