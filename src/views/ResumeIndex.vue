@@ -176,9 +176,9 @@
                 <div class="sub-box">
                   <div class="list">
                     <p class="value">
-                      <span class="high">Vue2/3工程化开发</span>：掌握<span class="high">组件化开发</span>、<span
-                        class="high">Vuex状态管理</span>、<span class="high">Vue Router</span>路由设计，熟悉<span class="high">Vue3
-                        Composition API</span>。基于<span class="high">Vue CLI</span>搭建项目脚手架，推动团队代码规范与工程化流程。
+                      <span class="high">Vue2/3工程化开发</span>：掌握<span class="high">组件化开发</span>与Vue3特新 <span
+                        class="high">Composition API</span>，熟悉状态管理（<span class="high">Vuex</span>）与路由管理（<span
+                        class="high">Vue Router</span>）。基于<span class="high">Vue CLI</span>搭建标准化项目，推动团队工程化流程。
                     </p>
                     <p class="value">
                       <span class="high">原生微信小程序开发</span>：熟练使用<span class="high">WXML/WXSS</span>、<span
