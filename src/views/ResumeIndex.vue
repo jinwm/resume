@@ -84,7 +84,7 @@
                   <p class="sub-label"><span class="high">工程化与性能优化</span></p>
                   <div class="list">
                     <p class="value">封装全局请求方法，支持自动携带Token、登录失效重试、Loading状态管理。</p>
-                    <p class="value">制定代码复用规范，降低团队成员接入成本。</p>
+                    <p class="value">通过分包加载与本地缓存优化小程序性能。</p>
                   </div>
                 </div>
 
