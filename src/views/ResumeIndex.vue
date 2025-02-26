@@ -110,7 +110,8 @@
               <div class="item">
                 <p class="label">技术栈：</p>
                 <div class="list">
-                  <p class="value"><span class="high">Vue3</span>、<span class="high">TypeScript</span>、<span
+                  <p class="value"><span class="high">Vue2</span>、<span class="high">Vue3</span>、<span
+                      class="high">TypeScript</span>、<span class="high">React</span>、<span
                       class="high">jQuery</span>、<span class="high">Swiper</span>、<span
                       class="high">HTML2Canvas</span>、<span class="high">QRCode</span>、<span class="high">Echarts</span>
                   </p>
@@ -209,8 +210,8 @@
                   <div class="list">
                     <p class="value"><span class="high">Swiper</span>（轮播组件开发）、<span
                         class="high">HTML2Canvas</span>（动态海报生成）、<span class="high">jQuery</span>（开发效率）、<span
-                        class="high">QRCode</span>（二维码生成）、<span class="high">Git</span>（版本控制）、<span class="high">Beyond
-                        Compare</span>（代码差异化对比）。</p>
+                        class="high">QRCode</span>（二维码生成）、<span class="high">Git</span>（版本控制）、<span
+                        class="high">NVM</span>（Node版本管理）、<span class="high">Beyond Compare</span>（代码差异化对比）。</p>
                   </div>
                 </div>
               </div>
@@ -252,7 +253,7 @@ const basicInfo = ref([
   ['出生年月', '2001年10月'],
   ['工作经验', '3年'],
   ['电话', '18072127956'],
-  ['邮箱', 'jinwming@qq.com'],
+  ['邮箱', 'jinwming@gmail.com'],
   ['所在地区', '杭州市滨江区'],
 ])
 
