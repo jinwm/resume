@@ -32,7 +32,7 @@
           <div class="line-box">
             <div class="top-info">
               <p class="name" style="margin-left: -0.1rem;">《燕云十六声》官方小程序</p>
-              <p class="date">2024年4月 - 至今</p>
+              <p class="date">2024年4月 - 2024年8月</p>
             </div>
             <div class="detail-info">
               <div class="item">
@@ -46,8 +46,9 @@
                 <p class="label">项目描述：</p>
                 <div class="list">
                   <p class="value not-point">
-                    从0到1独立搭建小程序核心功能，完成首页、活动列表页、帖子页等10+核心页面的开发与上线，支撑日均10万+用户互动。后续主导部分功能迭代，并为团队提供技术支持与代码审查，确保项目质量和一致性。
+                    从0到1<span class="high">独立搭建</span>小程序核心功能，完成首页、活动列表、帖子详情、Web H5承载页等10+核心页面的开发与上线，支撑日均10万+用户互动。
                   </p>
+                  <p class="value not-point">后续主导关键功能迭代及新增页面开发需求，并为团队提供技术支持与代码审查，确保项目质量和一致性。</p>
                 </div>
               </div>
               <div class="item">
@@ -103,17 +104,16 @@
           <!-- 项目2：网易专题页集群 -->
           <div class="line-box">
             <div class="top-info">
-              <p class="name">网易游戏营销专题开发</p>
+              <p class="name">网易游戏营销专题开发<span>（短期驻场）</span></p>
               <p class="date">2022年4月 - 至今</p>
             </div>
             <div class="detail-info">
               <div class="item">
                 <p class="label">技术栈：</p>
                 <div class="list">
-                  <p class="value"><span class="high">Vue2</span>、<span class="high">Vue3</span>、<span
-                      class="high">TypeScript</span>、<span class="high">React</span>、<span
-                      class="high">jQuery</span>、<span class="high">Swiper</span>、<span
-                      class="high">HTML2Canvas</span>、<span class="high">QRCode</span>、<span class="high">Echarts</span>
+                  <p class="value"><span class="high">Vue2/3</span>、<span class="high">TypeScript</span>、<span
+                      class="high">jQuery</span>、<span class="high">React</span>、<span class="high">Echarts</span>、<span
+                      class="high">Swiper</span>、<span class="high">HTML2Canvas</span>、<span class="high">QRCode</span>
                   </p>
                 </div>
               </div>
@@ -121,7 +121,7 @@
                 <p class="label">项目描述：</p>
                 <div class="list">
                   <p class="value not-point">
-                    主导开发《蛋仔派对》《第五人格》等游戏的活动页（PC端/移动端H5），单日峰值UV超50万，平均交付周期6天。
+                    主导开发《蛋仔派对》《第五人格》《逆水寒》等游戏的活动、赛事数据页（PC端/移动端H5），单日最高峰值UV超50万，项目平均交付周期6天。
                   </p>
                 </div>
               </div>
@@ -131,7 +131,7 @@
                 <div class="sub-box">
                   <p class="sub-label"><span class="high">功能开发</span></p>
                   <div class="list">
-                    <p class="value">实现用户授权登录（微信、QQ等平台）、抽奖、助力领奖等互动功能，记录用户行为数据以支持运营优化。</p>
+                    <p class="value">实现用户授权登录（微信、QQ等平台）、抽奖、助力、答题领奖等互动功能，记录用户行为数据以支持运营优化。</p>
                     <p class="value">开发动态海报生成功能，基于<span class="high">HTML2Canvas</span>+<span
                         class="high">QRCode</span>实现用户专属二维码嵌入与实时渲染，提升分享转化率。</p>
                   </div>
@@ -148,7 +148,7 @@
                 <div class="sub-box">
                   <p class="sub-label"><span class="high">工程化提效</span></p>
                   <div class="list">
-                    <p class="value">沉淀<span class="high">Swiper</span>单屏模板、Screen适配、移动端旋转提示、Loading蒙层等工具链，减少重复开发工作量。
+                    <p class="value">沉淀<span class="high">Swiper</span>单屏模板、Screen适配、移动端伪横屏、Loading蒙层等常用工具链，减少重复开发工作量。
                     </p>
                     <p class="value">推动团队代码复用规范，提升多人协作效率。</p>
                   </div>
@@ -158,7 +158,7 @@
               <div class="item">
                 <p class="label">项目成果：</p>
                 <div class="list">
-                  <p class="value">项目代码质量高，bug率低于团队平均水平，多个活动页稳定支持峰值UV 50万+，用户体验反馈优秀。</p>
+                  <p class="value">项目代码质量高，bug率低于团队平均水平，多个活动页稳定支持峰值UV 50万+，用户体验反馈良好。</p>
                   <p class="value">通过工具链沉淀与代码复用规范，团队开发效率有效提升，相似需求开发时间明显缩短。</p>
                 </div>
               </div>
