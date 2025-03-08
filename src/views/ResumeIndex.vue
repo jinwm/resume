@@ -112,8 +112,8 @@
                 <p class="label">技术栈：</p>
                 <div class="list">
                   <p class="value"><span class="high">Vue2/3</span>、<span class="high">TypeScript</span>、<span
-                      class="high">jQuery</span>、<span class="high">React</span>、<span class="high">Echarts</span>、<span
-                      class="high">Swiper</span>、<span class="high">HTML2Canvas</span>、<span class="high">QRCode</span>
+                      class="high">jQuery</span>、<span class="high">Echarts</span>、<span
+                      class="high">Swiper</span>、<span class="high">Html2canvas</span>、<span class="high">QRCode</span>
                   </p>
                 </div>
               </div>
@@ -121,7 +121,7 @@
                 <p class="label">项目描述：</p>
                 <div class="list">
                   <p class="value not-point">
-                    主导开发《蛋仔派对》《第五人格》《逆水寒》等游戏的活动、赛事数据页（PC端/移动端H5），单日最高峰值UV超50万，项目平均交付周期6天。
+                    主导开发《蛋仔派对》《第五人格》《逆水寒》等游戏的活动、数据页（PC端/移动端H5），单日最高峰值UV超50万，项目平均交付周期6天。
                   </p>
                 </div>
               </div>
@@ -132,7 +132,7 @@
                   <p class="sub-label"><span class="high">功能开发</span></p>
                   <div class="list">
                     <p class="value">实现用户授权登录（微信、QQ等平台）、抽奖、助力、答题领奖等互动功能，记录用户行为数据以支持运营优化。</p>
-                    <p class="value">开发动态海报生成功能，基于<span class="high">HTML2Canvas</span>+<span
+                    <p class="value">开发动态海报生成功能，基于<span class="high">Html2canvas</span>+<span
                         class="high">QRCode</span>实现用户专属二维码嵌入与实时渲染，提升分享转化率。</p>
                   </div>
                 </div>
@@ -209,7 +209,7 @@
                 <div class="sub-box">
                   <div class="list">
                     <p class="value"><span class="high">Swiper</span>（轮播组件开发）、<span
-                        class="high">HTML2Canvas</span>（动态海报生成）、<span class="high">jQuery</span>（开发效率）、<span
+                        class="high">Html2canvas</span>（动态海报生成）、<span class="high">jQuery</span>（开发效率）、<span
                         class="high">QRCode</span>（二维码生成）、<span class="high">Git</span>（版本控制）、<span
                         class="high">NVM</span>（Node版本管理）、<span class="high">Beyond Compare</span>（代码差异化对比）。</p>
                   </div>
@@ -220,7 +220,7 @@
         </div>
       </div>
 
-      <div class="info-part">
+      <!-- <div class="info-part">
         <div class="label">教育经历</div>
         <div class="content content-gzjl">
           <div class="line-box">
@@ -229,7 +229,7 @@
             <p class="item">2019年9月-2022年6月</p>
           </div>
         </div>
-      </div>
+      </div> -->
     </div>
   </div>
   <a href="javascript:;" class="btn-export" title="导出图片" @click="handelExportImg">导出图片</a>
@@ -237,7 +237,6 @@
 
 <script setup>
 import { ref } from 'vue';
-import html2canvas from 'html2canvas';
 import { formatDate } from '../js/utils';
 import EditableText from '../components/EditableText';
 
@@ -283,16 +282,23 @@ const handelExportImg = () => {
   if (!resumeContainer.value) {
     return;
   }
+
+  // eslint-disable-next-line
   html2canvas(resumeContainer.value, {
+    scale: window.devicePixelRatio,
+    width: resumeContainer.value.offsetWidth,
+    height: resumeContainer.value.offsetHeight,
     useCORS: true,
-    backgroundColor: null
-  }).then(canvas => {
+    backgroundColor: null,
+    scrollX: 0,
+    scrollY: 0,
+  }).then(function (canvas) {
     const imgData = canvas.toDataURL('image/jpg');
     const link = document.createElement('a');
     link.href = imgData;
     link.download = `个人简历${formatDate(new Date(), 'yyyymmdd')}.jpg`;
     link.click();
-  })
+  });
 }
 
 </script>
