@@ -35,3 +35,7 @@ export const useResize = () => {
     }, 100)
   });
 }
+
+export const getScale = () => {
+  return Math.min(Math.floor(parseFloat(document.documentElement.style.fontSize) / 15), 5);
+}

@@ -1,13 +1,15 @@
 .container {
   position: relative;
   margin: 0 auto;
-  width: 11.5rem;
+  width: 12rem;
   background: #fff;
   box-shadow: 0 0 0.15rem #d2d2d2;
   border-radius: 0.1rem;
   overflow: hidden;
   box-sizing: border-box;
   transition: all 0.3s;
+  will-change: transform; /* 触发 GPU 加速 */
+  contain: layout; /* 限制渲染范围 */
 
   .icon{
     width: 1.23rem;
@@ -26,8 +28,8 @@
   .main {
     position: relative;
     margin: 0 auto;
-    width: 9.9rem;
-    padding: 0.95rem 0 0.7rem;
+    width: 10.5rem;
+    padding: 0.9rem 0 0.3rem;
   }
 
   .slogan-title {
@@ -61,7 +63,7 @@
       height: 1rem;
 
       .item {
-        width: 2.7rem;
+        width: 3rem;
         margin-top: .25rem;
         white-space: nowrap;
         position: absolute;
@@ -70,11 +72,11 @@
         display: flex;
 
         &:nth-child(2) {
-          left: 2.75rem;
+          left: 3.05rem;
         }
 
         &:nth-child(3) {
-          left: 5.8rem;
+          left: 6.4rem;
         }
 
         &:nth-child(4) {
@@ -83,12 +85,12 @@
 
         &:nth-child(5) {
           top: 0.45rem;
-          left: 2.75rem;
+          left: 3.05rem;
         }
 
         &:nth-child(6) {
           top: 0.45rem;
-          left: 5.8rem;
+          left: 6.4rem;
         }
 
         p,span {
@@ -114,8 +116,8 @@
       position: absolute;
       right: 0;
       bottom: 0;
-      width: 1.25rem;
-      height: 1.75rem;
+      width: 1.35rem;
+      height: 1.85rem;
       border-radius: .07rem;
       overflow: hidden;
       background: #888;
@@ -133,7 +135,7 @@
   }
 
   .info-part {
-    margin-bottom: 0.6rem;
+    margin-bottom: 0.45rem;
 
     > .label {
       color: #44546a;
@@ -151,45 +153,46 @@
         .list{
           padding-left: .25rem;
         }
+        .value {
+          font-size: 0.18rem;
+          color: #333333;
+          line-height: 1.6;
+          margin-bottom: 0.1rem;
+          position: relative;
+          padding-left: 0.18rem;
+
+          span{
+            font-size: 0.18rem;
+            color: #333333;
+            line-height: 1.6;
+          }
+
+          &::before {
+            content: '';
+            position: absolute;
+            left: 0.02rem;
+            top: 0.12rem;
+            transform: rotate(45deg);
+            background: #333333;
+            width: 0.05rem;
+            height: 0.05rem;
+            border-radius: 50%;
+          }
+        }
         .item {
-          margin-bottom: 0.2rem;
+          margin-bottom: 0.15rem;
 
           .label {
             font-size: 0.2rem;
             color: #333333;
             font-weight: bold;
-            margin-bottom: 0.12rem;
+            margin-bottom: 0.1rem;
           }
 
-          .value {
-            font-size: 0.18rem;
-            color: #333333;
-            line-height: 1.6;
-            margin-bottom: 0.12rem;
-            position: relative;
-            padding-left: 0.18rem;
 
-            span{
-              font-size: 0.18rem;
-              color: #333333;
-              line-height: 1.6;
-            }
-
-            &::before {
-              content: '';
-              position: absolute;
-              left: 0.02rem;
-              top: 0.12rem;
-              transform: rotate(45deg);
-              background: #333333;
-              width: 0.05rem;
-              height: 0.05rem;
-              border-radius: 50%;
-            }
-          }
 
           .sub-box {
-            margin-bottom: 0.2rem;
+            margin-bottom: 0.15rem;
 
             .sub-label {
               font-size: 0.2rem;
@@ -215,7 +218,7 @@
               padding-left: 0.25rem;
 
               .value {
-                margin-bottom: 0.12rem;
+                margin-bottom: 0.1rem;
               }
             }
           }
@@ -227,7 +230,7 @@
           display: flex;
           justify-content: space-between;
           align-items: center;
-          margin-bottom: 0.4rem;
+          margin-bottom: 0.3rem;
 
           .item {
             font-size: 0.18rem;
@@ -238,7 +241,7 @@
 
       &.content-xmjl {
         .line-box {
-          margin-bottom: 0.5rem;
+          margin-bottom: 0.3rem;
 
           &:last-child {
             margin-bottom: 0;
@@ -248,7 +251,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin-bottom: 0.2rem;
+            margin-bottom: 0.15rem;
 
             .name,
             .date {
@@ -277,7 +280,7 @@
       &.content-grys {
         .line-box {
           .item {
-            margin-bottom: 0.2rem;
+            margin-bottom: 0.15rem;
 
             .title {
               font-weight: bold;
@@ -298,23 +301,30 @@
   }
 }
 
-.btn-export {
+.export-btns{
+  display: flex;
+  align-items: center;
   position: fixed;
   bottom: 0.5rem;
   left: 50%;
-  padding: 0 0.55rem;
-  height: 0.65rem;
-  line-height: 0.65rem;
-  text-align: center;
-  border-radius: 0.1rem;
-  background: #333333;
-  color: #fff;
-  font-size: 0.24rem;
-  box-shadow: 0 0 0.1rem #d2d2d2;
-  transition: all 0.3s;
   transform: translateX(-50%);
 
-  &:hover {
-    transform: translateX(-50%) scale(1.05);
+  .btn-export {
+    display: block;
+    margin: 0 0.2rem;
+    padding: 0 0.55rem;
+    height: 0.65rem;
+    line-height: 0.65rem;
+    text-align: center;
+    border-radius: 0.1rem;
+    background: #333333;
+    color: #fff;
+    font-size: 0.24rem;
+    box-shadow: 0 0 0.1rem #d2d2d2;
+    transition: all 0.3s;
+  
+    &:hover {
+      transform: scale(1.05);
+    }
   }
 }

@@ -40,9 +40,12 @@ span {
   color:#333333 !important;
 }
 
-hr{
-  display: none;
-  margin: 0.2rem auto;
+.hr{
+  width: 100%;
+  height: 0;
+  border-bottom: 1px solid gray;
+  margin: 0.15rem auto;
+  opacity: 0.5;
 }
 
 /*滚动条的宽度*/

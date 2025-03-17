@@ -1,9 +1,9 @@
 <template>
-  <div ref="resumeContainer" class="container">
+  <div ref="resumeContainer" class="container" v-loading="loading">
     <i class="icon"><img src="@/assets/img/icon.png"></i>
     <div class="main">
       <div class="slogan-title">个人简历</div>
-      <div class="intention">求职意向：Web前端开发</div>
+      <div class="intention">求职意向：中级前端开发</div>
       <div class="top-basic-info">
         <div class="basic-info">
           <div class="item" v-for="(item, index) in basicInfo" :key="index"><span class="label">{{ item[0]
@@ -24,14 +24,14 @@
             </div>
           </div>
         </div>
-
-        <hr>
-
+      </div>
+      <div class="info-part">
+        <div class="label">项目经历</div>
         <div class="content content-xmjl">
           <!-- 项目1：燕云小程序 -->
           <div class="line-box">
             <div class="top-info">
-              <p class="name" style="margin-left: -0.1rem;">《燕云十六声》官方小程序</p>
+              <p class="name">网易《燕云十六声》官方小程序</p>
               <p class="date">2024年4月 - 2024年8月</p>
             </div>
             <div class="detail-info">
@@ -39,14 +39,14 @@
                 <p class="label">技术栈：</p>
                 <div class="list">
                   <p class="value"><span class="high">微信小程序原生框架</span>、<span class="high">Canvas</span>、<span
-                      class="high">wxParse富文本解析</span></p>
+                      class="high">wxParse.js</span></p>
                 </div>
               </div>
               <div class="item">
                 <p class="label">项目描述：</p>
                 <div class="list">
                   <p class="value not-point">
-                    从0到1<span class="high">独立搭建</span>小程序核心功能，完成首页、活动列表、帖子详情、Web H5承载页等10+核心页面的开发与上线，支撑日均10万+用户互动。
+                    <span class="high">从0到1独立搭建</span>小程序核心功能，完成首页、活动列表、帖子详情、Web H5承载页等10+核心页面的开发与上线，支撑日均10万+用户互动。
                   </p>
                   <p class="value not-point">后续主导关键功能迭代及新增页面开发需求，并为团队提供技术支持与代码审查，确保项目质量和一致性。</p>
                 </div>
@@ -100,20 +100,22 @@
               </div>
             </div>
           </div>
-          <hr>
+          <div class="hr"></div>
           <!-- 项目2：网易专题页集群 -->
           <div class="line-box">
             <div class="top-info">
-              <p class="name">网易游戏营销专题开发<span>（短期驻场）</span></p>
+              <p class="name">网易游戏营销专题开发<span>（合集项目）</span></p>
               <p class="date">2022年4月 - 至今</p>
             </div>
             <div class="detail-info">
               <div class="item">
                 <p class="label">技术栈：</p>
                 <div class="list">
-                  <p class="value"><span class="high">Vue2/3</span>、<span class="high">TypeScript</span>、<span
-                      class="high">jQuery</span>、<span class="high">Echarts</span>、<span
-                      class="high">Swiper</span>、<span class="high">Html2canvas</span>、<span class="high">QRCode</span>
+                  <p class="value"><span class="high">Vue2/3</span>、<span class="high">Vue Router</span>、<span
+                      class="high">Vuex/Pinia</span>、<span class="high">TypeScript</span>、<span
+                      class="high">jQuery</span>、<span class="high">Preloader</span>、<span
+                      class="high">Swiper</span>、<span class="high">Html2canvas</span>、<span
+                      class="high">QRCode</span>、<span class="high">iScroll</span>
                   </p>
                 </div>
               </div>
@@ -131,9 +133,9 @@
                 <div class="sub-box">
                   <p class="sub-label"><span class="high">功能开发</span></p>
                   <div class="list">
-                    <p class="value">实现用户授权登录（微信、QQ等平台）、抽奖、助力、答题领奖等互动功能，记录用户行为数据以支持运营优化。</p>
+                    <p class="value">实现用户授权登录（微信、QQ等平台）、抽奖、助力、答题领奖等互动功能，用户行为数据埋点覆盖率达100%。</p>
                     <p class="value">开发动态海报生成功能，基于<span class="high">Html2canvas</span>+<span
-                        class="high">QRCode</span>实现用户专属二维码嵌入与实时渲染，提升分享转化率。</p>
+                        class="high">QRCode</span>实现用户专属二维码嵌入与实时渲染，分享转化率提升20%。</p>
                   </div>
                 </div>
 
@@ -141,7 +143,7 @@
                   <p class="sub-label"><span class="high">性能优化</span></p>
                   <div class="list">
                     <p class="value">通过<span class="high">静态资源优化（资源压缩、合并与缓存）</span>，使首屏加载时间从3.5s降至1.5s，有效降低用户的跳出率。</p>
-                    <p class="value">设计用户行为数据缓存方案，减少服务器接口调用频率，并发场景下响应速度得到一定提升。</p>
+                    <p class="value">设计用户行为数据缓存方案，接口调用频率减少40%，在并发场景下响应速度提升30%。</p>
                   </div>
                 </div>
 
@@ -150,7 +152,7 @@
                   <div class="list">
                     <p class="value">沉淀<span class="high">Swiper</span>单屏模板、Screen适配、移动端伪横屏、Loading蒙层等常用工具链，减少重复开发工作量。
                     </p>
-                    <p class="value">推动团队代码复用规范，提升多人协作效率。</p>
+                    <p class="value">推动团队代码复用规范，多人协作效率提升30%。</p>
                   </div>
                 </div>
 
@@ -158,8 +160,53 @@
               <div class="item">
                 <p class="label">项目成果：</p>
                 <div class="list">
-                  <p class="value">项目代码质量高，bug率低于团队平均水平，多个活动页稳定支持峰值UV 50万+，用户体验反馈良好。</p>
-                  <p class="value">通过工具链沉淀与代码复用规范，团队开发效率有效提升，相似需求开发时间明显缩短。</p>
+                  <p class="value">BUG率低于团队平均水平，活动页稳定支持峰值UV 50万+，用户体验反馈良好，获网易内部技术认可。</p>
+                  <p class="value">通过工具链沉淀与代码复用规范，相似需求开发周期缩短40%。</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="hr"></div>
+
+          <div class="line-box">
+            <div class="top-info">
+              <p class="name">宇宏数据可视化大屏项目</p>
+              <p class="date">2024年1月 - 2024年3月</p>
+            </div>
+            <div class="detail-info">
+              <div class="item">
+                <p class="label">技术栈：</p>
+                <div class="list">
+                  <p class="value"><span class="high">Vue2</span>、<span class="high">Vue Router</span>、<span
+                      class="high">Vuex</span>、<span class="high">Echarts</span>、<span class="high">CSS3</span>
+                  </p>
+                </div>
+              </div>
+              <div class="item">
+                <p class="label">项目描述：</p>
+                <div class="list">
+                  <p class="value">
+                    独立开发数据可视化大屏项目，集成柱状图、饼图、表格等多种图表，支持实时数据更新与动态展示。
+                  </p>
+                  <p class="value">
+                    通过CSS3动画实现中间区域的动态效果，提升视觉吸引力。
+                  </p>
+                </div>
+              </div>
+              <div class="item">
+                <p class="label">核心贡献：</p>
+
+                <div class="list">
+                  <p class="value">基于Echarts实现多图表联动，数据展示清晰直观。</p>
+                  <p class="value">优化动画性能，确保大屏流程运行，用户满意度提升20%。</p>
+                </div>
+
+              </div>
+              <div class="item">
+                <p class="label">项目成果：</p>
+                <div class="list">
+                  <p class="value">大屏成功上线并稳定运行，支撑日均数据展示需求。</p>
                 </div>
               </div>
             </div>
@@ -172,8 +219,8 @@
         <div class="content content-grys">
           <div class="line-box">
             <div class="detail-info">
-              <div class="item">
-                <p class="label">熟练：</p>
+              <!-- <div class="item">
+                <p class="label">精通：</p>
                 <div class="sub-box">
                   <div class="list">
                     <p class="value">
@@ -181,6 +228,14 @@
                         class="high">Composition API</span>，熟悉状态管理（<span class="high">Vuex</span>）与路由管理（<span
                         class="high">Vue Router</span>）。基于<span class="high">Vue CLI</span>搭建标准化项目，推动团队工程化流程。
                     </p>
+                  </div>
+                </div>
+              </div> -->
+              <!-- 
+              <div class="item">
+                <p class="label">熟练：</p>
+                <div class="sub-box">
+                  <div class="list">
                     <p class="value">
                       <span class="high">原生微信小程序开发</span>：熟练使用<span class="high">WXML/WXSS</span>、<span
                         class="high">自定义组件</span>、<span class="high">Canvas渲染</span>，通过<span
@@ -191,9 +246,9 @@
                     </p>
                   </div>
                 </div>
-              </div>
+              </div> -->
 
-              <div class="item">
+              <!-- <div class="item">
                 <p class="label">了解：</p>
                 <div class="sub-box">
                   <div class="list">
@@ -202,9 +257,9 @@
                         class="high">TypeScript</span>、<span class="high">Echarts</span>（数据可视化）。</p>
                   </div>
                 </div>
-              </div>
+              </div> -->
 
-              <div class="item">
+              <!-- <div class="item">
                 <p class="label">工具：</p>
                 <div class="sub-box">
                   <div class="list">
@@ -214,13 +269,58 @@
                         class="high">NVM</span>（Node版本管理）、<span class="high">Beyond Compare</span>（代码差异化对比）。</p>
                   </div>
                 </div>
+              </div> -->
+
+              <div class="item">
+                <p class="label">前端基础：</p>
+                <div class="sub-box">
+                  <div class="list">
+                    <p class="value">扎实掌握HTML5、CSS3、JavaScript（ES6+），熟悉浏览器渲染机制与性能优化原理。</p>
+                  </div>
+                </div>
               </div>
+              <div class="item">
+                <p class="label">Vue工程化开发：</p>
+                <div class="sub-box">
+                  <div class="list">
+                    <p class="value">熟练使用Vue2/3开发复杂应用，掌握组件化开发、Composition API、Vuex状态管理、Vue Router路由设计。</p>
+                    <p class="value">基于Vue CLI搭建标准化项目，推动团队代码规范与工程化流程落地。</p>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <p class="label">微信小程序开发：</p>
+                <div class="sub-box">
+                  <div class="list">
+                    <p class="value">熟练使用WXML/WXSS、自定义组件开发，基于Canvas实现动态渲染功能。</p>
+                    <p class="value">通过分包加载与本地缓存优化小程序性能，首屏加载时间缩短40%，支撑日均10万+用户访问。</p>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <p class="label">性能优化：</p>
+                <div class="sub-box">
+                  <div class="list">
+                    <p class="value">资源预加载、懒加载、本地缓存策略、DNS预解析等方案落地，白屏时间减少50%，用户跳出率降低20%。</p>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <p class="label">第三方库与工具：</p>
+                <div class="sub-box">
+                  <div class="list">
+                    <p class="value">熟练使用Swiper（轮播组件）、HTML2Canvas（动态海报生成）、QRCode（二维码生成）、ECharts（数据可视化）等。</p>
+                    <p class="value">工具链：Git（版本控制）、NVM（Node多版本管理）、Beyond Compare（代码差异化对比）。</p>
+                  </div>
+                </div>
+              </div>
+
             </div>
           </div>
         </div>
       </div>
 
-      <!-- <div class="info-part">
+      <div class="info-part">
         <div class="label">教育经历</div>
         <div class="content content-gzjl">
           <div class="line-box">
@@ -229,16 +329,21 @@
             <p class="item">2019年9月-2022年6月</p>
           </div>
         </div>
-      </div> -->
+      </div>
     </div>
   </div>
-  <a href="javascript:;" class="btn-export" title="导出图片" @click="handelExportImg">导出图片</a>
+  <div class="export-btns">
+    <a href="javascript:;" class="btn-export" title="导出图片" @click="handleExportImg">导出图片</a>
+    <a href="javascript:;" class="btn-export" title="导出PDF" @click="handleExportPDF">导出PDF</a>
+  </div>
 </template>
 
 <script setup>
 import { ref } from 'vue';
-import { formatDate } from '../js/utils';
+import { formatDate, getScale } from '../js/utils';
 import EditableText from '../components/EditableText';
+
+const loading = ref(false);
 
 const editableTextStyle = {
   'font-size': '0.2rem',
@@ -249,11 +354,11 @@ const resumeContainer = ref(null);
 
 const basicInfo = ref([
   ['姓名', '方思明'],
-  ['出生年月', '2001年10月'],
+  ['年龄', '24岁'],
   ['工作经验', '3年'],
   ['电话', '18072127956'],
   ['邮箱', 'jinwming@gmail.com'],
-  ['所在地区', '杭州市滨江区'],
+  ['所在地区', '杭州市'],
 ])
 
 const workExperience = ref([
@@ -278,14 +383,17 @@ if (!showPrivacy.value) {
   workExperience.value[0][0] = '杭州**科技有限公司（网易合作供应商）';
 }
 
-const handelExportImg = () => {
+const handleExportImg = (pdfCb) => {
   if (!resumeContainer.value) {
     return;
   }
 
+  window.scrollTo(0, 0);
+
+  loading.value = true;
   // eslint-disable-next-line
   html2canvas(resumeContainer.value, {
-    scale: window.devicePixelRatio,
+    scale: getScale(),
     width: resumeContainer.value.offsetWidth,
     height: resumeContainer.value.offsetHeight,
     useCORS: true,
@@ -293,12 +401,59 @@ const handelExportImg = () => {
     scrollX: 0,
     scrollY: 0,
   }).then(function (canvas) {
+    if (pdfCb && typeof pdfCb === 'function') {
+      pdfCb(canvas);
+      return;
+    }
+
     const imgData = canvas.toDataURL('image/jpg');
-    const link = document.createElement('a');
-    link.href = imgData;
-    link.download = `个人简历${formatDate(new Date(), 'yyyymmdd')}.jpg`;
-    link.click();
+
+    const a = document.createElement('a');
+    a.href = imgData;
+    a.download = `附件简历-方思明-前端开发工程师-3年-${formatDate(new Date(), 'yyyymmdd')}.jpg`;
+    a.click();
+    // ElMessage({
+    //   message: '导出成功',
+    //   type: 'success',
+    // })
+  }).catch(() => {
+    // ElMessage({
+    //   message: '导出失败',
+    //   type: 'error',
+    // })
+  }).finally(() => {
+    loading.value = false;
   });
+}
+
+const handleExportPDF = () => {
+  if (!resumeContainer.value) {
+    return;
+  }
+
+  handleExportImg((canvas) => {
+    // 计算等比缩小的尺寸
+    const targetWidth = 595; // A4 宽度（单位：pt，默认 1pt = 1/72 inch）
+    const scaleFactor = targetWidth / canvas.width; // 缩放比例
+    const targetHeight = canvas.height * scaleFactor; // 等比缩小的高度
+
+    // 创建 PDF 文档
+    // eslint-disable-next-line
+    const pdf = new jspdf.jsPDF({
+      orientation: 'portrait', // 纵向
+      unit: 'pt', // 使用点（point）作为单位
+      format: [targetWidth, targetHeight], // 自定义尺寸
+    });
+
+    // 将图片插入 PDF（等比缩小）
+    pdf.addImage(canvas, 'JPEG', 0, 0, targetWidth, targetHeight, undefined, 'FAST');
+    pdf.save(`附件简历-方思明-前端开发工程师-3年-${formatDate(new Date(), 'yyyymmdd')}.pdf`);
+    loading.value = false;
+    // ElMessage({
+    //   message: '导出成功',
+    //   type: 'success',
+    // })
+  })
 }
 
 </script>
