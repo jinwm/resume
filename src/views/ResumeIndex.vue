@@ -67,7 +67,7 @@
                 <div class="sub-box">
                   <p class="sub-label"><span class="high">富文本解析</span>与社交功能</p>
                   <div class="list">
-                    <p class="value">基于<span class="high">wxParse</span>实现富文本解析，支持图片预览、超链接智能跳转（H5/小程序页面/外部小程序）。</p>
+                    <p class="value">基于<span class="high">wxParse.js</span>实现富文本解析，支持图片预览、超链接智能跳转（H5/小程序页面/外部小程序）。</p>
                     <p class="value">实现点赞、评论、分享等社交功能，提升用户互动体验。</p>
                   </div>
                 </div>
@@ -84,7 +84,7 @@
                 <div class="sub-box">
                   <p class="sub-label"><span class="high">工程化与性能优化</span></p>
                   <div class="list">
-                    <p class="value">封装全局请求方法，支持自动携带Token、登录失效重试、Loading状态管理。</p>
+                    <p class="value">封装全局请求方法，支持自动携带Token、登录失效重试、加载状态管理。</p>
                     <p class="value">通过分包加载与本地缓存优化小程序性能。</p>
                   </div>
                 </div>
@@ -150,7 +150,7 @@
                 <div class="sub-box">
                   <p class="sub-label"><span class="high">工程化提效</span></p>
                   <div class="list">
-                    <p class="value">沉淀<span class="high">Swiper</span>单屏模板、Screen适配、移动端伪横屏、Loading蒙层等常用工具链，减少重复开发工作量。
+                    <p class="value">沉淀<span class="high">Swiper</span>单屏模板、Screen适配、移动端伪横屏、Loading层等常用工具/组件，减少重复开发工作量。
                     </p>
                     <p class="value">推动团队代码复用规范，多人协作效率提升30%。</p>
                   </div>
@@ -179,7 +179,8 @@
                 <p class="label">技术栈：</p>
                 <div class="list">
                   <p class="value"><span class="high">Vue2</span>、<span class="high">Vue Router</span>、<span
-                      class="high">Vuex</span>、<span class="high">Echarts</span>、<span class="high">CSS3</span>
+                      class="high">Vuex</span>、<span class="high">Echarts</span>、<span
+                      class="high">ElementUI</span>、<span class="high">CSS3</span>
                   </p>
                 </div>
               </div>
@@ -187,10 +188,10 @@
                 <p class="label">项目描述：</p>
                 <div class="list">
                   <p class="value">
-                    独立开发数据可视化大屏项目，集成柱状图、饼图、表格等多种图表，支持实时数据更新与动态展示。
+                    独立开发数据可视化大屏项目，集成柱状图、饼图、雷达图等多种图表，支持实时数据更新与动态展示。
                   </p>
                   <p class="value">
-                    通过CSS3动画实现中间区域的动态效果，提升视觉吸引力。
+                    所有图表皆<span class="high">高度还原</span>设计稿样式，通过CSS3动画实现中间区域的动态效果，提升视觉吸引力。
                   </p>
                 </div>
               </div>
@@ -198,8 +199,8 @@
                 <p class="label">核心贡献：</p>
 
                 <div class="list">
-                  <p class="value">基于Echarts实现多图表联动，数据展示清晰直观。</p>
-                  <p class="value">优化动画性能，确保大屏流程运行，用户满意度提升20%。</p>
+                  <p class="value">基于<span class="high">Echarts</span>实现多图表联动，数据展示清晰直观。</p>
+                  <p class="value">基于浏览器渲染机制优化动画性能，确保大屏流程运行。</p>
                 </div>
 
               </div>
@@ -275,7 +276,7 @@
                 <p class="label">前端基础：</p>
                 <div class="sub-box">
                   <div class="list">
-                    <p class="value">扎实掌握HTML5、CSS3、JavaScript（ES6+），熟悉浏览器渲染机制与性能优化原理。</p>
+                    <p class="value"><span class="high">扎实掌握HTML5、CSS3、JavaScript（ES6+）</span>，熟悉浏览器渲染机制与性能优化原理。</p>
                   </div>
                 </div>
               </div>
@@ -283,16 +284,17 @@
                 <p class="label">Vue工程化开发：</p>
                 <div class="sub-box">
                   <div class="list">
-                    <p class="value">熟练使用Vue2/3开发复杂应用，掌握组件化开发、Composition API、Vuex状态管理、Vue Router路由设计。</p>
+                    <p class="value"><span class="high">熟练使用Vue2/3开发复杂应用</span>，掌握组件化开发、Composition
+                      API、Pinia/Vuex状态管理、Vue Router路由设计等。</p>
                     <p class="value">基于Vue CLI搭建标准化项目，推动团队代码规范与工程化流程落地。</p>
                   </div>
                 </div>
               </div>
               <div class="item">
-                <p class="label">微信小程序开发：</p>
+                <p class="label">小程序开发：</p>
                 <div class="sub-box">
                   <div class="list">
-                    <p class="value">熟练使用WXML/WXSS、自定义组件开发，基于Canvas实现动态渲染功能。</p>
+                    <p class="value"><span class="high">熟练使用UniApp以及原生的WXML/WXSS、自定义组件开发</span>，基于Canvas实现动态渲染功能。</p>
                     <p class="value">通过分包加载与本地缓存优化小程序性能，首屏加载时间缩短40%，支撑日均10万+用户访问。</p>
                   </div>
                 </div>
@@ -447,7 +449,8 @@ const handleExportPDF = () => {
 
     // 将图片插入 PDF（等比缩小）
     pdf.addImage(canvas, 'JPEG', 0, 0, targetWidth, targetHeight, undefined, 'FAST');
-    pdf.save(`附件简历-方思明-前端开发工程师-3年-${formatDate(new Date(), 'yyyymmdd')}.pdf`);
+    // pdf.save(`附件简历-方思明-前端开发工程师-3年-${formatDate(new Date(), 'yyyymmdd')}.pdf`);
+    pdf.save(`附件简历-方思明-前端开发工程师-3年-${Date.now()}.pdf`);
     loading.value = false;
     // ElMessage({
     //   message: '导出成功',
