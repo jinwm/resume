@@ -75,7 +75,7 @@
                   <p class="sub-label"><span class="high">数据埋点与上报模块</span></p>
                   <div class="list">
                     <p class="value">设计全局埋点上报模块，使用小程序UUID作为用户标识，支持页面显示上报和自定义事件上报。</p>
-                    <p class="value">实现登录态依赖管理，通过<span class="high">Promise锁机制</span>避免wx.login和userinfo接口重复调用。</p>
+                    <p class="value">实现登录态依赖管理，通过<span class="high">高并发场景下的登录态治理方案</span>避免wx.login和userinfo接口重复调用。</p>
                     <p class="value">开发自动重试策略，在网络异常时保障UUID获取成功率，减少数据上报丢失。</p>
                     <p class="value">封装统一上报方法，支持通过字段名匹配预定义上报内容，提升埋点开发和维护效率。</p>
                   </div>
@@ -112,10 +112,9 @@
                 <p class="label">技术栈：</p>
                 <div class="list">
                   <p class="value"><span class="high">Vue2/3</span>、<span class="high">Vue Router</span>、<span
-                      class="high">Vuex/Pinia</span>、<span class="high">TypeScript</span>、<span
-                      class="high">jQuery</span>、<span class="high">Preloader</span>、<span
-                      class="high">Swiper</span>、<span class="high">Html2canvas</span>、<span
-                      class="high">QRCode</span>、<span class="high">iScroll</span>
+                      class="high">Vuex/Pinia</span>、<span class="high">jQuery</span>、<span class="high">Element
+                      Plus</span>、<span class="high">Vant</span>、<span class="high">TypeScript</span>、<span
+                      class="high">Html2canvas</span>、<span class="high">QRCode</span>、<span class="high">iScroll</span>
                   </p>
                 </div>
               </div>
@@ -129,30 +128,33 @@
               </div>
               <div class="item">
                 <p class="label">核心贡献：</p>
-
+                <span class="high"></span>
                 <div class="sub-box">
                   <p class="sub-label"><span class="high">功能开发</span></p>
                   <div class="list">
-                    <p class="value">实现用户授权登录（微信、QQ等平台）、抽奖、助力、答题领奖等互动功能，用户行为数据埋点覆盖率达100%。</p>
-                    <p class="value">开发动态海报生成功能，基于<span class="high">Html2canvas</span>+<span
-                        class="high">QRCode</span>实现用户专属二维码嵌入与实时渲染，分享转化率提升20%。</p>
+                    <p class="value"><span class="high">100%还原</span>设计稿并<span class="high">独立对接</span>网易私有化接口（RESTful
+                      API），实现动态数据交互，交付<span class="high">准确率100%</span>。</p>
+                    <p class="value"><span
+                        class="high">解决Android/iOS/iPad多机型兼容性问题</span>（显示适配与JS逻辑兼容），异常问题24小时内闭环，上线后0重大缺陷。</p>
+                    <p class="value">集成微信/QQ/微博授权登录，开发抽奖、助力、绘图、微信支付等互动功能，用户行为埋点覆盖率达100%。</p>
+                    <p class="value"><span class="high">基于Pinia+EventBus实现登录态持久化与模块解耦</span>，代码维护效率提升40%。</p>
+                    <p class="value">设计Html2canvas+QRCode动态海报生成方案，分享转化率提升20%。</p>
                   </div>
                 </div>
 
                 <div class="sub-box">
                   <p class="sub-label"><span class="high">性能优化</span></p>
                   <div class="list">
-                    <p class="value">通过<span class="high">静态资源优化（资源压缩、合并与缓存）</span>，使首屏加载时间从3.5s降至1.5s，有效降低用户的跳出率。</p>
-                    <p class="value">设计用户行为数据缓存方案，接口调用频率减少40%，在并发场景下响应速度提升30%。</p>
+                    <p class="value">静态资源压缩/CDN缓存优化，首屏加载时间从3.5s降至1.5s，用户跳出率降低35%。</p>
+                    <p class="value">用户行为数据本地缓存策略减少40%接口调用，高并发场景响应速度提升30%。</p>
                   </div>
                 </div>
 
                 <div class="sub-box">
                   <p class="sub-label"><span class="high">工程化提效</span></p>
                   <div class="list">
-                    <p class="value">沉淀<span class="high">Swiper</span>单屏模板、Screen适配、移动端伪横屏、Loading层等常用工具/组件，减少重复开发工作量。
-                    </p>
-                    <p class="value">推动团队代码复用规范，多人协作效率提升30%。</p>
+                    <p class="value">封装Swiper单屏、Screen适配等10+高频组件，减少30%重复开发量。</p>
+                    <p class="value">制定代码复用规范，多人协作效率提升30%。</p>
                   </div>
                 </div>
 
@@ -160,7 +162,7 @@
               <div class="item">
                 <p class="label">项目成果：</p>
                 <div class="list">
-                  <p class="value">BUG率低于团队平均水平，活动页稳定支持峰值UV 50万+，用户体验反馈良好，获网易内部技术认可。</p>
+                  <p class="value">BUG率低于团队平均水平，活动页稳定支持峰值UV 50万+，用户体验反馈良好，期间获甲方表扬。</p>
                   <p class="value">通过工具链沉淀与代码复用规范，相似需求开发周期缩短40%。</p>
                 </div>
               </div>
@@ -179,7 +181,7 @@
                 <p class="label">技术栈：</p>
                 <div class="list">
                   <p class="value"><span class="high">Vue2</span>、<span class="high">Vue Router</span>、<span
-                      class="high">Vuex</span>、<span class="high">Echarts</span>、<span
+                      class="high">Vuex</span>、<span class="high">Echarts</span>、<span class="high">Axios</span>、<span
                       class="high">ElementUI</span>、<span class="high">CSS3</span>
                   </p>
                 </div>
@@ -311,7 +313,7 @@
                 <p class="label">第三方库与工具：</p>
                 <div class="sub-box">
                   <div class="list">
-                    <p class="value">熟练使用Swiper（轮播组件）、HTML2Canvas（动态海报生成）、QRCode（二维码生成）、ECharts（数据可视化）等。</p>
+                    <p class="value">熟练使用Swiper（轮播插件）、HTML2Canvas（动态海报生成）、QRCode（二维码生成）、ECharts（数据可视化）等。</p>
                     <p class="value">工具链：Git（版本控制）、NVM（Node多版本管理）、Beyond Compare（代码差异化对比）。</p>
                   </div>
                 </div>
