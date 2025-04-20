@@ -12,7 +12,7 @@ body {
 }
 
 #app {
-  padding: 0.2rem 0;
+  padding: 0.2rem 0 1.3rem;
   box-sizing: border-box;
   position: relative;
 }
@@ -32,7 +32,7 @@ span {
 }
 
 .bold{
-  font-weight: bold;
+  font-weight: bold !important;
 }
 
 .high{
@@ -40,10 +40,15 @@ span {
   color:#333333 !important;
 }
 
+.keyword{
+  color : #44546a !important;
+  font-weight: bold !important;
+}
+
 .hr{
   width: 100%;
   height: 0;
-  border-bottom: 1px solid gray;
+  border-bottom: 0.02rem solid gray;
   margin: 0.15rem auto;
   opacity: 0.5;
 }
