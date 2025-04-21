@@ -1,5 +1,10 @@
 <template>
-  <div ref="resumeContainer" class="container" v-loading="loading">
+  <div ref="resumeContainer" class="container">
+    <teleport to="body">
+      <div :class="['loading-layer', { on: loading }]">
+        <div class="loader"></div>
+      </div>
+    </teleport>
     <i class="icon"><img src="@/assets/img/icon.png"></i>
     <div class="main">
       <div class="slogan-title">个人简历</div>
