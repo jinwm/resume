@@ -24,7 +24,7 @@
             </div>
           </div> -->
           <div class="line-box">
-            <div class="item" style="font-size: 0.2rem;">杭州鑫烨科技有限公司（网易合作供应商）</div>
+            <div class="item" style="font-size: 0.2rem;">杭州鑫烨科技有限公司<span>（网易合作供应商）</span></div>
             <div class="item" style="font-size: 0.2rem;">前端开发工程师</div>
             <div class="item" style="font-size: 0.2rem;">2022年4月 - 至今</div>
           </div>
@@ -227,7 +227,39 @@
         <div class="content content-xmjl">
           <div class="line-box">
             <div class="top-info">
-              <p class="name">项目一：江南镇优控办公管理系统<span>（浙政钉小程序）</span></p>
+              <p class="name">项目一：浙江省城镇污水零直排区动态监管系统<span>（大屏可视化）</span></p>
+              <p class="date">2021年10月 — 2021年12月</p>
+            </div>
+            <div class="detail-info">
+              <div class="item">
+                <p class="label">技术栈：<span class="keyword">ECharts</span>、<span class="keyword">Vue.js</span>、<span
+                    class="keyword">Axios</span>、<span class="keyword">WebSocket</span>、<span
+                    class="keyword">天地图API</span>、<span class="keyword">ElementUI</span></p>
+              </div>
+              <div class="item">
+                <p class="label">核心贡献：</p>
+                <div class="list">
+                  <p class="value"><span class="high">数据可视化：</span>负责该系统的数据展示模块设计与实现，利用
+                    <span class="keyword">ECharts</span> 和 <span class="keyword">WebSocket</span>
+                    实现了实时数据更新及动态图表展示，显著提升了数据监控的直观性和效率。
+                  </p>
+                  <p class="value"><span class="high">天地图集成：</span>在大屏核心区域嵌入<span class="keyword">天地图</span>，通过调用<span
+                      class="keyword">天地图
+                      API</span>，结合服务器返回的经纬度数据，动态展示“井”点位的空间分布情况，帮助用户快速定位关键区域。</p>
+                  <p class="value"><span class="high">接口优化：</span>完成与后端团队的数据接口对接，通过优化数据加载逻辑减少了延迟，提升了用户体验。</p>
+                </div>
+              </div>
+              <div class="item">
+                <p class="label">项目成果：</p>
+                <div class="list">
+                  <p class="value">项目完成了核心功能开发并通过内部测试，因客户需求调整暂缓上线，但在开发过程中积累了丰富的<span class="keyword">数据可视化经验</span>。</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="line-box">
+            <div class="top-info">
+              <p class="name">项目二：江南镇优控办公管理系统<span>（浙政钉小程序）</span></p>
               <p class="date">2021年8月 — 2021年11月</p>
             </div>
             <div class="detail-info">
@@ -268,40 +300,6 @@
               </div>
             </div>
           </div>
-
-          <div class="line-box">
-            <div class="top-info">
-              <p class="name">项目二：浙江省城镇污水零直排区动态监管系统<span>（大屏可视化）</span></p>
-              <p class="date">2021年10月 — 2021年12月</p>
-            </div>
-            <div class="detail-info">
-              <div class="item">
-                <p class="label">技术栈：<span class="keyword">ECharts</span>、<span class="keyword">Vue.js</span>、<span
-                    class="keyword">Axios</span>、<span class="keyword">WebSocket</span>、<span
-                    class="keyword">天地图API</span>、<span class="keyword">ElementUI</span></p>
-              </div>
-              <div class="item">
-                <p class="label">核心贡献：</p>
-                <div class="list">
-                  <p class="value"><span class="high">数据可视化：</span>负责该系统的数据展示模块设计与实现，利用
-                    <span class="keyword">ECharts</span> 和 <span class="keyword">WebSocket</span>
-                    实现了实时数据更新及动态图表展示，显著提升了数据监控的直观性和效率。
-                  </p>
-                  <p class="value"><span class="high">天地图集成：</span>在大屏核心区域嵌入<span class="keyword">天地图</span>，通过调用<span
-                      class="keyword">天地图
-                      API</span>，结合服务器返回的经纬度数据，动态展示“井”点位的空间分布情况，帮助用户快速定位关键区域。</p>
-                  <p class="value"><span class="high">接口优化：</span>完成与后端团队的数据接口对接，通过优化数据加载逻辑减少了延迟，提升了用户体验。</p>
-                </div>
-              </div>
-              <div class="item">
-                <p class="label">项目成果：</p>
-                <div class="list">
-                  <p class="value">项目完成了核心功能开发并通过内部测试，因客户需求调整暂缓上线，但在开发过程中积累了丰富的<span class="keyword">数据可视化经验</span>。</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
         </div>
 
 
@@ -384,7 +382,7 @@ const resumeContainer = ref(null);
 const basicInfo = ref([
   ['姓名', '方思明'],
   ['年龄', '24岁'],
-  ['工作经验', '3年'],
+  ['工作经验', '4年'],
   ['电话', '18072127956'],
   ['邮箱', 'jinwming@gmail.com'],
   ['所在地区', '杭州市'],
@@ -392,7 +390,7 @@ const basicInfo = ref([
 
 const workExperience = ref([
   ['杭州鑫烨科技有限公司（网易合作供应商）', '前端开发工程师', '2022年4月 - 至今'],
-  // ['浙江博润空间科技有限公司', '前端开发工程师（实习）', '2021年7月 - 2022年3月'],
+  // ['浙江博润空间科技有限公司', '前端开发工程师（实习）', '2021年7月 - 2022年1月'],
 ])
 
 let pictureSrc = require('@/assets/img/picture.jpg');
@@ -440,7 +438,7 @@ const handleExportImg = (pdfCb) => {
 
     const a = document.createElement('a');
     a.href = imgData;
-    a.download = `附件简历-方思明-前端开发工程师-3年-${formatDate(new Date(), 'yyyymmdd')}.jpg`;
+    a.download = `附件简历-方思明-前端开发工程师-4年-${formatDate(new Date(), 'yyyymmdd')}.jpg`;
     a.click();
     // ElMessage({
     //   message: '导出成功',
