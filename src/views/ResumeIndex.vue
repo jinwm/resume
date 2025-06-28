@@ -117,8 +117,9 @@
                     Plus</span>、<span class="keyword">Vant4</span></p>
               </div>
               <div class="item">
-                <p class="label">项目描述：<span>主导开发包括《<span class="keyword">第五人格</span>》、《<span
-                      class="keyword">梦幻西游</span>》在内的网易互娱及网易雷火多款游戏相关页面（PC+H5），单日最高峰值UV超<span
+                <p class="label">项目描述：<span>主导开发包括<span class="keyword">《第五人格》</span>、<span
+                      class="keyword">《蛋仔派对》</span>、<span
+                      class="keyword">《梦幻西游》</span>在内的网易互娱及网易雷火多款游戏相关页面（PC+H5），单日最高峰值UV超<span
                       class="keyword">50万</span>，平均交付周期<span class="keyword">7天</span>。</span></p>
               </div>
               <div class="item">
@@ -359,6 +360,30 @@
             <p class="item">浙江工贸职业技术学院</p>
             <p class="item">软件技术（大专）</p>
             <p class="item">2019年9月-2022年6月</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="info-part">
+        <div class="label">其他信息</div>
+        <div class="content content-grzp">
+          <div class="detail-info">
+            <div class="item">
+              <p class="label">个人作品：<img src="../assets/img/mini.jpg"></p>
+            </div>
+            <div class="item">
+              <p class="label">GitHub：<a href="https://jinwm.github.io/resume/"
+                  target="_blank">https://jinwm.github.io/resume/</a></p>
+            </div>
+            <div class="item">
+              <p class="label">Gitee：<a href="https://gitee.com/jinwm/" target="_blank">https://gitee.com/jinwm/</a></p>
+            </div>
+            <div class="item">
+              <p class="label">抖音：<a
+                  href="https://www.douyin.com/user/MS4wLjABAAAAPMa65r_AAt0MPcAIRqXfABncWTqxS4BPASkkVIsxZi8?from_tab_name=main"
+                  target="_blank">_JINWM_</a>
+              </p>
+            </div>
           </div>
         </div>
       </div>

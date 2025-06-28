@@ -198,11 +198,30 @@
 
             span {
               font-weight: initial;
+              display: inline;
+              font-size: inherit;
 
               &.high {
-                color: #333333 !important;
                 font-weight: bold !important;
               }
+            }
+
+            a {
+              font-weight: initial;
+              color: #333333;
+              display: inline;
+              font-size: inherit;
+
+              &:hover {
+                opacity: 0.8;
+              }
+            }
+
+            img {
+              height: 1.2rem;
+              vertical-align: middle;
+              border-radius: .08rem;
+              object-fit: contain;
             }
           }
 
@@ -228,7 +247,7 @@
                 height: 0.06rem;
               }
 
-              span{
+              span {
                 font-weight: initial;
 
                 &.high {
@@ -262,18 +281,19 @@
             flex: 1;
             white-space: nowrap;
             text-align: center;
+
             span {
               font-size: 0.18rem;
               color: #666666;
               font-weight: initial;
             }
 
-            &:nth-child(1){
+            &:nth-child(1) {
               text-align: left;
               font-weight: bold;
             }
 
-            &:nth-child(3){
+            &:nth-child(3) {
               text-align: right;
             }
           }
