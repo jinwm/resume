@@ -21,6 +21,46 @@
         </div>
       </div>
       <div class="info-part">
+        <div class="label">技术能力</div>
+        <div class="content content-grys">
+          <div class="line-box">
+            <div class="detail-info">
+              <div class="item">
+                <p class="label">HTML/CSS/JS：<span>扎实掌握 <span class="keyword">HTML5、CSS3、JavaScript（ES6+）</span>
+                    ，熟悉<span class="keyword">浏览器渲染机制与性能优化原理</span>。</span></p>
+              </div>
+              <div class="item">
+                <p class="label">Vue2/3应用开发：<span>熟练使用 <span class="keyword">Vue2 和 Vue3</span> 开发复杂应用，熟练运用 <span
+                      class="keyword">Composition API</span> 实现<span class="keyword">高复用组件</span>。</span></p>
+              </div>
+              <div class="item">
+                <p class="label">UniApp与原生框架：<span>熟练使用 <span class="keyword">UniApp 以及原生小程序框架</span>、自定义组件开发，基于 <span
+                      class="keyword">Canvas</span> 实现动态渲染功能。</span></p>
+              </div>
+              <div class="item">
+                <p class="label">小程序性能优化：<span>通过<span class="keyword">分包加载与本地缓存</span>优化小程序性能，<span
+                      class="keyword">首次载入时间缩短 30%</span>，支撑<span class="keyword">日均 20万+ 用户访问</span>。</span></p>
+              </div>
+              <div class="item">
+                <p class="label">资源管理：<span><span class="keyword">资源预加载、懒加载、本地缓存策略、DNS 预解析</span>等方案落地，<span
+                      class="keyword">白屏时间减少 50%，用户跳出率降低 20%</span>。</span></p>
+              </div>
+              <div class="item">
+                <p class="label">常用插件：<span>熟练使用 <span class="keyword">Swiper</span>（轮播插件）、<span
+                      class="keyword">HTML2Canvas</span>（海报生成）、<span class="keyword">ECharts</span>（数据可视化）、<span
+                      class="keyword">GSAP</span>（JS 动画插件）等。</span>
+                </p>
+              </div>
+              <div class="item">
+                <p class="label">工具链：<span><span class="keyword">Git</span>（代码版本控制）、<span
+                      class="keyword">NVM</span>（Node 版本管理工具）、<span class="keyword">WinMergeU</span>（文件差异对比工具）。</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="info-part">
         <div class="label">工作经历</div>
         <div class="content content-gzjl">
           <!-- <div class="line-box" v-for="(item, index) in workExperience" :key="index">
@@ -43,13 +83,13 @@
             </div>
             <div class="detail-info">
               <div class="item">
-                <p class="label">技术栈：<span class="keyword">微信小程序原生框架</span>、<span class="keyword">Canvas</span>、<span
+                <p class="label">技术栈：<span class="keyword">微信小程序框架</span>、<span class="keyword">Canvas</span>、<span
                     class="keyword">wxParse.js</span></p>
               </div>
               <div class="item">
                 <p class="label">项目描述：<span><span class="keyword">从0到1独立搭建小程序核心功能</span>，完成首页、活动列表、帖子详情、Web H5承载页等<span
                       class="keyword">10+</span>核心页面的开发与上线，支撑日均<span
-                      class="keyword">10万+</span>用户互动。后续主导关键功能迭代及新增页面开发需求，并为团队提供技术支持与代码审查，确保项目质量和一致性。</span></p>
+                      class="keyword">20万+</span>用户互动。后续主导关键功能迭代及新增页面开发需求，并为团队提供技术支持与代码审查，确保项目质量和一致性。</span></p>
               </div>
               <div class="item">
                 <p class="label">核心贡献：</p>
@@ -67,7 +107,8 @@
                 <div class="sub-box">
                   <p class="sub-label"><span class="high">富文本解析</span>与社交功能</p>
                   <div class="list">
-                    <p class="value">基于<span class="keyword">wxParse.js</span>实现富文本解析，支持图片预览、超链接智能跳转（H5/小程序页面/外部小程序）。
+                    <p class="value">基于<span class="keyword">wxParse.js</span>实现富文本解析，支持图片预览、超链接智能跳转（webview
+                      H5/原生页面/外部小程序）。
                     </p>
                     <p class="value">实现点赞、评论、分享等社交功能，提升用户互动体验。</p>
                   </div>
@@ -75,7 +116,8 @@
                 <div class="sub-box">
                   <p class="sub-label"><span class="high">数据埋点与上报模块</span></p>
                   <div class="list">
-                    <p class="value">设计全局埋点上报模块，使用小程序 UUID 作为用户标识，支持页面显示和自定义事件上报，提升数据采集效率。</p>
+                    <p class="value">设计<span class="keyword">全局埋点上报模块</span>，使用小程序 UUID 作为用户标识，支持页面显示和自定义事件上报，提升数据采集效率。
+                    </p>
                     <p class="value">实现<span class="keyword">登录态依赖管理</span>，避免高并发场景下的接口重复调用，并开发<span
                         class="keyword">自动重试机制</span>，确保网络异常时的数据上报成功率。</p>
                     <p class="value">封装<span class="keyword">通用上报方法</span>，通过字段名匹配预定义内容，降低埋点开发和维护成本。</p>
@@ -85,7 +127,7 @@
                 <div class="sub-box">
                   <p class="sub-label"><span class="high">工程化与性能优化</span></p>
                   <div class="list">
-                    <p class="value">封装全局请求方法，支持自动携带<span class="keyword">Token</span>、登录失效重试、加载状态管理。</p>
+                    <p class="value">封装全局请求方法，支持自动携带<span class="keyword">登录凭证</span>、登录失效重试、加载状态管理。</p>
                     <p class="value">通过<span class="keyword">分包加载</span>与<span class="keyword">本地缓存</span>优化小程序性能。</p>
                   </div>
                 </div>
@@ -94,7 +136,7 @@
               <div class="item">
                 <p class="label">项目成果：</p>
                 <div class="list">
-                  <p class="value">成功上线并稳定运行，日均用户互动量超过<span class="keyword">10万+</span>。</p>
+                  <p class="value">成功上线并稳定运行，日均用户互动量超过<span class="keyword">20万+</span>。</p>
                   <p class="value">通过技术优化，海报生成时间减少<span class="keyword">67%</span>，显著提升用户体验。</p>
                   <p class="value">数据埋点系统有效支持了用户行为分析和产品优化决策。</p>
                 </div>
@@ -110,34 +152,35 @@
             </div>
             <div class="detail-info">
               <div class="item">
-                <p class="label">技术栈：<span class="keyword">Vue2/3</span>、<span class="keyword">Vue Router</span>、<span
+                <p class="label">技术栈：<span class="keyword">Vue2</span>、<span class="keyword">Vue3</span>、<span
                     class="keyword">Pinia</span>、<span class="keyword">Axios</span>、<span
-                    class="keyword">jQuery</span>、<span class="keyword">TypeScript</span>、<span
-                    class="keyword">Html2canvas</span>、<span class="keyword">GSAP</span>、<span class="keyword">Element
-                    Plus</span>、<span class="keyword">Vant4</span></p>
+                    class="keyword">jQuery</span>、<span class="keyword">TypeScript</span>、<span class="keyword">Element
+                    Plus</span>、<span class="keyword">Vant4</span>、<span class="keyword">Html2canvas</span>、<span
+                    class="keyword">GSAP</span></p>
               </div>
               <div class="item">
                 <p class="label">项目描述：<span>主导开发包括<span class="keyword">《第五人格》</span>、<span
                       class="keyword">《蛋仔派对》</span>、<span
-                      class="keyword">《梦幻西游》</span>在内的网易互娱及网易雷火多款游戏相关页面（PC+H5），单日最高峰值UV超<span
-                      class="keyword">50万</span>，平均交付周期<span class="keyword">7天</span>。</span></p>
+                      class="keyword">《梦幻西游》</span>等在内的网易互娱及网易雷火多款游戏相关Web应用，项目兼容性含盖<span
+                      class="keyword">PC端/移动端/平板</span>等多种设备，单日最高峰值UV超<span class="keyword">50万+</span>。</span></p>
               </div>
               <div class="item">
                 <p class="label">核心贡献：</p>
                 <div class="sub-box">
                   <p class="sub-label"><span class="high">功能开发</span></p>
                   <div class="list">
-                    <p class="value"><span class="high">独立对接与交付：</span>100%还原设计稿，独立对接网易私有化接口（<span
-                        class="keyword">RESTful API</span>），实现动态数据交互，交付准确率<span class="keyword">100%</span>。</p>
+                    <p class="value"><span class="high">独立对接与交付：</span><span
+                        class="keyword">100%</span>还原设计稿，独立对接网易私有化接口（<span class="keyword">RESTful
+                        API</span>），实现动态数据交互，交付准确率<span class="keyword">100%</span>。</p>
                     <p class="value"><span class="high">兼容性与稳定性：</span>解决<span
-                        class="keyword">Android/iOS/iPad</span>多机型显示适配与JS逻辑兼容问题，异常问题<span
-                        class="keyword">24小时内闭环</span>，上线后<span class="keyword">0重大缺陷</span>。</p>
-                    <p class="value"><span class="high">互动功能开发：</span>集成<span
-                        class="keyword">微信/QQ/微博</span>授权登录，开发抽奖、助力、绘图、微信支付等互动功能，用户行为埋点覆盖率达<span
-                        class="keyword">100%</span>。</p>
+                        class="keyword">Android/iOS/iPad/PC浏览器</span>等多种设备兼容性问题，<span class="keyword">Bug
+                        24小时内闭环</span>，确保上线后<span class="keyword">0重大缺陷</span>。</p>
+                    <p class="value"><span class="high">互动功能开发：</span>集成社媒授权登录，开发图片生成、答题、小游戏、微信支付等各类功能，用户行为埋点覆盖率达<span
+                        class="keyword">100%</span>。
+                    </p>
                     <p class="value"><span class="high">登录态优化：</span>基于 <span class="keyword">Pinia + EventBus</span>
-                      实现登录态持久化与模块解耦，代码维护效率提升<span class="keyword">40%</span>。</p>
-                    <p class="value"><span class="high">海报生成方案：</span>设计 <span class="keyword">Html2canvas +
+                      实现登录态持久化与模块解耦，代码维护效率提升<span class="keyword">28%</span>。</p>
+                    <p class="value"><span class="high">海报生成方案：</span>设计及优化 <span class="keyword">Html2canvas +
                         QRCode</span> 动态海报生成方案，分享转化率提升<span class="keyword">20%</span>。</p>
                   </div>
                 </div>
@@ -167,7 +210,7 @@
               <div class="item">
                 <p class="label">项目成果：</p>
                 <div class="list">
-                  <p class="value">BUG率低于团队平均水平，活动页稳定支持峰值UV <span class="keyword">50万+</span>，用户体验反馈良好，获甲方表扬。</p>
+                  <p class="value">BUG率低于团队平均水平，活动页稳定支持峰值UV <span class="keyword">50万+</span>，用户体验反馈良好，曾获甲方表扬。</p>
                   <p class="value">通过工具链沉淀与代码复用规范，相似需求开发周期缩短<span class="keyword">30%</span>。</p>
                 </div>
               </div>
@@ -224,8 +267,8 @@
 
         <div class="content content-gzjl">
           <div class="line-box">
-            <div class="item" style="font-size: 0.2rem;">浙江博润空间科技有限公司</div>
-            <div class="item" style="font-size: 0.2rem;">前端开发工程师（实习）</div>
+            <div class="item" style="font-size: 0.2rem;">浙江博润空间科技有限公司<span>（实习经历）</span></div>
+            <div class="item" style="font-size: 0.2rem;">前端开发工程师</div>
             <div class="item" style="font-size: 0.2rem;">2021年7月 - 2022年1月</div>
           </div>
         </div>
@@ -238,7 +281,7 @@
             </div>
             <div class="detail-info">
               <div class="item">
-                <p class="label">技术栈：<span class="keyword">ECharts</span>、<span class="keyword">Vue.js</span>、<span
+                <p class="label">技术栈：<span class="keyword">ECharts</span>、<span class="keyword">Vue</span>、<span
                     class="keyword">Axios</span>、<span class="keyword">WebSocket</span>、<span
                     class="keyword">天地图API</span>、<span class="keyword">ElementUI</span></p>
               </div>
@@ -270,7 +313,7 @@
             </div>
             <div class="detail-info">
               <div class="item">
-                <p class="label">技术栈：<span class="keyword">专有钉钉小程序框架</span></p>
+                <p class="label">技术栈：<span class="keyword">专有钉钉小程序框架</span>、<span class="keyword">JavaScript</span></p>
               </div>
               <div class="item">
                 <p class="label">
@@ -313,47 +356,6 @@
       </div>
 
       <div class="info-part">
-        <div class="label">技术能力</div>
-        <div class="content content-grys">
-          <div class="line-box">
-            <div class="detail-info">
-              <div class="item">
-                <p class="label">HTML/CSS/JS：<span>扎实掌握 <span class="keyword">HTML5、CSS3、JavaScript（ES6+）</span>
-                    ，熟悉<span class="keyword">浏览器渲染机制与性能优化原理</span>。</span></p>
-              </div>
-              <div class="item">
-                <p class="label">Vue2/3应用开发：<span>熟练使用 <span class="keyword">Vue2 和 Vue3</span> 开发复杂应用，熟练运用 <span
-                      class="keyword">Composition API</span> 实现<span class="keyword">高复用组件</span>。</span></p>
-              </div>
-              <div class="item">
-                <p class="label">UniApp与原生框架：<span>熟练使用 <span class="keyword">UniApp 以及原生小程序框架</span>、自定义组件开发，基于 <span
-                      class="keyword">Canvas</span> 实现动态渲染功能。</span></p>
-              </div>
-              <div class="item">
-                <p class="label">小程序性能优化：<span>通过<span class="keyword">分包加载与本地缓存</span>优化小程序性能，<span
-                      class="keyword">首屏加载时间缩短 30%</span>，支撑<span class="keyword">日均 10万+ 用户访问</span>。</span></p>
-              </div>
-              <div class="item">
-                <p class="label">资源管理：<span><span class="keyword">资源预加载、懒加载、本地缓存策略、DNS 预解析</span>等方案落地，<span
-                      class="keyword">白屏时间减少 50%，用户跳出率降低 20%</span>。</span></p>
-              </div>
-              <div class="item">
-                <p class="label">常用插件：<span>熟练使用 <span class="keyword">Swiper</span>（轮播插件）、<span
-                      class="keyword">HTML2Canvas</span>（海报生成）、<span class="keyword">ECharts</span>（数据可视化）、<span
-                      class="keyword">GSAP</span>（JS 动画插件）等。</span>
-                </p>
-              </div>
-              <div class="item">
-                <p class="label">工具链：<span><span class="keyword">Git</span>（代码版本控制）、<span
-                      class="keyword">NVM</span>（Node 版本管理工具）、<span class="keyword">WinMergeU</span>（文件差异对比工具）。</span>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="info-part">
         <div class="label">教育经历</div>
         <div class="content content-jyjl">
           <div class="line-box">
@@ -363,7 +365,7 @@
           </div>
         </div>
       </div>
-
+      <!-- 
       <div class="info-part">
         <div class="label">其他信息</div>
         <div class="content content-grzp">
@@ -386,7 +388,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
     </div>
   </div>
   <div class="export-btns">
@@ -505,8 +507,8 @@ const handleExportPDF = () => {
 
     // 将图片插入 PDF（等比缩小）
     pdf.addImage(canvas, 'JPEG', 0, 0, targetWidth, targetHeight, undefined, 'FAST');
-    // pdf.save(`附件简历-方思明-前端开发工程师-3年-${formatDate(new Date(), 'yyyymmdd')}.pdf`);
-    pdf.save(`附件简历-方思明-前端开发工程师-3年-${Date.now()}.pdf`);
+    // pdf.save(`附件简历-方思明-前端开发工程师-4年-${formatDate(new Date(), 'yyyymmdd')}.pdf`);
+    pdf.save(`附件简历-方思明-前端开发工程师-4年-${Date.now()}.pdf`);
     loading.value = false;
     // ElMessage({
     //   message: '导出成功',
