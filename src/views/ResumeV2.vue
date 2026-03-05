@@ -281,7 +281,7 @@
 <script setup>
 import { ref, computed, onMounted } from 'vue';
 import { useRoute } from 'vue-router';
-import { formatDate, getScale } from '../js/utils';
+import { getScale } from '../js/utils';
 import { vTextJustify } from '@/js/custom';
 import textRainInit from '@/js/textRain';
 
@@ -335,7 +335,8 @@ const handleExportImg = (pdfCb) => {
 
     const a = document.createElement('a');
     a.href = imgData;
-    a.download = `附件简历-方思明-前端开发工程师-4年-${formatDate(new Date(), 'yyyymmdd')}.jpg`;
+    // a.download = `方思明-4年前端开发-${formatDate(new Date(), 'yyyymmdd')}.jpg`;
+    a.download = '前端开发-4年-方思明.jpg';
     a.click();
     // ElMessage({
     //   message: '导出成功',
@@ -373,7 +374,8 @@ const handleExportPDF = () => {
     // 将图片插入 PDF（等比缩小）
     pdf.addImage(canvas, 'JPEG', 0, 0, targetWidth, targetHeight, undefined, 'FAST');
     // pdf.save(`附件简历-方思明-前端开发工程师-4年-${formatDate(new Date(), 'yyyymmdd')}.pdf`);
-    pdf.save(`附件简历-方思明-前端开发工程师-4年-${Date.now()}.pdf`);
+    // pdf.save(`附件简历-方思明-前端开发工程师-4年-${Date.now()}.pdf`);
+    pdf.save('前端开发-4年-方思明.pdf');
     loading.value = false;
     // ElMessage({
     //   message: '导出成功',
