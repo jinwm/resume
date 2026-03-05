@@ -29,7 +29,7 @@ export const useResize = () => {
   const _resize = () => {
     if (isMobile) {
       const width = window.innerWidth;
-      document.documentElement.style.fontSize = `${width / 750 * 50}px`;
+      document.documentElement.style.fontSize = `${width / 750 * 58}px`;
     } else {
       const width = Math.max(window.innerWidth, 1440);
       document.documentElement.style.fontSize = `${width / 1920 * 100}px`;

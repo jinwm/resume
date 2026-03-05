@@ -1,5 +1,5 @@
 <template>
-  <div ref="resumeContainer" class="container">
+  <div ref="resumeContainer" class="container-old">
     <teleport to="body">
       <div :class="['loading-layer', { on: loading }]">
         <div class="loader"></div>
