@@ -18,11 +18,22 @@ export const formatDate = (date, format = 'yyyy-mm-dd hh:mm:ss') => {
     .replaceAll('ss', startPad(second));
 }
 
+// 是否移动端
+export const isMobile = (() => {
+  return !(/iphone|android|ipod|phone/i.test(navigator.userAgent.toLowerCase()) === false);
+})();
+
+
 export const useResize = () => {
 
   const _resize = () => {
-    const width = Math.max(window.innerWidth, 1440);
-    document.documentElement.style.fontSize = `${width / 1920 * 100}px`;
+    if (isMobile) {
+      const width = window.innerWidth;
+      document.documentElement.style.fontSize = `${width / 750 * 50}px`;
+    } else {
+      const width = Math.max(window.innerWidth, 1440);
+      document.documentElement.style.fontSize = `${width / 1920 * 100}px`;
+    }
   }
 
   _resize();
@@ -38,4 +49,8 @@ export const useResize = () => {
 
 export const getScale = () => {
   return Math.min(Math.floor(parseFloat(document.documentElement.style.fontSize) / 15), 5);
+}
+
+export const remToPx = (num) => {
+  return document.documentElement.style.fontSize.replace(/px/, '') * num / 100;
 }

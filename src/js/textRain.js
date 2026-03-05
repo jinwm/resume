@@ -1,3 +1,5 @@
+import { remToPx, isMobile } from '@/js/utils';
+
 export default () => {
   let canvas;
   if (!document.getElementById('text-rain-container')) {
@@ -41,7 +43,7 @@ export default () => {
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
     // 文字大小
-    fontSize = 20;
+    fontSize = isMobile ? remToPx(60) : remToPx(20);
     // 总列数
     cols = Math.ceil(document.documentElement.clientWidth / fontSize);
     // 总行数
@@ -59,7 +61,7 @@ export default () => {
     ctx.fillStyle = 'rgba(0,0,0,.08)';
     ctx.fillRect(0, 0, canvas.width, canvas.height);
     for (let i = 0; i < arr.length; i++) {
-      let x = i * (fontSize + 3);
+      let x = i * (fontSize + (isMobile ? remToPx(9) : remToPx(3)));
       let y = arr[i] * fontSize;
       ctx.fillStyle = getColor()
       ctx.font = `${fontSize}px serif`;

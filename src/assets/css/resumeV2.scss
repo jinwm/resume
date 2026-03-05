@@ -122,6 +122,11 @@ span {
   left: 50%;
   transform: translateX(-50%);
 
+  &.is-mobile{
+    transform: translateX(-50%) scale(2.6);
+    bottom: 7%;
+  }
+
   .btn-export {
     display: block;
     margin: 0 0.2rem;
@@ -140,6 +145,15 @@ span {
       transform: scale(1.05);
     }
   }
+}
+
+.container{
+  opacity: 0.9;
+  border-radius: .1rem;
+  overflow: hidden;
+  width: fit-content;
+  height: fit-content;
+  margin: 0 auto;
 }
 
 .resume-container {

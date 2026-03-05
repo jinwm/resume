@@ -11,6 +11,10 @@ const routes = [
     name: 'ResumeV2',
     component: () => import(/* webpackChunkName: "index" */ '../views/ResumeV2.vue'),
   },
+  {
+    path: '/short',
+    redirect: '/H0-I0I34ONTOIN78SD612bG0RN3240',
+  },
 ];
 
 const router = createRouter({
