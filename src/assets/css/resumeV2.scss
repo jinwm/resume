@@ -3,11 +3,12 @@
   src: url(../fonts/iconfont.c8a6acf.woff2) format("woff2"), url(../fonts/iconfont.0006101.woff) format("woff"), url(../fonts/iconfont.46e0e56.ttf) format("truetype");
 }
 
-html,body{
+html,
+body {
   background-color: #000;
 }
 
-#app{
+#app {
   padding: 0.5rem 0;
 }
 
@@ -28,6 +29,10 @@ span {
   font-weight: bold;
   opacity: 0.9;
   line-height: initial;
+}
+
+.part-context {
+  margin: 0 auto !important;
 }
 
 .icon-age {
@@ -122,7 +127,7 @@ span {
   left: 50%;
   transform: translateX(-50%);
 
-  &.is-mobile{
+  &.is-mobile {
     transform: translateX(-50%) scale(2.6);
     bottom: 7%;
   }
@@ -147,7 +152,7 @@ span {
   }
 }
 
-.container{
+.container {
   opacity: 0.9;
   border-radius: .1rem;
   overflow: hidden;
@@ -307,10 +312,10 @@ span {
   }
 
   .part-context {
+    margin: 0 auto;
     position: relative;
     width: calc(100% - 1rem);
     padding-left: 0.3rem;
-    margin: 0 auto;
 
     .left-line {
       position: absolute;
