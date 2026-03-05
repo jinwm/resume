@@ -391,17 +391,20 @@
       </div> -->
     </div>
   </div>
-  <div class="export-btns">
+  <div v-if="isExport" class="export-btns">
     <a href="javascript:;" class="btn-export" title="导出图片" @click="handleExportImg">导出图片</a>
     <a href="javascript:;" class="btn-export" title="导出PDF" @click="handleExportPDF">导出PDF</a>
   </div>
 </template>
 
 <script setup>
-import { ref } from 'vue';
+import { useRoute } from 'vue-router';
+import { ref, computed } from 'vue';
 import { formatDate, getScale } from '../js/utils';
 import EditableText from '../components/EditableText';
 
+const route = useRoute();
+const isExport = computed(() => route.query.export === '1');
 const loading = ref(false);
 
 const editableTextStyle = {
