@@ -64,7 +64,7 @@ export default () => {
       let x = i * (fontSize + (isMobile ? remToPx(9) : remToPx(3)));
       let y = arr[i] * fontSize;
       ctx.fillStyle = getColor()
-      ctx.font = `${fontSize}px serif`;
+      ctx.font = `${fontSize}px serif`
       ctx.fillText(getText(), x, y);
 
       if (arr[i] >= rows && Math.random() > 0.95) {
@@ -98,9 +98,20 @@ export default () => {
     return colorArr[Math.floor(Math.random() * colorArr.length)];
   }
 
+  const texts = [
+    'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ',
+    '0123456789',
+    '01',
+    '☆',
+    '❤',
+    '✿',
+    '✦',
+    '✯',
+  ]
+  let text = texts[Math.floor(Math.random() * texts.length)];
+
   // 随机文字
   function getText() {
-    let text = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
     // 去掉空格
     text = text.replace(/\s/g, '');
     return text.split('')[Math.floor(Math.random() * text.length)];

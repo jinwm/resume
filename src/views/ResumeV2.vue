@@ -10,16 +10,16 @@
         <div class="inner">
           <div class="inner-left">
             <div class="user-name">方思明</div>
-            <div class="top-info-line">
+            <!-- <div class="top-info-line">
               <div class="item bold">求职意向：前端开发</div>
               <div class="item">杭州</div>
               <div class="item">13-14k</div>
               <div class="item">随时到岗</div>
-            </div>
+            </div> -->
             <div class="top-base-info">
               <div class="item" v-for="(item, index) in topBaseInfo" :key="index">
                 <div :class="['label', `icon-${item.key}`]"><span
-                    v-text-justify="{ text: item.name, width: 0.82, noJustify: item.noJustify }"></span>
+                    v-text-justify="{ text: item.name, width: 'fit-content', minWidth: 0.82, noJustify: item.noJustify }"></span>
                   <block>:</block>
                 </div>
                 <div class="value">{{ item.value }}</div>
@@ -28,7 +28,7 @@
           </div>
           <div class="inner-right">
             <!-- <div class="avatar"><img src="@/assets/img/picture.jpg"></div> -->
-            <div class="avatar"><img src="@/assets/img/avatar.png"></div>
+            <!-- <div class="avatar"><img src="@/assets/img/avatar.png"></div> -->
           </div>
         </div>
       </div>
@@ -92,13 +92,15 @@
             <div class="sub-list sub-list-point">
               <div class="item">
                 <span class="point">1.</span>基于公司Vue脚手架开发C端业务通用模板，覆盖PC及移动H5场景，复用业务能力，为同类需求节省<span
-                  class="high">2-8人时/次</span>。
+                  class="high">2-6人时/次</span>。
               </div>
               <div class="item">
-                <span class="point">2.</span>独立封装微信小程序Canvas海报生成工具库，解决复杂绘图与兼容问题，降低社交营销开发门槛。
+                <span class="point">2.</span>独立封装微信小程序Canvas海报生成工具库，解决复杂绘图与兼容问题，覆盖<span
+                  class="high">98%</span>的主流机型，该工具库已应用于《第五人格》、《王牌竞速》等<span
+                  class="high">5</span>个网易同类小程序项目，降低图片绘制及生成的开发门槛。
               </div>
               <div class="item">
-                <span class="point">3.</span>项目交付效率与质量获甲方客户多次口头表扬。
+                <span class="point">3.</span>项目交付效率与质量获甲方客户高度认可，多次获得口头表扬，全年保持<span class="high">0</span>客诉。
               </div>
             </div>
           </div>
@@ -144,13 +146,14 @@
               <div class="sub-label">项目业绩</div>
               <div class="sub-list sub-list-point">
                 <div class="item"><span class="point">1.</span>上线3个月日活跃用户突破<span class="high">10万</span>，日均用户互动量超过<span
-                    class="high">20万次</span>，成为游戏外官方资讯核心入口</div>
+                    class="high">20万次</span>，成为游戏外官方资讯核心入口，快速积累高粘性用户群体，有效承接游戏外流量。</div>
                 <div class="item"><span class="point">2.</span>使用WebAssembly技术实现前端图像处理，结合Web
-                  Worker优化图像效率，实现图像处理速度提升<span class="high">2倍</span>，降低<span class="high">50%</span>的处理延迟，显著提高用户体验
+                  Worker优化图像效率，实现图像处理速度提升<span class="high">2倍</span>，降低<span
+                    class="high">50%</span>的处理延迟，日均处理用户图像超<span class="high">6000</span>张，显著提高用户体验。
                 </div>
                 <div class="item">
                   <span class="point">3.</span>实现虚拟列表，通过缓冲区技术显著提升长列表的滚动流畅度和渲染性能。经过优化，渲染时间减少<span
-                    class="high">90%</span>，实现了滚动无卡顿。该优化方案已成功应用到多个项目，解决大规模数据展示的性能瓶颈问题
+                    class="high">90%</span>，实现了滚动无卡顿。该优化方案已成功应用到多个项目，有效解决高数据量场景下的性能瓶颈问题。
                 </div>
               </div>
             </div>
@@ -237,8 +240,9 @@
             <div class="sub-context">
               <div class="sub-label">项目业绩</div>
               <div class="sub-list sub-list-point">
-                <div class="item"><span class="point">1.</span>实现业务流程线上化闭环，审批效率提升约<span
-                    class="high">40%</span>，获得用户一致好评。
+                <div class="item"><span class="point">1.</span>实现业务流程线上化闭环，覆盖全镇<span
+                    class="high">20</span>余个部门及村社，日均处理审批<span class="high">100</span>余件，审批效率提升<span
+                    class="high">40%</span>以上，显著缩短办理周期，获用户一致好评。
                 </div>
                 <div class="item">
                   <span
@@ -262,9 +266,9 @@
             <div class="item">温州大学</div>
             <div class="item">软件工程</div>
           </div>
-          <div class="context-type type-list">
+          <!-- <div class="context-type type-list">
             <div class="item">主修课程包括：前端框架应用开发、Web应用开发、数据库应用技术、Node.js应用开发、PHP应用开发、计算机数学。</div>
-          </div>
+          </div> -->
         </div>
 
         <div class="context-item icon-evaluate">
@@ -301,17 +305,18 @@ const isExport = computed(() => route.query.export === '1');
 const topBaseInfo = ref([
   { key: 'age', name: '年龄', value: '25岁' },
   { key: 'sex', name: '性别', value: '男' },
-  { key: 'position', name: '籍贯', value: '温州' },
+  // { key: 'position', name: '籍贯', value: '温州' },
   { key: 'duration', name: '工作年限', value: '4年经验' },
   { key: 'telephone', name: '电话', value: '180 7212 7956' },
   { key: 'email', name: '邮箱', value: 'jinwming@qq.com' },
-  { key: 'qq', name: 'QQ', value: '1327354592' },
+  // { key: 'qq', name: 'QQ', value: '1327354592' },
   { key: 'wechat', name: '微信', value: '_JINWM_' },
-  { key: 'git', name: 'Gitee', value: 'https://gitee.com/jinwm/', noJustify: false },
+  // { key: 'git', name: 'Gitee', value: 'https://gitee.com/jinwm/', noJustify: false },
 ])
 
 const loading = ref(false);
 const resumeContainer = ref(null);
+const fileName = '方思明-前端开发-18072127956';
 
 const handleExportImg = (pdfCb) => {
   if (!resumeContainer.value) {
@@ -341,7 +346,7 @@ const handleExportImg = (pdfCb) => {
     const a = document.createElement('a');
     a.href = imgData;
     // a.download = `方思明-4年前端开发-${formatDate(new Date(), 'yyyymmdd')}.jpg`;
-    a.download = '前端开发-4年-方思明.jpg';
+    a.download = `${fileName}.jpg`;
     a.click();
     // ElMessage({
     //   message: '导出成功',
@@ -380,7 +385,7 @@ const handleExportPDF = () => {
     pdf.addImage(canvas, 'JPEG', 0, 0, targetWidth, targetHeight, undefined, 'FAST');
     // pdf.save(`附件简历-方思明-前端开发工程师-4年-${formatDate(new Date(), 'yyyymmdd')}.pdf`);
     // pdf.save(`附件简历-方思明-前端开发工程师-4年-${Date.now()}.pdf`);
-    pdf.save('前端开发-4年-方思明.pdf');
+    pdf.save(`${fileName}.pdf`);
     loading.value = false;
     // ElMessage({
     //   message: '导出成功',

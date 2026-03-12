@@ -19,6 +19,7 @@ span {
   color: #fff;
   font-size: inherit;
   line-height: 0.32rem;
+  font-family: "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .bold {
@@ -38,84 +39,98 @@ span {
 .icon-age {
   &::before {
     content: "\E609";
+    font-family: qmfont;
   }
 }
 
 .icon-sex {
   &::before {
     content: "\E619";
+    font-family: qmfont;
   }
 }
 
 .icon-position {
   &::before {
     content: "\E625";
+    font-family: qmfont;
   }
 }
 
 .icon-duration {
   &::before {
     content: "\E616";
+    font-family: qmfont;
   }
 }
 
 .icon-telephone {
   &::before {
     content: "\E63A";
+    font-family: qmfont;
   }
 }
 
 .icon-email {
   &::before {
     content: "\E634";
+    font-family: qmfont;
   }
 }
 
 .icon-qq {
   &::before {
     content: "\E60F";
+    font-family: qmfont;
   }
 }
 
 .icon-wechat {
   &::before {
     content: "\E61A";
+    font-family: qmfont;
   }
 }
 
 .icon-git {
   &::before {
     content: "\E642";
+    font-family: qmfont;
   }
 }
 
 .icon-technology {
   &::before {
     content: "\E657";
+    font-family: qmfont;
   }
 }
 
 .icon-education {
   &::before {
     content: "\E6B1";
+    font-family: qmfont;
   }
 }
 
 .icon-work {
   &::before {
     content: "\E656";
+    font-family: qmfont;
   }
 }
 
 .icon-project {
   &::before {
     content: "\E616";
+    font-family: qmfont;
   }
 }
 
 .icon-evaluate {
   &::before {
     content: "\E60E";
+    font-family: qmfont;
   }
 }
 
@@ -123,7 +138,7 @@ span {
   display: flex;
   align-items: center;
   position: fixed;
-  bottom: 0.5rem;
+  bottom: 0.45rem;
   left: 50%;
   transform: translateX(-50%);
 
@@ -143,11 +158,11 @@ span {
     background: #333333;
     color: #fff;
     font-size: 0.24rem;
-    box-shadow: 0 0 0.1rem #d2d2d2;
     transition: all 0.3s;
 
     &:hover {
-      transform: scale(1.05);
+      transform: scale(1.02);
+      filter: brightness(1.3);
     }
   }
 }
@@ -171,7 +186,6 @@ span {
   box-sizing: border-box;
   transition: all 0.3s;
   will-change: transform;
-  font-family: qmfont;
   /* 触发 GPU 加速 */
   contain: layout;
   /* 限制渲染范围 */
@@ -181,7 +195,7 @@ span {
     position: relative;
     width: 100%;
     background-color: #2a76aa;
-    padding: 0.42rem 0.5rem 0.15rem;
+    padding: 0.42rem 0.5rem 0.1rem;
     margin-bottom: 0.63rem;
 
     &::before {
@@ -201,7 +215,6 @@ span {
       position: relative;
       z-index: 1;
       width: 100%;
-      height: 2.95rem;
       display: flex;
 
       .inner-left {
@@ -211,12 +224,13 @@ span {
         .user-name {
           font-size: 0.43rem;
           line-height: 0.43rem;
+          margin-bottom: 0.17rem;
+          font-weight: bold;
         }
 
         .top-info-line {
           display: flex;
           line-height: 0.3rem;
-          margin-top: 0.17rem;
 
           .item {
             padding-right: 0.52rem;
@@ -257,7 +271,8 @@ span {
             align-items: center;
 
             .label {
-              width: 1.3rem;
+              min-width: 1.3rem;
+              width: fit-content;
               height: 100%;
               display: flex;
               align-items: center;
@@ -316,6 +331,7 @@ span {
     position: relative;
     width: calc(100% - 1rem);
     padding-left: 0.3rem;
+    left: 0.05rem;
 
     .left-line {
       position: absolute;
@@ -328,6 +344,7 @@ span {
 
     .context-item {
       width: 100%;
+      min-height: 0.8rem;
       position: relative;
       margin-bottom: .25rem;
 
@@ -351,8 +368,8 @@ span {
       .name {
         color: #333333;
         font-weight: bold;
-        margin-bottom: .05rem;
-        font-size: .26rem;
+        margin-bottom: .088888rem;
+        font-size: .266666rem;
       }
 
       .context-top-line {
