@@ -46,22 +46,22 @@
               <span class="label">工程化方面：</span>熟练掌握Webpack、Vite等前端工程化工具，了解不同工具的核心原理以及差异，针对每种工具能实现自定义构建流程和打包优化。
             </div>
             <div class="item">
-              <span class="label">C端开发经验：</span>熟练使用UniAPP等跨端框架或者原生语法独立开发微信小程序。
+              <span class="label">C端开发经验：</span>熟练使用UniApp等跨端框架或者原生语法独立开发微信小程序。
             </div>
             <div class="item">
               <span class="label">性能优化：</span>掌握前端常见性能优化手段，包括代码分割、懒加载、资源优化等技术，显著降低FCP和LCP时间，提升用户交互体验。
             </div>
             <div class="item">
-              <span class="label">后端能力：</span>熟悉PHP以及ThinkPHP框架, 能够设计并实现Restful风格的API，做到前后端分离。
-            </div>
-            <div class="item">
-              <span class="label">数据库方面：</span>熟悉MYSQL数据库的基本使用， 能够设计简单的数据库模型，进行数据的CRUD操作。
+              <span class="label">编码能力：</span>拥有扎实的HTML、CSS、JS基础，针对部分前端核心知识有深入研究。
             </div>
             <div class="item">
               <span class="label">设计模式：</span>熟悉SOLID设计原则以及前端常用设计模式，能够在合适的场景下应用这些模式，提高代码的可维护性和可扩展性。
             </div>
             <div class="item">
-              <span class="label">编码能力：</span>拥有扎实的HTML、CSS、JS基础，针对部分前端核心知识有深入研究。
+              <span class="label">AI辅助开发：</span>熟练借助主流AI IDE提升开发效率。
+            </div>
+            <div class="item">
+              <span class="label">后端能力：</span>熟悉PHP/ThinkPHP框架及MySQL数据库，能够进行简单的数据库建模与CRUD操作，并设计实现 Restful风格的API，做到前后端分离。
             </div>
           </div>
         </div>
@@ -263,7 +263,8 @@
           <div class="item">软件技术</div>
         </div> -->
           <div class="context-top-line">
-            <div class="item">温州大学</div>
+            <div class="item">2019-09 ~ 2022-06</div>
+            <div class="item">浙江工贸职业技术学院</div>
             <div class="item">软件工程</div>
           </div>
           <!-- <div class="context-type type-list">
