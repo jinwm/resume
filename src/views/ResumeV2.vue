@@ -206,7 +206,7 @@
                     class="high">99%</span>，LCP提升<span class="high">95%</span>，RR提升<span class="high">12%</span>。</div>
                 <div class="item"><span
                     class="point">4.</span>攻克技术难点，参考飞书的技术方案，实现DOM到Cilpboard的数据链路转换。并收入到企业通用库，服务于公司<span
-                    class="high">3+</span>个业务产品。
+                    class="high">4+</span>个业务产品。
                 </div>
               </div>
             </div>
