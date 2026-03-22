@@ -58,10 +58,10 @@
               <span class="label">设计模式：</span>熟悉SOLID设计原则以及前端常用设计模式，能够在合适的场景下应用这些模式，提高代码的可维护性和可扩展性。
             </div>
             <div class="item">
-              <span class="label">AI辅助开发：</span>熟练借助主流AI IDE提升开发效率。
+              <span class="label">后端能力：</span>熟悉PHP/ThinkPHP框架及MySQL数据库，能够进行简单的数据库建模与CRUD操作，并设计实现 Restful风格的API，做到前后端分离。
             </div>
             <div class="item">
-              <span class="label">后端能力：</span>熟悉PHP/ThinkPHP框架及MySQL数据库，能够进行简单的数据库建模与CRUD操作，并设计实现 Restful风格的API，做到前后端分离。
+              <span class="label">AI辅助开发：</span>熟练借助主流AI IDE提升开发效率。
             </div>
           </div>
         </div>
@@ -149,10 +149,14 @@
                     class="high">20万次</span>，成为游戏外官方资讯核心入口，快速积累高粘性用户群体，有效承接游戏外流量。</div>
                 <div class="item"><span class="point">2.</span>使用WebAssembly技术实现前端图像处理，结合Web
                   Worker优化图像效率，实现图像处理速度提升<span class="high">2倍</span>，降低<span
-                    class="high">50%</span>的处理延迟，日均处理用户图像超<span class="high">6000</span>张，显著提高用户体验。
+                    class="high">50%</span>的处理延迟，日均处理用户图像超<span class="high">6000张</span>，显著提高用户体验。
                 </div>
                 <div class="item">
-                  <span class="point">3.</span>实现虚拟列表，通过缓冲区技术显著提升长列表的滚动流畅度和渲染性能。经过优化，渲染时间减少<span
+                  <span class="point">3.</span>基于WxParse二次封装实现富文本交互增强，通过自定义属性映射与事件委托，统一处理<span
+                    class="high">4类</span>可交互元素、<span class="high">6种</span>交互场景，实现图片预览、视频播放、多类型链接跳转及一键复制。
+                </div>
+                <div class="item">
+                  <span class="point">4.</span>实现虚拟列表，通过缓冲区技术显著提升长列表的滚动流畅度和渲染性能。经过优化，渲染时间减少<span
                     class="high">90%</span>，实现了滚动无卡顿。该优化方案已成功应用到多个项目，有效解决高数据量场景下的性能瓶颈问题。
                 </div>
               </div>
@@ -177,7 +181,7 @@
             <div class="sub-context">
               <div class="sub-label">技术栈</div>
               <div class="sub-list">
-                <div class="item">Vue3、Pinia、JQuery、ElementUI、Vant4、Html2Canvas、JsPDF、GSAP、Clipboard、Swiper
+                <div class="item">Vue3、Pinia、JQuery、ElementUI、Vant4、Html2Canvas、JSPDF、GSAP、Swiper
                 </div>
               </div>
             </div>
@@ -198,12 +202,12 @@
                 <div class="item"><span
                     class="point">2.</span>使用计时器劫持模拟，并通过线程通信，封装通用的解决浏览器页标签计时器节流问题。减少开发期间的心智负担，并收录到企业通用库，服务于公司相关业务产品。
                 </div>
-                <div class="item"><span class="point">3.</span>基于监控平台数据反馈，针对首次访问网络耗时进行专项优化，通过改进DNS解析策略，使DNS解析时间降低<span
-                    class="high">99%</span>，FCP/LCP分别提升<span class="high">25%-30%</span>；该功能已被收录到公司通用库，赋能<span
-                    class="high">10+</span>个项目。
-                </div>
-                <div class="item"><span class="point">4.</span>针对首页白屏问题，通过defer方案，配合自行研发的元素嗅探工具，完成的首屏切片化渲染。FCP提升<span
+                <div class="item"><span class="point">3.</span>针对首页白屏问题，通过defer方案，配合自行研发的元素嗅探工具，完成的首屏切片化渲染。FCP提升<span
                     class="high">99%</span>，LCP提升<span class="high">95%</span>，RR提升<span class="high">12%</span>。</div>
+                <div class="item"><span
+                    class="point">4.</span>攻克技术难点，参考飞书的技术方案，实现DOM到Cilpboard的数据链路转换。并收入到企业通用库，服务于公司<span
+                    class="high">3+</span>个业务产品。
+                </div>
               </div>
             </div>
           </div>
@@ -329,7 +333,7 @@ const handleExportImg = (pdfCb) => {
   loading.value = true;
   // eslint-disable-next-line
   html2canvas(resumeContainer.value, {
-    scale: getScale(),
+    scale: 4.5 || getScale(),
     width: resumeContainer.value.offsetWidth,
     height: resumeContainer.value.offsetHeight,
     useCORS: true,
