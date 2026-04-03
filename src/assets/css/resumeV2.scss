@@ -28,7 +28,7 @@ span {
 
 .high {
   font-weight: bold;
-  opacity: 0.9;
+  opacity: 0.85;
   line-height: initial;
 }
 
@@ -382,7 +382,7 @@ span {
         .item {
           line-height: 0.22rem;
           color: #3273a0;
-          font-size: .2rem;
+          font-size: .21rem;
           font-weight: bold;
         }
       }
@@ -422,6 +422,11 @@ span {
             font-size: 0.2rem;
             line-height: 0.3rem;
             position: relative;
+            margin-bottom: .05rem;
+
+            &:last-child{
+              margin-bottom: 0;
+            }
 
             .point {
               position: absolute;

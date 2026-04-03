@@ -39,29 +39,30 @@
           <div class="name">技术栈</div>
           <div class="context-type type-list">
             <div class="item">
-              <span
-                class="label">框架方面：</span>精通Vue2/3等现代前端框架，理解其核心原理以及差异，拥有Vue框架开发多个大型项目的开发经验，对其框架的周边生态（Vue-Router、Pinia、ElementUI）有一定的使用心得和体会。
+              <span class="label">框架方面：</span>精通 Vue2/3 等现代前端框架，理解其核心原理以及差异，拥有 Vue
+              框架开发多个大型项目的开发经验，对其框架的周边生态（Vue-Router、Pinia、ElementUI）有一定的使用心得和体会。
             </div>
             <div class="item">
-              <span class="label">工程化方面：</span>熟练掌握Webpack、Vite等前端工程化工具，了解不同工具的核心原理以及差异，针对每种工具能实现自定义构建流程和打包优化。
+              <span class="label">工程化方面：</span>熟练掌握 Webpack、Vite 等前端工程化工具，了解不同工具的核心原理以及差异，针对每种工具能实现自定义构建流程和打包优化。
             </div>
             <div class="item">
-              <span class="label">C端开发经验：</span>熟练使用UniApp等跨端框架或者原生语法独立开发微信小程序。
+              <span class="label">C端开发经验：</span>熟练使用 UniApp 等跨端框架或者原生语法独立开发微信小程序。
             </div>
             <div class="item">
-              <span class="label">性能优化：</span>掌握前端常见性能优化手段，包括代码分割、懒加载、资源优化等技术，显著降低FCP和LCP时间，提升用户交互体验。
+              <span class="label">性能优化：</span>掌握前端常见性能优化手段，包括代码分割、懒加载、资源优化等技术，显著降低 FCP 和 LCP 时间，提升用户交互体验。
             </div>
             <div class="item">
-              <span class="label">编码能力：</span>拥有扎实的HTML、CSS、JS基础，针对部分前端核心知识有深入研究。
+              <span class="label">编码能力：</span>拥有扎实的 HTML、CSS、JS 基础，针对部分前端核心知识有深入研究。
             </div>
             <div class="item">
-              <span class="label">设计模式：</span>熟悉SOLID设计原则以及前端常用设计模式，能够在合适的场景下应用这些模式，提高代码的可维护性和可扩展性。
+              <span class="label">设计模式：</span>熟悉 SOLID 设计原则以及前端常用设计模式，能够在合适的场景下应用这些模式，提高代码的可维护性和可扩展性。
             </div>
             <div class="item">
-              <span class="label">后端能力：</span>熟悉PHP/ThinkPHP框架及MySQL数据库，能够进行简单的数据库建模与CRUD操作，并设计实现 Restful风格的API，做到前后端分离。
+              <span class="label">后端能力：</span>熟悉 PHP/ThinkPHP 框架及 MySQL 数据库，能够进行简单的数据库建模与 CRUD操作，并设计实现
+              Restful风格的API，做到前后端分离。
             </div>
             <div class="item">
-              <span class="label">AI辅助开发：</span>熟练借助主流AI IDE提升开发效率。
+              <span class="label">AI辅助开发：</span>熟练借助主流 AI IDE 提升开发效率。
             </div>
           </div>
         </div>
@@ -91,16 +92,21 @@
             <div class="sub-label">工作成绩</div>
             <div class="sub-list sub-list-point">
               <div class="item">
-                <span class="point">1.</span>基于公司Vue脚手架开发C端业务通用模板，覆盖PC及移动H5场景，复用业务能力，为同类需求节省<span
-                  class="high">2-6人时/次</span>。
+                <span class="point">1.</span>基于<span class="high">网易项目 Vue 脚手架</span>开发<span
+                  class="high">C端业务通用模板</span>，覆盖<span class="high"> PC 及移动 H5</span>
+                场景，复用业务能力，为同类需求<span class="high">节省
+                  2-6
+                  人时/次</span>。
               </div>
               <div class="item">
-                <span class="point">2.</span>独立封装微信小程序Canvas海报生成工具库，解决复杂绘图与兼容问题，覆盖<span
-                  class="high">98%</span>的主流机型，该工具库已应用于《第五人格》、《王牌竞速》等<span
-                  class="high">5</span>个网易同类小程序项目，降低图片绘制及生成的开发门槛。
+                <span class="point">2.</span><span class="high">独立封装</span>微信小程序 <span class="high">Canvas
+                  海报绘制引擎</span>，实现图片裁剪/圆角/旋转/灰度及文字阴影/字间距/多行换行；内置<span class="high">图片缓存与加载容错</span>，覆盖<span
+                  class="high"> 98%
+                  机型</span>；已落地<span class="high"> 5 个网易游戏小程序</span>，降低海报开发成本。
               </div>
               <div class="item">
-                <span class="point">3.</span>项目交付效率与质量获甲方客户高度认可，多次获得口头表扬，全年保持<span class="high">0</span>客诉。
+                <span class="point">3.</span>项目交付效率与质量获<span class="high">甲方客户高度认可</span>，多次获得口头表扬，全年保持<span
+                  class="high"> 0 客诉</span>。
               </div>
             </div>
           </div>
@@ -112,15 +118,16 @@
           <div class="project-wrap">
             <div class="context-top-line">
               <div class="item">2024-04 ~ 至今</div>
-              <div class="item">网易燕云官方资讯小程序</div>
+              <div class="item">网易燕云官方资讯·微信小程序</div>
               <div class="item">前端开发工程师</div>
             </div>
             <div class="sub-context">
               <div class="sub-label">项目描述</div>
               <div class="sub-list">
                 <div class="item">
-                  网易燕云官方资讯小程序，服务百万级《燕云十六声》玩家。核心功能包括：账号绑定与游戏数据实时查询（时长/探索度）、万相集作品收藏同步；集成攻略资讯、福利礼包及社区活动。上线3个月日活突破<span
-                    class="high">10w+</span>，有效承接游戏外流量，打造玩家一站式聚集地。
+                  该资讯小程序服务<span
+                    class="high">百万级《燕云十六声》玩家</span>。核心功能包括：账号绑定与游戏数据实时查询（时长/探索度）、万相集作品收藏同步；集成攻略资讯、福利礼包及社区活动。上线 3
+                  个月<span class="high">日活突破 10w+ </span>，有效承接游戏外流量，打造玩家<span class="high">一站式聚集地</span>。
                 </div>
               </div>
             </div>
@@ -128,14 +135,14 @@
               <div class="sub-label">技术栈</div>
               <div class="sub-list">
                 <div class="item">
-                  微信小程序原生框架、WxParse富文本解析、Lodash
+                  微信小程序原生框架、WxParse 富文本解析、Lodash
                 </div>
               </div>
             </div>
             <div class="sub-context">
               <div class="sub-label">项目职责</div>
               <div class="sub-list sub-list-point">
-                <div class="item"><span class="point">1.</span>根据产品需求文档，UI设计图，完成每一期的开发需求</div>
+                <div class="item"><span class="point">1.</span>根据产品需求文档，UI 设计图，完成每一期的开发需求</div>
                 <div class="item"><span class="point">2.</span>针对复用率高的代码，提取为公共组件，增强代码的复用性</div>
                 <div class="item"><span class="point">3.</span>开发动态海报生成功能，实现图片文字灵活排版与性能优化</div>
                 <div class="item"><span class="point">4.</span>搭建富文本展示与社交互动体系，支持内容解析、跳转及用户交互</div>
@@ -145,19 +152,48 @@
             <div class="sub-context">
               <div class="sub-label">项目业绩</div>
               <div class="sub-list sub-list-point">
-                <div class="item"><span class="point">1.</span>上线3个月日活跃用户突破<span class="high">10万</span>，日均用户互动量超过<span
-                    class="high">20万次</span>，成为游戏外官方资讯核心入口，快速积累高粘性用户群体，有效承接游戏外流量。</div>
-                <div class="item"><span class="point">2.</span>使用WebAssembly技术实现前端图像处理，结合Web
+                <div class="item"><span class="point">1.</span>上线 3 个月日活跃用户突破<span class="high"> 10
+                    万</span>，日均用户互动量超过<span class="high"> 20 万次</span>，成为游戏外官方资讯核心入口，快速积累高粘性用户群体，有效承接游戏外流量。</div>
+
+                <!-- <div class="item"><span class="point">2.</span>使用WebAssembly技术实现前端图像处理，结合Web
                   Worker优化图像效率，实现图像处理速度提升<span class="high">2倍</span>，降低<span
                     class="high">50%</span>的处理延迟，日均处理用户图像超<span class="high">6000张</span>，显著提高用户体验。
-                </div>
+                </div> -->
                 <div class="item">
+                  <span class="point">2.</span>基于 <span class="high">WxParse 二次封装</span> 实现富文本交互增强，通过 <span
+                    class="high">自定义属性映射 + 事件委托，零埋点</span>
+                  统一处理 <span class="high">4 类元素、6
+                    种场景</span>，实现图片预览、视频播放、多类型链接跳转及一键复制。
+                </div>
+
+
+
+                <!-- <div class="item">
                   <span class="point">3.</span>基于WxParse二次封装实现富文本交互增强，通过自定义属性映射与事件委托，统一处理<span
                     class="high">4类</span>可交互元素、<span class="high">6种</span>交互场景，实现图片预览、视频播放、多类型链接跳转及一键复制。
-                </div>
-                <div class="item">
+                </div> -->
+
+                <!-- <div class="item">
                   <span class="point">4.</span>实现虚拟列表，通过缓冲区技术显著提升长列表的滚动流畅度和渲染性能。经过优化，渲染时间减少<span
                     class="high">90%</span>，实现了滚动无卡顿。该优化方案已成功应用到多个项目，有效解决高数据量场景下的性能瓶颈问题。
+                </div> -->
+                <div class="item">
+                  <span class="point">3.</span><span class="high">实现虚拟列表 + 缓冲区优化</span>，显著改善长列表滚动流畅度与渲染性能。<span
+                    class="high">渲染时间降低 90% </span>，滚动体验顺滑无卡顿。该方案已在<span class="high">多个项目中推广</span>，有效攻克高数据量场景的性能瓶颈。
+                </div>
+                <div class="item">
+                  <span class="point">4.</span>小程序原生能力无法满足高性能图像处理场景，通过WebView嵌入H5，利用 <span class="high">WebAssembly +
+                    Web Worker</span>
+                  技术实现前端图像加速，使处理速度<span class="high">提升 2 倍</span>，延迟
+                  <span class="high">降低 50% </span>，<span class="high">日均处理超 6000 张</span>图像，有效突破小程序性能边界。
+                </div>
+                <div class="item">
+                  <span class="point">5.</span><span class="high">针对游戏后端存盘延迟（约1分钟）</span> 导致的状态不一致问题，设计<span
+                    class="high">前端中间态缓存 +
+                    轮询确认</span>机制：通过<span class="high">本地缓存代理队伍加入/取消状态，避免用户重复点击</span>；配合<span
+                    class="high">指数级轮询（2秒/次，最长1分钟）</span>
+                  异步确认操作结果，直至状态同步完成。从根本上解决了<span class="high">界面状态与实际状态不一致</span>及<span
+                    class="high">重复请求错误</span>，保障百业活动报名功能的稳定体验。
                 </div>
               </div>
             </div>
@@ -173,8 +209,9 @@
               <div class="sub-label">项目描述</div>
               <div class="sub-list">
                 <div class="item">
-                  因网易游戏运营活动具有高频、多样化的特点，三年多时间深度参与其营销体系建设，独立或主导完成<span
-                    class="high">200+</span>个专题活动页开发，覆盖PC端官网活动、移动端H5页面及小游戏互动页，并为部分活动配套开发轻量级管理后台，服务于《蛋仔派对》《第五人格》《梦幻西游》等多款头部游戏的版本推广、节日运营及品牌宣发。
+                  因网易游戏运营活动具有高频、多样化的特点，三年多时间深度参与其营销体系建设，<span class="high">独立或主导</span>完成<span class="high"> 200+
+                    个专题活动页开发</span>，<span class="high">覆盖PC端官网活动、移动端H5页面及小游戏互动页</span>，并为部分活动配套开发<span
+                    class="high">轻量级管理后台</span>，服务于<span class="high">《蛋仔派对》《第五人格》《梦幻西游》</span>等多款头部游戏的版本推广、节日运营及品牌宣发。
                 </div>
               </div>
             </div>
@@ -197,16 +234,28 @@
             <div class="sub-context">
               <div class="sub-label">项目业绩</div>
               <div class="sub-list sub-list-point">
-                <div class="item"><span class="point">1.</span>三年累计完成<span
-                    class="high">200+</span>个网易游戏营销专题页开发，覆盖多个网易头部游戏，支撑版本推广、节日运营等高频业务需求。</div>
-                <div class="item"><span
+                <div class="item"><span class="point">1.</span>三年累计完成<span class="high"> 200+
+                    个</span>网易营销专题页开发，覆盖多个网易头部游戏，支撑版本推广、节日运营等高频业务需求。</div>
+                <!-- <div class="item"><span
                     class="point">2.</span>使用计时器劫持模拟，并通过线程通信，封装通用的解决浏览器页标签计时器节流问题。减少开发期间的心智负担，并收录到企业通用库，服务于公司相关业务产品。
+                </div> -->
+                <div class="item">
+                  <span class="point">2.</span>采用 <span class="high">计时器劫持模拟</span> 及 <span class="high">线程通信</span>
+                  技术，封装了一套解决浏览器标签页计时器节流问题的 <span class="high">通用方案</span>，显著减少开发过程中的心智负担。该方案已纳入
+                  <span class="high">企业通用库</span>，并应用于公司多个业务产品。
                 </div>
-                <div class="item"><span class="point">3.</span>针对首页白屏问题，通过defer方案，配合自行研发的元素嗅探工具，完成的首屏切片化渲染。FCP提升<span
-                    class="high">99%</span>，LCP提升<span class="high">95%</span>，RR提升<span class="high">12%</span>。</div>
-                <div class="item"><span
-                    class="point">4.</span>攻克技术难点，参考飞书的技术方案，实现DOM到Cilpboard的数据链路转换。并收入到企业通用库，服务于公司<span
-                    class="high">4+</span>个业务产品。
+                <!-- <div class="item"><span class="point">3.</span>针对首页白屏问题，通过defer方案，配合自行研发的元素嗅探工具，完成的首屏切片化渲染。FCP提升<span
+                    class="high">99%</span>，LCP提升<span class="high">95%</span>，RR提升<span class="high">12%</span>。</div> -->
+                <div class="item">
+                  <span class="point">3.</span><span class="high">针对首页白屏问题，采用 defer
+                    策略配合自行研发的</span>组件优先级调度工具，<span class="high">实现首屏切片化渲染。优化后 FCP 提升 99%，LCP 提升
+                    95%，RR
+                    提升 12%。</span>
+                </div>
+
+                <div class="item"><span class="point">4.</span><span class="high">攻克</span>技术难点，参考<span
+                    class="high">飞书的技术方案</span>，实现<span class="high"> DOM 到 Clipboard 的数据链路转换</span>，并<span
+                    class="high">沉淀</span>至<span class="high">企业通用库</span>，服务于公司<span class="high"> 4+ 个业务产品</span>。
                 </div>
               </div>
             </div>
@@ -222,7 +271,9 @@
               <div class="sub-label">项目描述</div>
               <div class="sub-list">
                 <div class="item">
-                  随着数字化改革在基层治理中的深入推进，江南镇原有办公方式面临流程分散、信息不同步、审批效率低等问题，难以满足日常协同需求。为此，打造PC端统一办公入口，实现审批、值班、信访、人事等核心业务线上协同，助力基层治理数字化转型。
+                  随着数字化改革在基层治理中的深入推进，江南镇原有办公方式面临<span class="high">流程分散、信息不同步、审批效率低</span>等问题，难以满足日常协同需求。为此，打造<span
+                    class="high">PC端统一办公入口</span>，实现<span class="high">审批、值班、信访、人事</span>等核心业务线上协同，助力<span
+                    class="high">基层治理数字化转型</span>。
                 </div>
               </div>
             </div>
@@ -238,20 +289,20 @@
                 <div class="item"><span class="point">1.</span>参与项目全流程开发，根据需求与UI完成各期迭代，确保功能按时交付。</div>
                 <div class="item"><span class="point">2.</span>提取公共组件（表格/表单/弹窗），提升代码复用性及维护效率。</div>
                 <div class="item"><span class="point">3.</span>主导审批、值班、信访、人事等核心业务模块开发，实现业务线上协同。</div>
-                <div class="item"><span class="point">4.</span>封装Axios请求层，配置动态路由与状态管理，保障系统流畅运行。</div>
+                <div class="item"><span class="point">4.</span>封装 Axios 请求层，配置动态路由与状态管理，保障系统流畅运行。</div>
               </div>
             </div>
             <div class="sub-context">
               <div class="sub-label">项目业绩</div>
               <div class="sub-list sub-list-point">
-                <div class="item"><span class="point">1.</span>实现业务流程线上化闭环，覆盖全镇<span
-                    class="high">20</span>余个部门及村社，日均处理审批<span class="high">100</span>余件，审批效率提升<span
-                    class="high">40%</span>以上，显著缩短办理周期，获用户一致好评。
+                <div class="item"><span class="point">1.</span>实现<span class="high">业务流程线上化闭环</span>，覆盖全镇<span
+                    class="high"> 20 余个部门及村社，日均处理审批 100 余件，审批效率提升 40% 以上</span>，显著缩短办理周期，获用户一致好评。
                 </div>
                 <div class="item">
-                  <span
-                    class="point">2.</span>设计适用于长表单应用的高性能数据存储和同步模块，并主导该模块的实现和落地。通过深度优化本地存储和采用浏览器跨标签页通信方案，将表单数据存储和同步效率提升<span
-                    class="high">90%</span>，从根源上规避了数据遗失风险。该模块已广泛应用到公司其他项目。
+                  <span class="point">2.</span><span class="high">针对长表单场景</span>，设计并<span
+                    class="high">主导落地</span>了一套<span class="high">高性能数据存储与同步模块</span>。通过<span
+                    class="high">深度优化本地存储机制</span>，并结合<span class="high">浏览器跨标签页通信方案</span>，使表单数据存储与同步<span
+                    class="high">效率提升 90% </span>，同时<span class="high">从根本上杜绝了数据丢失风险</span>。该模块已广泛应用于公司其他项目。
                 </div>
               </div>
             </div>
