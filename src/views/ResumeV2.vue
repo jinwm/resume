@@ -187,13 +187,19 @@
                   技术实现前端图像加速，使处理速度<span class="high">提升 2 倍</span>，延迟
                   <span class="high">降低 50% </span>，<span class="high">日均处理超 6000 张</span>图像，有效突破小程序性能边界。
                 </div>
-                <div class="item">
+                <!-- <div class="item">
                   <span class="point">5.</span><span class="high">针对游戏后端存盘延迟（约1分钟）</span> 导致的状态不一致问题，设计<span
                     class="high">前端中间态缓存 +
                     轮询确认</span>机制：通过<span class="high">本地缓存代理队伍加入/取消状态，避免用户重复点击</span>；配合<span
                     class="high">指数级轮询（2秒/次，最长1分钟）</span>
                   异步确认操作结果，直至状态同步完成。从根本上解决了<span class="high">界面状态与实际状态不一致</span>及<span
                     class="high">重复请求错误</span>，保障百业活动报名功能的稳定体验。
+                </div> -->
+                <div class="item">
+                  <span class="point">5.</span>针对游戏后端存盘延迟（约1分钟）导致的<span class="high">状态最终不一致</span>问题，基于<span
+                    class="high">最终一致性</span>思想设计前端补偿机制：通过本地缓存实现 <span class="high">“读己之所写”</span>
+                  ，在1分钟窗口期内代理队伍状态，消除用户重复点击；配合<span
+                    class="high">递增间隔轮询</span>（2秒/次，最长1分钟）异步确认操作结果，直至状态同步完成。该方案以极低成本解决了分布式场景下的状态滞后问题，保障了百业活动报名功能的稳定体验。
                 </div>
               </div>
             </div>
