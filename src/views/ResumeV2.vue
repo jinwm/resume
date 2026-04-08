@@ -332,6 +332,54 @@
               </div>
             </div>
           </div>
+          <!-- 
+          <div class="project-wrap">
+            <div class="context-top-line">
+              <div class="item">2022-04 ~ 2022-08</div>
+              <div class="item">镇污水零直排区动态监管系统</div>
+              <div class="item">前端开发工程师</div>
+            </div>
+            <div class="sub-context">
+              <div class="sub-label">项目描述</div>
+              <div class="sub-list">
+                <div class="item">
+                  为某镇建设污水零直排动态监管系统，<span class="high">对标工业 MES
+                    数据可视化标准</span>，实现全镇排水管网及监测点位的<span
+                    class="high">实时数据采集与看板展示</span>。系统通过大屏可视化方式，实时呈现污水排放指标、设备状态及空间分布，助力镇级管理部门快速响应异常，提升区域环境监控的数字化水平。
+                </div>
+              </div>
+            </div>
+            <div class="sub-context">
+              <div class="sub-label">技术栈</div>
+              <div class="sub-list">
+                <div class="item">Vue、ECharts、WebSocket、天地图API、Axios、ElementUI</div>
+              </div>
+            </div>
+            <div class="sub-context">
+              <div class="sub-label">项目职责</div>
+              <div class="sub-list sub-list-point">
+                <div class="item"><span class="point">1.</span>负责数据可视化模块设计与实现，基于<span class="high"> ECharts 和 WebSocket
+                  </span>构建实时动态图表（如流量趋势、水质指标），数据更新延迟控制在秒级，满足高实时性监控要求。</div>
+                <div class="item"><span class="point">2.</span>集成<span class="high">天地图
+                    API</span>，在大屏核心区域动态展示雨水井、污水井等点位空间分布，结合后端经纬度数据实现监测点状态标注与交互，辅助快速定位异常区域。</div>
+                <div class="item"><span class="point">3.</span>完成与后端数据接口对接，<span
+                    class="high">优化数据加载逻辑</span>（批量请求、增量更新），减少大屏交互延迟，提升终端用户体验。</div>
+              </div>
+            </div>
+            <div class="sub-context">
+              <div class="sub-label">项目业绩</div>
+              <div class="sub-list sub-list-point">
+                <div class="item"><span class="point">1.</span>天地图点位模块成功辅助用户快速定位问题井位，<span class="high">平均定位时间减少
+                    50%</span>，有效支撑了镇级环保巡检工作。</div>
+                <div class="item">
+                  <span class="point">2.</span>通过接口与渲染优化，终端<span class="high">首屏加载时间降低 30%</span>，大屏在连续运行测试中保持流畅。
+                </div>
+                <div class="item">
+                  <span class="point">3.</span>项目虽因客户需求调整暂缓上线，但积累了类 MES 级数据可视化与地图集成的实践经验，相关技术方案已沉淀并计划复用至其他智慧城镇项目。
+                </div>
+              </div>
+            </div>
+          </div> -->
 
         </div>
 
