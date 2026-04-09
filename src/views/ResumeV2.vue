@@ -59,7 +59,7 @@
               Restful风格的API，做到前后端分离。
             </div> -->
             <div class="item">
-              <span class="label">后端能力：</span>熟悉 Node.js 以及 express 等框架，能够设计实现 Restful 风格的API，做到前后端分离。
+              <span class="label">后端能力：</span>熟悉 Node.js 以及 Express 等框架，能够设计实现 Restful 风格的API，做到前后端分离。
             </div>
             <div class="item">
               <span class="label">数据库方面：</span>熟悉 MySQL 数据库的基本使用，能够设计简单的数据库模型，进行数据CRUD操作。
@@ -81,7 +81,7 @@
         </div> -->
           <div class="context-top-line">
             <div class="item">温州理工学院</div>
-            <div class="item">计算机科学与技术 (本科)</div>
+            <div class="item">软件工程 (本科)</div>
           </div>
           <!-- <div class="context-type type-list">
             <div class="item">主修课程包括：前端框架应用开发、Web应用开发、数据库应用技术、Node.js应用开发、PHP应用开发、计算机数学。</div>
@@ -91,7 +91,7 @@
           <div class="name">工作经验</div>
           <div class="context-top-line">
             <div class="item">2022-04 ~ 至今</div>
-            <div class="item">杭州鑫烨科技有限公司（网易合作）</div>
+            <div class="item">杭州千航科技有限公司 · 网易互娱项目组</div>
             <div class="item">前端开发工程师</div>
           </div>
           <div class="sub-context">
@@ -101,7 +101,7 @@
                 <span class="point">1.</span>负责前端项目各业务模块的开发。
               </div>
               <div class="item">
-                <span class="point">2.</span>配合后端人员进行接口联调。
+                <span class="point">2.</span>配合后端人员进行接口联调，保障跨团队协作效率。
               </div>
               <div class="item">
                 <span class="point">3.</span>参与代码评审，确保代码质量和规范性，根据优化建议对代码进行优化。
@@ -112,21 +112,24 @@
             <div class="sub-label">工作成绩</div>
             <div class="sub-list sub-list-point">
               <div class="item">
-                <span class="point">1.</span>基于<span class="high">网易项目 Vue 脚手架</span>开发<span
-                  class="high">C端业务通用模板</span>，覆盖<span class="high"> PC 及移动 H5</span>
-                场景，复用业务能力，为同类需求<span class="high">节省
-                  4-7
-                  人时/次</span>。
+                <span class="point">1.</span>基于网易项目搭建 Vue 通用业务模板，通过 UA 判断与响应式适配，实现<span class="high"> PC、移动 H5
+                  及游戏内嵌横屏三端代码复用；</span>核心业务逻辑统一维护，同类需求开发耗时平均节省<span class="high"> 4-7 人时/次。</span>
               </div>
               <div class="item">
-                <span class="point">2.</span><span class="high">独立封装</span>微信小程序 <span class="high">Canvas
-                  海报绘制引擎</span>，实现图片裁剪/圆角/旋转/灰度及文字阴影/字间距/多行换行；内置<span class="high">图片缓存与加载容错</span>，覆盖<span
-                  class="high"> 98%
-                  机型</span>；已落地<span class="high"> 5 个</span>网易游戏小程序，降低海报开发成本。
+                <span class="point">2.</span>独立封装微信小程序 Canvas 通用海报绘制库，统一抽象图片与文字渲染逻辑；支持 <span class="high">Cover
+                  裁剪、圆角、旋转、灰度滤镜 </span>及
+                <span class="high">文字多行换行、字间距、对齐方式</span>等复杂样式配置；内置<span class="high">基于内存的图片缓存与加载容错机制</span>，兼容性覆盖 98%
+                机型；已稳定落地<span class="high"> 5 款</span>网易游戏小程序，显著降低运营活动海报开发成本。
               </div>
               <div class="item">
-                <span class="point">3.</span>项目交付效率与质量获甲方客户高度认可，多次获得口头表扬，全年保持<span class="high"> 0 客诉</span>。
+                <span class="point">3.</span>抽象封装项目通用 JS 工具库，收敛高频底层逻辑；涵盖<span class="high"> queryString
+                  解析、日期格式化、多端 UA 判断、社媒授权登录及文件上传 Token
+                  加密流程</span>等模块；统一团队调用规范，累计复用<span class="high"> 20+ </span>业务场景，预计减少重复开发与调试耗时约<span class="high"> 15
+                  人时/月</span>。
               </div>
+              <!-- <div class="item">
+                <span class="point">4.</span>项目交付效率与质量获甲方客户高度认可，多次获得口头表扬，全年保持<span class="high"> 0 客诉</span>。
+              </div> -->
             </div>
           </div>
         </div>
@@ -137,7 +140,7 @@
           <div class="project-wrap">
             <div class="context-top-line">
               <div class="item">2024-04 ~ 至今</div>
-              <div class="item">网易燕云官方资讯·微信小程序</div>
+              <div class="item">网易燕云官方资讯 · 微信小程序</div>
               <div class="item">前端开发工程师</div>
             </div>
             <div class="sub-context">
@@ -227,7 +230,7 @@
           <div class="project-wrap">
             <div class="context-top-line">
               <div class="item">2022-10 ~ 至今</div>
-              <div class="item">网易游戏营销专题跨端开发</div>
+              <div class="item">网易游戏专题跨端开发</div>
               <div class="item">前端开发工程师</div>
             </div>
             <div class="sub-context">
@@ -289,7 +292,7 @@
           <div class="project-wrap">
             <div class="context-top-line">
               <div class="item">2022-04 ~ 2022-10</div>
-              <div class="item">江南·优政智控平台</div>
+              <div class="item">江南 · 优政智控平台</div>
               <div class="item">前端开发工程师</div>
             </div>
             <div class="sub-context">
@@ -324,7 +327,7 @@
                     余件，审批效率提升 40% 以上</span>，显著缩短办理周期，获用户一致好评。
                 </div>
                 <div class="item">
-                  <span class="point">2.</span><span class="high">针对长表单场景，设计并主导落地</span>了一套<span
+                  <span class="point">2.</span><span class="high">针对长表单场景，</span>设计并主导落地了一套<span
                     class="high">高性能数据存储与同步模块</span>。通过深度优化本地存储机制，并结合<span
                     class="high">浏览器跨标签页通信方案</span>，使表单数据存储与同步<span class="high">效率提升 90%
                   </span>，同时从根本上杜绝了数据丢失风险。该模块已广泛应用于公司其他项目。
