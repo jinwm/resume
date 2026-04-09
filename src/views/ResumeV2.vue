@@ -122,8 +122,8 @@
                 机型；已稳定落地<span class="high"> 5 款</span>网易游戏小程序，显著降低运营活动海报开发成本。
               </div>
               <div class="item">
-                <span class="point">3.</span>抽象封装项目通用 JS 工具库，收敛高频底层逻辑；涵盖<span class="high"> queryString
-                  解析、日期格式化、多端 UA 判断、社媒授权登录及文件上传 Token
+                <span class="point">3.</span>抽象封装项目通用 JS 工具库，收敛高频底层逻辑；涵盖<span class="high">端型判断</span>、<span
+                  class="high">社媒授权登录</span>及<span class="high">文件上传 Token
                   加密流程</span>等模块；统一团队调用规范，累计复用<span class="high"> 20+ </span>业务场景，预计减少重复开发与调试耗时约<span class="high"> 15
                   人时/月</span>。
               </div>
@@ -269,21 +269,20 @@
                 </div> -->
                 <div class="item">
                   <span class="point">2.</span>采用 <span class="high">计时器劫持模拟</span> 及 <span class="high">线程通信</span>
-                  技术，封装了一套解决浏览器标签页计时器节流问题的 <span class="high">通用模块</span>，显著减少开发过程中的心智负担。该方案已纳入
-                  <span class="high">企业通用库</span>，并应用于公司多个业务产品。
+                  技术，封装了一套解决浏览器标签页计时器节流问题的 <span class="high">通用模块</span>，显著减少开发过程中的心智负担。该方案已纳入企业通用库，并应用于公司多个业务产品。
                 </div>
                 <!-- <div class="item"><span class="point">3.</span>针对首页白屏问题，通过defer方案，配合自行研发的元素嗅探工具，完成的首屏切片化渲染。FCP提升<span
                     class="high">99%</span>，LCP提升<span class="high">95%</span>，RR提升<span class="high">12%</span>。</div> -->
                 <div class="item">
-                  <span class="point">3.</span>针对首页白屏问题，<span class="high">采用 defer
-                    策略</span>配合<span class="high">自研的</span>组件优先级调度工具，实现<span class="high">首屏切片化渲染。优化后 FCP 提升 99%，LCP 提升
+                  <span class="point">3.</span>基于监控平台的数据反馈优化首页白屏问题，<span class="high">通过 defer
+                    方案</span>配合<span class="high">自研的</span>组件优先级调度工具，实现<span class="high">首屏的切片化渲染。优化后 FCP 提升 99%，LCP
+                    提升
                     95%，RR
                     提升 12%。</span>
                 </div>
 
                 <div class="item"><span class="point">4.</span>攻克技术难点，参考<span class="high">飞书的技术方案</span>，实现<span
-                    class="high"> DOM 到 Clipboard 的数据链路转换</span>，并沉淀至<span class="high">企业通用库</span>，服务于公司<span
-                    class="high"> 4+ 个业务产品</span>。
+                    class="high"> DOM 到 Clipboard 的数据链路转换</span>，并沉淀至企业通用库，服务于公司<span class="high"> 4+ 个业务产品</span>。
                 </div>
               </div>
             </div>
@@ -307,7 +306,7 @@
             <div class="sub-context">
               <div class="sub-label">技术栈</div>
               <div class="sub-list">
-                <div class="item">Vue、Vue-Router、Vuex、Axios、ElementUI</div>
+                <div class="item">Vue2、Vue-Router、Vuex、Axios、ElementUI</div>
               </div>
             </div>
             <div class="sub-context">
