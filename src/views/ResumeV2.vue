@@ -91,7 +91,7 @@
           <div class="name">工作经验</div>
           <div class="context-top-line">
             <div class="item">2022-04 ~ 至今</div>
-            <div class="item">杭州千航科技有限公司 · 网易互娱项目组</div>
+            <div class="item">杭州鑫烨科技有限公司 · 网易互娱项目组</div>
             <div class="item">前端开发工程师</div>
           </div>
           <div class="sub-context">
