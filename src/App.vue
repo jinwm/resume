@@ -3,6 +3,11 @@
 </template>
 
 <script setup>
+// import eventBus from './js/eventBus';
+
+// eventBus.on('test', (data) => {
+//   console.log('test', data.sort());
+// })
 // import { useRouter } from 'vue-router';
 
 // const router = useRouter();

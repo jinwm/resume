@@ -91,7 +91,7 @@
           <div class="name">工作经验</div>
           <div class="context-top-line">
             <div class="item">2022-04 ~ 至今</div>
-            <div class="item">杭州鑫烨科技有限公司 · 网易互娱项目组</div>
+            <div class="item">杭州鑫烨科技有限公司 · 网易游戏网站部</div>
             <div class="item">前端开发工程师</div>
           </div>
           <div class="sub-context">
@@ -325,11 +325,17 @@
                   余个部门及村社，<span class="high">日均处理审批 100
                     余件，审批效率提升 40% 以上</span>，显著缩短办理周期，获用户一致好评。
                 </div>
-                <div class="item">
+                <!-- <div class="item">
                   <span class="point">2.</span><span class="high">针对长表单场景，</span>设计并主导落地了一套<span
                     class="high">高性能数据存储与同步模块</span>。通过深度优化本地存储机制，并结合<span
                     class="high">浏览器跨标签页通信方案</span>，使表单数据存储与同步<span class="high">效率提升 90%
                   </span>，同时从根本上杜绝了数据丢失风险。该模块已广泛应用于公司其他项目。
+                </div> -->
+                <div class="item">
+                  <span class="point">2.</span><span class="high">团队反馈</span>基于事件总线的通信机制报错难以排查且<span
+                    class="high">“一错全停”</span>。通过
+                  <span class="high">调整监听器执行时序与调用栈隔离</span>，实现错误不阻塞且堆栈直达，<span class="high">排查效率提升
+                    90%</span>，该方案已广泛应用于多个项目。
                 </div>
               </div>
             </div>
@@ -409,6 +415,11 @@ import { useRoute } from 'vue-router';
 import { getScale, isMobile } from '../js/utils';
 import { vTextJustify } from '@/js/custom';
 import textRainInit from '@/js/textRain';
+// import eventBus from '../js/eventBus';
+
+// eventBus.asyncEmit('test', 1)
+// eventBus.asyncEmit('test', [])
+// eventBus.asyncEmit('test', 1)
 
 onMounted(() => {
   textRainInit();
