@@ -72,21 +72,6 @@
             </div>
           </div>
         </div>
-        <div class="context-item icon-education">
-          <div class="name">教育背景</div>
-          <!-- <div class="context-top-line">
-          <div class="item">2019-09 ~ 2022-06</div>
-          <div class="item">浙江工贸职业技术学院</div>
-          <div class="item">软件技术</div>
-        </div> -->
-          <div class="context-top-line">
-            <div class="item">温州大学</div>
-            <div class="item">软件工程</div>
-          </div>
-          <!-- <div class="context-type type-list">
-            <div class="item">主修课程包括：前端框架应用开发、Web应用开发、数据库应用技术、Node.js应用开发、PHP应用开发、计算机数学。</div>
-          </div> -->
-        </div>
         <div class="context-item icon-work">
           <div class="name">工作经验</div>
           <div class="context-top-line">
@@ -391,7 +376,21 @@
 
         </div>
 
-
+        <div class="context-item icon-education">
+          <div class="name">教育背景</div>
+          <!-- <div class="context-top-line">
+          <div class="item">2019-09 ~ 2022-06</div>
+          <div class="item">浙江工贸职业技术学院</div>
+          <div class="item">软件技术</div>
+        </div> -->
+          <div class="context-top-line">
+            <div class="item">温州大学</div>
+            <div class="item">软件工程</div>
+          </div>
+          <!-- <div class="context-type type-list">
+            <div class="item">主修课程包括：前端框架应用开发、Web应用开发、数据库应用技术、Node.js应用开发、PHP应用开发、计算机数学。</div>
+          </div> -->
+        </div>
 
         <div class="context-item icon-evaluate">
           <div class="name">个人评价</div>
