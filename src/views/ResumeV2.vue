@@ -37,7 +37,7 @@
 
         <div class="context-item icon-technology">
           <div class="name">技术栈</div>
-          <div class="context-type type-list">
+          <div class="context-type type-list" v-if="true">
             <div class="item">
               <span class="label">框架方面：</span>精通 Vue2/3 等现代前端框架，理解其核心原理以及差异，拥有 Vue
               框架开发多个大型项目的开发经验，对其框架的周边生态（Vue-Router、Pinia、ElementUI）有一定的使用心得和体会。
@@ -71,11 +71,14 @@
               <span class="label">AI辅助开发：</span>擅长借助主流 AI IDE 提升从需求到落地的开发效率。
             </div>
           </div>
+          <div class="context-type type-list" v-else>
+            <div class="item">Vue、Tooling、MiniApp、Perf、JS、Node、SQL、Pattern、AI</div>
+          </div>
         </div>
         <div class="context-item icon-work">
           <div class="name">工作经验</div>
           <div class="context-top-line">
-            <div class="item">2022-04 ~ 至今</div>
+            <div class="item">2022-04 ~ 2026-03</div>
             <div class="item">杭州鑫烨科技有限公司 · 网易游戏网站部</div>
             <div class="item">前端开发工程师</div>
           </div>
@@ -124,7 +127,7 @@
 
           <div class="project-wrap">
             <div class="context-top-line">
-              <div class="item">2024-04 ~ 至今</div>
+              <div class="item">2024-04 ~ 2026-03</div>
               <div class="item">网易燕云官方资讯 · 微信小程序</div>
               <div class="item">前端开发工程师</div>
             </div>
@@ -214,7 +217,7 @@
 
           <div class="project-wrap">
             <div class="context-top-line">
-              <div class="item">2022-10 ~ 至今</div>
+              <div class="item">2022-10 ~ 2026-03</div>
               <div class="item">网易游戏专题跨端开发</div>
               <div class="item">前端开发工程师</div>
             </div>
@@ -384,6 +387,7 @@
           <div class="item">软件技术</div>
         </div> -->
           <div class="context-top-line">
+            <div class="item">2019-09 ~ 2023-06</div>
             <div class="item">温州大学</div>
             <div class="item">软件工程</div>
           </div>
@@ -420,13 +424,31 @@ import textRainInit from '@/js/textRain';
 // eventBus.asyncEmit('test', [])
 // eventBus.asyncEmit('test', 1)
 
-onMounted(() => {
-  textRainInit();
-})
-
 const route = useRoute();
 
 const isExport = computed(() => route.query.export === '1');
+const isPrivacy = computed(() => route.query.privacy === '1');
+
+onMounted(() => {
+  textRainInit();
+
+  if (isPrivacy.value) {
+    handlePrivacy([
+      '方思明',
+      '燕云十六声',
+      '网易燕云官方',
+      '180 7212 7956',
+      'jinwming@qq.com',
+      '_JINWM_',
+      '蛋仔派对',
+      '第五人格',
+      '梦幻西游',
+      { key: '网易', replace: '冈易' },
+      '鑫烨科技',
+      '江南镇'
+    ]);
+  }
+})
 
 const topBaseInfo = ref([
   { key: 'age', name: '年龄', value: '25岁' },
@@ -442,7 +464,9 @@ const topBaseInfo = ref([
 
 const loading = ref(false);
 const resumeContainer = ref(null);
-const fileName = '方思明-前端开发-18072127956';
+const fileName = computed(() => {
+  return isPrivacy.value ? '番茄鸡蛋-前端开发-18018018000' : '方思明-前端开发-18072127956';
+});
 
 const handleExportImg = (pdfCb) => {
   if (!resumeContainer.value) {
@@ -454,7 +478,7 @@ const handleExportImg = (pdfCb) => {
   loading.value = true;
   // eslint-disable-next-line
   html2canvas(resumeContainer.value, {
-    scale: 4.5 || getScale(),
+    scale: 4.3 || getScale(),
     width: resumeContainer.value.offsetWidth,
     height: resumeContainer.value.offsetHeight,
     useCORS: true,
@@ -472,7 +496,7 @@ const handleExportImg = (pdfCb) => {
     const a = document.createElement('a');
     a.href = imgData;
     // a.download = `方思明-4年前端开发-${formatDate(new Date(), 'yyyymmdd')}.jpg`;
-    a.download = `${fileName}.jpg`;
+    a.download = `${fileName.value}.jpg`;
     a.click();
     // ElMessage({
     //   message: '导出成功',
@@ -511,7 +535,7 @@ const handleExportPDF = () => {
     pdf.addImage(canvas, 'JPEG', 0, 0, targetWidth, targetHeight, undefined, 'FAST');
     // pdf.save(`附件简历-方思明-前端开发工程师-4年-${formatDate(new Date(), 'yyyymmdd')}.pdf`);
     // pdf.save(`附件简历-方思明-前端开发工程师-4年-${Date.now()}.pdf`);
-    pdf.save(`${fileName}.pdf`);
+    pdf.save(`${fileName.value}.pdf`);
     loading.value = false;
     // ElMessage({
     //   message: '导出成功',
@@ -520,6 +544,80 @@ const handleExportPDF = () => {
   })
 }
 
+// 批量替换文本节点中的关键词（支持字符串或 { key, replace } 对象）
+function handlePrivacy(keywords) {
+  if (!keywords || keywords.length === 0) return;
+
+  // 隐私处理：全部替换为等长 *
+  function maskPrivacy(str) {
+    if (!str || str.length === 0) return '';
+    return '*'.repeat(str.length);
+  }
+
+  // 转义正则特殊字符
+  function escapeRegex(str) {
+    return str.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  }
+
+  // 解析 keywords，构建 key -> replacer 映射
+  const items = keywords.map(item => {
+    if (typeof item === 'string') {
+      return { key: item, replacer: match => maskPrivacy(match) };
+    } else if (item && typeof item === 'object' && item.key) {
+      const replaceValue = item.replace !== undefined ? item.replace : '';
+      return { key: item.key, replacer: () => replaceValue };
+    }
+    return null;
+  }).filter(Boolean);
+
+  if (items.length === 0) return;
+
+  // 按 key 长度降序排序，避免短词先匹配破坏长词
+  items.sort((a, b) => b.key.length - a.key.length);
+
+  // 构建正则
+  const pattern = items.map(item => escapeRegex(item.key)).join('|');
+  const regex = new RegExp(pattern, 'g');
+
+  // 获取容器
+  const container = document.querySelector('#app .resume-container');
+  if (!container) return;
+
+  // 遍历所有文本节点
+  const walker = document.createTreeWalker(
+    container,
+    NodeFilter.SHOW_TEXT,
+    {
+      acceptNode(node) {
+        const parent = node.parentElement;
+        if (parent && (parent.tagName === 'SCRIPT' || parent.tagName === 'STYLE')) {
+          return NodeFilter.FILTER_REJECT;
+        }
+        return NodeFilter.FILTER_ACCEPT;
+      }
+    }
+  );
+
+  const textNodes = [];
+  while (walker.nextNode()) {
+    textNodes.push(walker.currentNode);
+  }
+
+  // 替换文本
+  textNodes.forEach(node => {
+    const original = node.nodeValue;
+    if (regex.test(original)) {
+      regex.lastIndex = 0;
+      const replaced = original.replace(regex, (matched) => {
+        const matchedItem = items.find(item => item.key === matched);
+        return matchedItem ? matchedItem.replacer(matched) : matched;
+      });
+      if (replaced !== original) {
+        node.nodeValue = replaced;
+      }
+    }
+  });
+}
 </script>
 <style lang="scss">
 @import url('../assets/css/resumeV2.scss');
