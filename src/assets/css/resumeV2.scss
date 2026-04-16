@@ -300,26 +300,21 @@ span {
 
       .inner-right {
         width: 2.13rem;
-        height: 100%;
         position: relative;
 
         .avatar {
           position: absolute;
           top: 50%;
           right: 0;
-          margin: -0.85rem 0 0 0;
+          margin: -0.9rem 0 0 0;
           width: 1.63rem;
           height: 1.76rem;
 
           img {
-            border-radius: .05rem;
-            width: 1.63rem;
-            height: 1.63rem;
+            width: 100%;
+            height: 100%;
             display: block;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            margin: -0.8rem 0 0 -0.81rem;
+            object-fit: contain;
           }
         }
       }
