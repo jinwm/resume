@@ -27,8 +27,8 @@
             </div>
           </div>
           <div class="inner-right">
-            <!-- <div class="avatar"><img src="@/assets/img/picture.jpg"></div> -->
-            <!-- <div class="avatar"><img src="@/assets/img/avatar.png"></div> -->
+            <div v-if="isPrivacy" class="avatar"><img src="@/assets/img/avatar.png"></div>
+            <div v-else class="avatar"><img src="@/assets/img/pic2.jpg"></div>
           </div>
         </div>
       </div>
@@ -77,7 +77,8 @@
           <div class="context-top-line">
             <div class="item">2022-04 ~ 至今</div>
             <!-- <div class="item">杭州鑫烨科技有限公司 · 网易游戏网站部</div> -->
-            <div class="item">网易（杭州）网络有限公司 · 网易游戏网站部</div>
+            <!-- <div class="item">网易（杭州）网络有限公司 · 网易游戏网站部</div> -->
+            <div class="item">网易游戏 · 网站部</div>
             <div class="item">前端开发工程师</div>
           </div>
           <div class="sub-context">
@@ -152,7 +153,9 @@
                     提升约 30%</span>，页面加载体验显著改善。
                 </div>
                 <div class="item">
-                  <span class="point">2.</span><span class="high">基于 Formily 实现 PC 运营平台表单中心化设计</span>，通过<span class="high"> schema 驱动与字段联动逻辑抽象</span>，统一全平台表单规范，<span class="high">降低复杂表单开发成本</span>，提升后台系统扩展性与维护性。
+                  <span class="point">2.</span>基于<span class="high"> Formily </span>实现 PC 运营平台表单中心化设计，通过<span
+                    class="high"> schema 驱动与字段联动逻辑抽象</span>，统一全平台表单规范，<span
+                    class="high">降低复杂表单开发成本</span>，提升后台系统扩展性与维护性。
                 </div>
                 <div class="item">
                   <span class="point">3.</span>团队反馈基于事件总线的通信机制报错难以排查且<span class="high">“一错全停”</span>。通过
@@ -333,7 +336,8 @@
                 </div> -->
                 <div class="item">
                   <span class="point">3.</span>针对移动端弱网环境，实现 Vue
-                  打包后<span class="high"> script 脚本自动重试与阻塞式加载</span>，失败达到阈值后<span class="high">展示兜底静态页面</span>，保障核心脚本加载成功后再继续解析页面，<span class="high">避免加载失败导致的白屏</span>，大幅提升活动稳定性与可用性。
+                  打包后<span class="high"> script 脚本自动重试与阻塞式加载</span>，失败达到阈值后<span
+                    class="high">展示兜底静态页面</span>，保障核心脚本加载成功后再继续解析页面，<span class="high">避免加载失败导致的白屏</span>，大幅提升活动稳定性与可用性。
                 </div>
                 <div class="item"><span class="point">4.</span>攻克复杂粘贴板技术难点，参考<span class="high">飞书</span>的技术方案，实现<span
                     class="high"> DOM 到 Clipboard 的数据链路转换</span>，并沉淀至企业通用库，服务于公司 4+ 个业务产品。
@@ -345,8 +349,7 @@
                 <div class="item">
                   <span class="point">6.</span>抽象封装项目通用 JS 工具库，收敛高频底层逻辑；涵盖<span class="high">端型判断</span>、<span
                     class="high">社媒授权登录</span>及<span class="high">文件上传 Token
-                    加密流程</span>等模块；统一团队调用规范，累计复用<span class="high"> 20+ </span>业务场景，预计减少重复开发与调试耗时约<span class="high"> 15
-                    人时/月</span>。
+                    加密流程</span>等模块；统一团队调用规范，累计复用<span class="high"> 20+ </span>业务场景，预计减少重复开发与调试耗时约 15 人时/月。
                 </div>
               </div>
             </div>
