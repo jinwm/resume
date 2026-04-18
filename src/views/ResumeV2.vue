@@ -73,7 +73,7 @@
         </div>
 
         <div class="context-item icon-work">
-          <div class="name">工作经验</div>
+          <div class="name">工作经历</div>
           <div class="context-top-line">
             <div class="item">2022-04 ~ 至今</div>
             <!-- <div class="item">杭州鑫烨科技有限公司 · 网易游戏网站部</div> -->
@@ -85,7 +85,7 @@
             <div class="sub-label">工作职责</div>
             <div class="sub-list sub-list-point">
               <div class="item">
-                <span class="point">1.</span>负责游戏营销 H5、PC 官网、运营平台及小程序等多端业务开发与迭代。
+                <span class="point">1.</span>负责PC 官网、运营平台、游戏营销 H5及小程序等多端业务开发与迭代。
               </div>
               <div class="item">
                 <span class="point">2.</span>对接后端完成接口联调、数据交互与复杂业务逻辑实现。
@@ -110,7 +110,7 @@
         </div>
 
         <div class="context-item icon-project">
-          <div class="name">项目经验</div>
+          <div class="name">项目经历</div>
 
           <div class="project-wrap">
             <div class="context-top-line">
@@ -122,9 +122,8 @@
               <div class="sub-label">项目描述</div>
               <div class="sub-list">
                 <div class="item">
-                  负责游戏<span class="high"> PC
-                    官网、运营管理平台及活动配置后台</span>的开发与优化，包含品牌展示、数据看板、表单表格、活动编排等核心模块，支撑官方对外展示与<span
-                    class="high">内部运营效率提升</span>。
+                  网易游戏 PC
+                  官网、运营管理平台及活动配置后台的开发与优化，包含品牌展示、数据看板、表单表格、活动编排等核心模块，支撑官方对外展示与内部运营效率提升。
                 </div>
               </div>
             </div>
@@ -181,9 +180,8 @@
               <div class="sub-label">项目描述</div>
               <div class="sub-list">
                 <div class="item">
-                  该资讯小程序服务于<span
-                    class="high">百万级《燕云十六声》玩家</span>。核心功能包括：账号绑定与游戏数据实时查询（时长/探索度）、万相集作品收藏同步；集成攻略资讯、福利礼包及社区活动，有效承接游戏外流量，打造玩家<span
-                    class="high">一站式聚集地</span>。
+                  该资讯小程序服务于百万级《燕云十六声》玩家，上线 3 个月日活突破 10 万，日均用户互动量超 20
+                  万次，作为游戏外官方资讯核心入口，快速积累高粘性用户，有效承接游戏外公域流量。核心功能包括：账号绑定与游戏数据实时查询（时长/探索度）、万相集作品收藏同步；集成攻略资讯、福利礼包及社区活动，打造玩家一站式聚集地。
                 </div>
               </div>
             </div>
@@ -210,20 +208,19 @@
               <div class="sub-list sub-list-point">
                 <!-- <div class="item"><span class="point">1.</span>上线 3 个月<span class="high">日活突破 10
                     万</span>，日均用户互动量超过<span class="high"> 20 万次</span>，成为游戏外官方资讯核心入口，快速积累高粘性用户群体，有效承接游戏外流量。</div> -->
-                <div class="item">
+                <!-- <div class="item">
                   <span class="point">1.</span>上线 3 个月日活突破<span class="high"> 10 万</span>，日均用户互动量超<span class="high"> 20
                     万次</span>，作为游戏外官方资讯核心入口，快速积累高粘性用户，有效承接游戏外公域流量。
-                </div>
+                </div> -->
 
                 <!-- <div class="item"><span class="point">2.</span>使用WebAssembly技术实现前端图像处理，结合Web
                   Worker优化图像效率，实现图像处理速度提升<span class="high">2倍</span>，降低<span
                     class="high">50%</span>的处理延迟，日均处理用户图像超<span class="high">6000张</span>，显著提高用户体验。
                 </div> -->
                 <div class="item">
-                  <span class="point">2.</span>基于 <span class="high">WxParse 二次封装</span> 实现富文本交互增强，通过 <span
-                    class="high">自定义属性映射 + 事件委托，零埋点</span>
-                  统一处理 <span class="high">4 类元素、6
-                    种场景</span>，实现图片预览、视频播放、多类型链接跳转及一键复制。
+                  <span class="point">2.</span>基于 <span class="high">WxParse </span>二次封装，实现富文本交互增强，通过 <span
+                    class="high">AST 节点遍历 + 自定义属性映射</span>注入交互协议，利用事件委托实现零埋点统一调度 <span class="high">4 类元素、6
+                    种场景</span>，覆盖图片预览、视频播放、多类型链接跳转及一键复制等能力。
                 </div>
 
 
@@ -257,17 +254,16 @@
                     class="high">重复请求错误</span>，保障百业活动报名功能的稳定体验。
                 </div> -->
                 <div class="item">
-                  <span class="point">4.</span>针对游戏后端存盘延迟（约1分钟）导致的<span class="high">状态最终不一致</span>问题，基于<span
-                    class="high">最终一致性</span>思想设计前端补偿机制：通过本地缓存实现 <span class="high">“读己之所写”</span>
-                  ，在1分钟窗口期内代理队伍状态，消除用户重复点击；配合<span
-                    class="high">递增间隔轮询</span>（2秒/次，最长1分钟）异步确认操作结果，直至状态同步完成。该方案以极低成本解决了分布式场景下的状态滞后问题，保障了百业活动报名功能的稳定体验。
+                  <span class="point">4.</span>针对游戏后端存盘延迟（约1min）导致的状态不一致问题，基于<span class="high">最终一致性思想</span>设计补偿机制，利用
+                  Storage Proxy 实现 <span class="high">“读己之所写”</span>
+                  ，在60s窗口期内代理队伍状态，消除用户重复点击；配合<span
+                    class="high">退避递增轮询</span>（2s/次，最长60s）异步确认操作结果，直至状态同步完成。以极低成本解决了分布式状态滞后问题，保障了百业活动报名功能的稳定体验。
                 </div>
                 <div class="item">
-                  <span class="point">5.</span>独立封装小程序 Canvas 通用海报绘制库，统一抽象图片与文字渲染逻辑；支持 <span class="high">Cover
-                    裁剪、圆角、旋转、灰度滤镜 </span>及
-                  <span class="high">文字多行换行、字间距、对齐方式</span>等复杂样式配置；内置<span class="high">基于内存的图片缓存与加载容错机制</span>，兼容性覆盖
-                  98%
-                  机型；已稳定落地 5 款小程序，显著降低运营活动海报开发成本。
+                  <span class="point">5.</span>封装小程序 Canvas
+                  通用海报绘制库，构建<span class="high">声明式渲染管线</span>，统一图片与文字的布局计算模型，支持几何变换（Cover/圆角/旋转/灰度）、高级排版（多行换行/字间距/对齐），内置
+                  <span class="high">内存级图片缓存池</span> 与
+                  <span class="high">加载异常降级策略</span>，兼容 98% 机型，大幅降低海报开发维护成本。
                 </div>
               </div>
             </div>
@@ -283,8 +279,8 @@
               <div class="sub-label">项目描述</div>
               <div class="sub-list">
                 <div class="item">
-                  深度负责多款<span class="high">网易头部游戏</span>的营销专题迭代，覆盖节日大促、版本上线、互动玩法、拉新活动等移动端 H5
-                  场景，支撑<span class="high">高频、高并发</span>的运营需求，保障活动<span class="high">快速交付与稳定运行</span>。
+                  深度负责多款网易头部游戏的营销专题迭代，覆盖节日大促、版本上线、互动玩法、拉新活动等移动端 H5
+                  场景，支撑高频、高并发的运营需求，保障活动快速交付与稳定运行。
                 </div>
               </div>
             </div>
@@ -334,11 +330,11 @@
                     95%，RR
                     提升 12%。</span>
                 </div> -->
-                <div class="item">
+                <!-- <div class="item">
                   <span class="point">3.</span>针对移动端弱网环境，实现 Vue
                   打包后<span class="high"> script 脚本自动重试与阻塞式加载</span>，失败达到阈值后<span
                     class="high">展示兜底静态页面</span>，保障核心脚本加载成功后再继续解析页面，<span class="high">避免加载失败导致的白屏</span>，大幅提升活动稳定性与可用性。
-                </div>
+                </div> -->
                 <div class="item"><span class="point">4.</span>攻克复杂粘贴板技术难点，参考<span class="high">飞书</span>的技术方案，实现<span
                     class="high"> DOM 到 Clipboard 的数据链路转换</span>，并沉淀至企业通用库，服务于公司 4+ 个业务产品。
                 </div>
@@ -355,7 +351,7 @@
             </div>
           </div>
 
-          <div class="project-wrap">
+          <div class="project-wrap" v-if="false">
             <div class="context-top-line">
               <div class="item">2022-06 ~ 2022-12</div>
               <div class="item">江南 · 优政智控平台</div>
@@ -365,8 +361,8 @@
               <div class="sub-label">项目描述</div>
               <div class="sub-list">
                 <div class="item">
-                  随着数字化改革在基层治理中深入推进，江南镇原有办公方式面临流程分散、信息不同步、审批效率低等问题，难以满足协同需求。打造<span class="high"> PC
-                    端统一办公入口</span>，实现审批、值班、信访、人事等核心业务线上协同，助力<span class="high">基层治理数字化转型</span>。
+                  随着数字化改革在基层治理中深入推进，江南镇原有办公方式面临流程分散、信息不同步、审批效率低等问题，难以满足协同需求。打造 PC
+                  端统一办公入口，实现审批、值班、信访、人事等核心业务线上协同，助力基层治理数字化转型。
                 </div>
               </div>
             </div>
@@ -457,7 +453,7 @@
         </div>
 
         <div class="context-item icon-education">
-          <div class="name">教育背景</div>
+          <div class="name">教育经历</div>
           <!-- <div class="context-top-line">
           <div class="item">2019-09 ~ 2022-06</div>
           <div class="item">浙江工贸职业技术学院</div>
@@ -473,14 +469,14 @@
           </div> -->
         </div>
 
-        <div class="context-item icon-evaluate">
+        <!-- <div class="context-item icon-evaluate">
           <div class="name">个人评价</div>
           <div class="context-type type-list">
             <div class="item">
               对前端开发保持持续热情，主动拓展技术边界，系统研读过《Vue.js设计与实现》《前端架构设计》《前端工程化》等专业书籍。具备快速学习能力，面对新技术能在一周内完成从理解到应用落地，始终保持积极的技术探索态度。
             </div>
           </div>
-        </div>
+        </div> -->
       </div>
     </div>
   </div>
@@ -490,6 +486,7 @@
   </div>
 </template>
 <script setup>
+import $ from 'jquery';
 import { ref, computed, onMounted } from 'vue';
 import { useRoute } from 'vue-router';
 import { getScale, isMobile } from '../js/utils';
@@ -509,6 +506,12 @@ const isPrivacy = computed(() => route.query.privacy === '1');
 onMounted(() => {
   textRainInit();
 
+  // 填充 点
+  $('.point').each((_, item) => {
+    const index = $(item).parent('.item').index();
+    $(item).text(`${index + 1}.`);
+  })
+
   if (isPrivacy.value) {
     handlePrivacy([
       '方思明',
@@ -520,7 +523,7 @@ onMounted(() => {
       '蛋仔派对',
       '第五人格',
       '梦幻西游',
-      { key: '网易', replace: '冈易' },
+      { key: '网易', replace: '**' },
       '鑫烨科技',
       '江南镇'
     ]);
@@ -698,4 +701,5 @@ function handlePrivacy(keywords) {
 </script>
 <style lang="scss">
 @import url('../assets/css/resumeV2.scss');
+@import url('../assets/css/resumeV2-1.scss');
 </style>
