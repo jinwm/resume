@@ -12,8 +12,17 @@ const routes = [
     component: () => import(/* webpackChunkName: "index" */ '../views/ResumeV2.vue'),
   },
   {
+    path: '/98BWNR12LEFVSEG54HTRKNZF821IOM',
+    name: 'ResumeV3',
+    component: () => import(/* webpackChunkName: "index" */ '../views/ResumeV3.vue'),
+  },
+  {
     path: '/short',
     redirect: '/H0-I0I34ONTOIN78SD612bG0RN3240',
+  },
+  {
+    path: '/short2',
+    redirect: '/98BWNR12LEFVSEG54HTRKNZF821IOM',
   },
 ];
 

@@ -180,8 +180,7 @@
               <div class="sub-label">项目描述</div>
               <div class="sub-list">
                 <div class="item">
-                  该资讯小程序服务于百万级《燕云十六声》玩家，上线 3 个月日活突破 10 万，日均用户互动量超 20
-                  万次，作为游戏外官方资讯核心入口，快速积累高粘性用户，有效承接游戏外公域流量。核心功能包括：账号绑定与游戏数据实时查询（时长/探索度）、万相集作品收藏同步；集成攻略资讯、福利礼包及社区活动，打造玩家一站式聚集地。
+                  该资讯小程序服务于百万级《燕云十六声》玩家。核心功能包括：账号绑定与游戏数据实时查询（时长/探索度）、万相集作品收藏同步；集成攻略资讯、福利礼包及社区活动，有效承接游戏外流量，打造玩家一站式聚集地。
                 </div>
               </div>
             </div>
@@ -208,10 +207,10 @@
               <div class="sub-list sub-list-point">
                 <!-- <div class="item"><span class="point">1.</span>上线 3 个月<span class="high">日活突破 10
                     万</span>，日均用户互动量超过<span class="high"> 20 万次</span>，成为游戏外官方资讯核心入口，快速积累高粘性用户群体，有效承接游戏外流量。</div> -->
-                <!-- <div class="item">
+                <div class="item">
                   <span class="point">1.</span>上线 3 个月日活突破<span class="high"> 10 万</span>，日均用户互动量超<span class="high"> 20
                     万次</span>，作为游戏外官方资讯核心入口，快速积累高粘性用户，有效承接游戏外公域流量。
-                </div> -->
+                </div>
 
                 <!-- <div class="item"><span class="point">2.</span>使用WebAssembly技术实现前端图像处理，结合Web
                   Worker优化图像效率，实现图像处理速度提升<span class="high">2倍</span>，降低<span
@@ -330,16 +329,16 @@
                     95%，RR
                     提升 12%。</span>
                 </div> -->
-                <!-- <div class="item">
+                <div class="item">
                   <span class="point">3.</span>针对移动端弱网环境，实现 Vue
                   打包后<span class="high"> script 脚本自动重试与阻塞式加载</span>，失败达到阈值后<span
                     class="high">展示兜底静态页面</span>，保障核心脚本加载成功后再继续解析页面，<span class="high">避免加载失败导致的白屏</span>，大幅提升活动稳定性与可用性。
-                </div> -->
+                </div>
                 <div class="item"><span class="point">4.</span>攻克复杂粘贴板技术难点，参考<span class="high">飞书</span>的技术方案，实现<span
                     class="high"> DOM 到 Clipboard 的数据链路转换</span>，并沉淀至企业通用库，服务于公司 4+ 个业务产品。
                 </div>
                 <div class="item">
-                  <span class="point">5.</span>基于网易项目搭建 Vue 通用业务模板，通过 UA 判断与响应式适配，实现<span class="high"> PC、移动 H5
+                  <span class="point">5.</span>基于网易项目搭建 Vue 通用业务模板，通过 User-Agent 解析与响应式适配，实现<span class="high"> PC、移动 H5
                     及游戏内嵌横屏三端代码复用</span>；核心业务逻辑统一维护，同类需求开发耗时平均节省 4-7 人时 / 次。
                 </div>
                 <div class="item">
