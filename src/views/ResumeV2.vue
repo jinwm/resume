@@ -27,8 +27,8 @@
             </div>
           </div>
           <div class="inner-right">
-            <div v-if="isPrivacy" class="avatar"><img src="@/assets/img/avatar.png"></div>
-            <div v-else class="avatar"><img src="@/assets/img/pic2.jpg"></div>
+            <!-- <div v-if="isPrivacy" class="avatar"><img src="@/assets/img/avatar.png"></div>
+            <div v-else class="avatar"><img src="@/assets/img/pic2.jpg"></div> -->
           </div>
         </div>
       </div>
@@ -114,7 +114,7 @@
 
           <div class="project-wrap">
             <div class="context-top-line">
-              <div class="item">2025-06 ~ 至今</div>
+              <div class="item">2025-04 ~ 至今</div>
               <div class="item">网易游戏 PC 官网及运营管理平台</div>
               <div class="item">前端开发工程师</div>
             </div>
@@ -165,6 +165,11 @@
                   <span class="point">4.</span>实现<span class="high">虚拟列表</span>与<span
                     class="high">缓冲区渲染优化</span>，提升长列表滚动流畅度与渲染效率，降低大数据量下的卡顿现象，该方案已在多个平台项目中复用，有效解决<span
                     class="high">高数据量场景</span>的性能问题。
+                </div>
+                <div class="item">
+                  <span class="point">5.</span>梳理多业务线数据流转逻辑，基于 Fetch 构建请求调度层，通过<span class="high"> Promise Batching
+                  </span>优化并发请求，结合<span class="high"> LRU
+                    缓存策略</span>减少 70% 以上的重复请求开销，显著提升系统响应效率与稳定性。
                 </div>
               </div>
             </div>
@@ -270,7 +275,7 @@
 
           <div class="project-wrap">
             <div class="context-top-line">
-              <div class="item">2023-01 ~ 至今</div>
+              <div class="item">2022-12 ~ 至今</div>
               <div class="item">网易游戏活动专题 H5</div>
               <div class="item">前端开发工程师</div>
             </div>
@@ -353,7 +358,7 @@
           <div class="project-wrap" v-if="false">
             <div class="context-top-line">
               <div class="item">2022-06 ~ 2022-12</div>
-              <div class="item">江南 · 优政智控平台</div>
+              <div class="item">江南优政智控平台</div>
               <div class="item">前端开发工程师</div>
             </div>
             <div class="sub-context">
@@ -385,7 +390,7 @@
               <div class="sub-list sub-list-point">
                 <div class="item"><span class="point">1.</span>实现业务流程线上化闭环，覆盖全镇 20
                   余个部门及村社，日均处理审批 100
-                  余件，<span class="high">审批效率提升 40% 以上</span>，显著缩短办理周期，获用户一致好评。
+                  余件，审批效率<span class="high">提升 40% 以上</span>，显著缩短办理周期，获用户一致好评。
                 </div>
                 <!-- <div class="item">
                   <span class="point">2.</span><span class="high">针对长表单场景，</span>设计并主导落地了一套<span
@@ -393,10 +398,11 @@
                     class="high">浏览器跨标签页通信方案</span>，使表单数据存储与同步<span class="high">效率提升 90%
                   </span>，同时从根本上杜绝了数据丢失风险。该模块已广泛应用于公司其他项目。
                 </div> -->
-                <div class="item">
-                  <span class="point">2.</span>梳理并优化多业务线数据流转逻辑，基于<span class="high"> Axios
-                    实现重复请求合并与防抖</span>，有效减少冗余网络请求，提升系统整体响应效率，为基层高效办公提供稳定支撑。
-                </div>
+                <!-- <div class="item">
+                  <span class="point">2.</span>梳理多业务线数据流转逻辑，基于 Axios 构建请求调度层，通过<span class="high"> Promise Batching
+                  </span>优化并发请求，结合<span class="high"> LRU
+                    缓存策略</span>实现请求级本地缓存，减少 70% 以上的重复请求开销，显著提升系统响应效率与稳定性
+                </div> -->
               </div>
             </div>
           </div>
