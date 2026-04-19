@@ -85,7 +85,7 @@
             <div class="sub-label">工作职责</div>
             <div class="sub-list sub-list-point">
               <div class="item">
-                <span class="point">1.</span>负责PC 官网、运营平台、游戏营销 H5及小程序等多端业务开发与迭代。
+                <span class="point">1.</span>负责 PC 官网、运营平台、游戏营销 H5及小程序等多端业务开发与迭代。
               </div>
               <div class="item">
                 <span class="point">2.</span>负责对接后端完成接口联调、数据交互与复杂业务逻辑实现。
@@ -157,7 +157,7 @@
                     class="high">降低复杂表单开发成本</span>，提升后台系统扩展性与维护性。
                 </div> -->
                 <div class="item">
-                  <span class="point">3.</span>团队反馈基于事件总线的通信机制报错难以排查且<span class="high">“一错全停”</span>。通过
+                  <span class="point">3.</span>团队反馈基于 EventBus 的通信机制报错难以排查且<span class="high">“一错全停”</span>。通过
                   <span class="high">调整监听器执行时序与调用栈隔离</span>，实现错误不阻塞且堆栈直达，<span class="high">排查效率提升
                     90%</span>，该方案已广泛应用于多个项目。
                 </div>
@@ -284,7 +284,7 @@
               <div class="sub-list">
                 <div class="item">
                   深度负责多款网易头部游戏的营销专题迭代，覆盖节日大促、版本上线、互动玩法、拉新活动等移动端 H5
-                  场景，支撑高频、高并发的运营需求，保障活动快速交付与稳定运行。
+                  场景，支撑高频、高并发的运营需求，保障活动 快速交付与稳定运行。
                 </div>
               </div>
             </div>
