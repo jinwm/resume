@@ -68,7 +68,7 @@
             </div>
           </div> -->
           <div class="context-type type-list">
-            <div class="item">精通 Vue 全生态与跨端开发，具备工程化构建及 Node 与 MySQL 应用能力，熟悉 AI Agent 编排与 LLM 应用集成。</div>
+            <div class="item">精通 Vue 全生态与跨端开发，具备工程化构建及 Node 与 MySQL 应用能力，熟悉 AI Agent 原理与 LLM 应用集成。</div>
           </div>
         </div>
 
@@ -88,10 +88,10 @@
                 <span class="point">1.</span>负责PC 官网、运营平台、游戏营销 H5及小程序等多端业务开发与迭代。
               </div>
               <div class="item">
-                <span class="point">2.</span>对接后端完成接口联调、数据交互与复杂业务逻辑实现。
+                <span class="point">2.</span>负责对接后端完成接口联调、数据交互与复杂业务逻辑实现。
               </div>
               <div class="item">
-                <span class="point">3.</span>参与代码评审与规范制定，保障代码质量与可维护性。
+                <span class="point">3.</span>负责参与代码评审与规范制定，保障代码质量与可维护性。
               </div>
               <div class="item">
                 <span class="point">4.</span>负责页面性能优化、问题排查与线上稳定性保障。
@@ -151,11 +151,11 @@
                     class="high">首屏切片化渲染</span>，优化后<span class="high"> FCP 提升约 35%，LCP
                     提升约 30%</span>，页面加载体验显著改善。
                 </div>
-                <div class="item">
+                <!-- <div class="item">
                   <span class="point">2.</span>基于<span class="high"> Formily </span>实现 PC 运营平台表单中心化设计，通过<span
                     class="high"> schema 驱动与字段联动逻辑抽象</span>，统一全平台表单规范，<span
                     class="high">降低复杂表单开发成本</span>，提升后台系统扩展性与维护性。
-                </div>
+                </div> -->
                 <div class="item">
                   <span class="point">3.</span>团队反馈基于事件总线的通信机制报错难以排查且<span class="high">“一错全停”</span>。通过
                   <span class="high">调整监听器执行时序与调用栈隔离</span>，实现错误不阻塞且堆栈直达，<span class="high">排查效率提升
@@ -335,9 +335,10 @@
                     提升 12%。</span>
                 </div> -->
                 <div class="item">
-                  <span class="point">3.</span>针对移动端弱网环境，实现 Vue
-                  打包后<span class="high"> script 脚本自动重试与阻塞式加载</span>，失败达到阈值后<span
-                    class="high">展示兜底静态页面</span>，保障核心脚本加载成功后再继续解析页面，<span class="high">避免加载失败导致的白屏</span>，大幅提升活动稳定性与可用性。
+                  <span class="point">3.</span>针对弱网/网络抖动问题，开发 Vite
+                  构建插件，<span class="high">实现生产环境脚本自动重试 + 阻塞式加载保护</span>，失败达到阈值后展示<span
+                    class="high">纯静态兜底页面</span>，确保核心脚本加载成功后再执行页面逻辑，<span
+                    class="high">彻底避免因资源加载失败导致的白屏问题</span>，大幅提升活动稳定性与可用性。
                 </div>
                 <div class="item"><span class="point">4.</span>攻克复杂粘贴板技术难点，参考<span class="high">飞书</span>的技术方案，实现<span
                     class="high"> DOM 到 Clipboard 的数据链路转换</span>，并沉淀至企业通用库，服务于公司 4+ 个业务产品。
