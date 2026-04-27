@@ -27,8 +27,8 @@
             </div>
           </div>
           <div class="inner-right">
-            <!-- <div v-if="isPrivacy" class="avatar"><img src="@/assets/img/avatar.png"></div>
-            <div v-else class="avatar"><img src="@/assets/img/pic2.jpg"></div> -->
+            <div v-if="isPrivacy" class="avatar"><img src="@/assets/img/avatar.png"></div>
+            <div v-else class="avatar"><img src="@/assets/img/pic2.jpg"></div>
           </div>
         </div>
       </div>
@@ -79,13 +79,13 @@
             <!-- <div class="item">杭州鑫烨科技有限公司 · 网易游戏网站部</div> -->
             <!-- <div class="item">网易（杭州）网络有限公司 · 网易游戏网站部</div> -->
             <div class="item">网易游戏 · 网站部</div>
-            <div class="item">前端开发工程师</div>
+            <div class="item">前端开发 & 组长</div>
           </div>
           <div class="sub-context">
             <div class="sub-label">工作职责</div>
             <div class="sub-list sub-list-point">
               <div class="item">
-                <span class="point">1.</span>负责 PC 官网、运营平台、游戏营销 H5及小程序等多端业务开发与迭代。
+                <span class="point">1.</span>负责 PC 官网、运营平台、H5 及小程序等多端业务开发与迭代。
               </div>
               <div class="item">
                 <span class="point">2.</span>负责对接后端完成接口联调、数据交互与复杂业务逻辑实现。
@@ -116,7 +116,7 @@
             <div class="context-top-line">
               <div class="item">2025-04 ~ 至今</div>
               <div class="item">网易游戏 PC 官网及运营管理平台</div>
-              <div class="item">前端开发工程师</div>
+              <div class="item">前端开发</div>
             </div>
             <div class="sub-context">
               <div class="sub-label">项目描述</div>
@@ -130,7 +130,7 @@
             <div class="sub-context">
               <div class="sub-label">技术栈</div>
               <div class="sub-list">
-                <div class="item">Vue3、TypeScript、Pinia、Element Plus、Vite、ECharts、Less、JsPDF</div>
+                <div class="item">Vue3、TypeScript、Pinia、Element Plus、Tailwind CSS、ECharts、jsPDF、Vite</div>
               </div>
             </div>
             <div class="sub-context">
@@ -179,13 +179,14 @@
             <div class="context-top-line">
               <div class="item">2024-04 ~ 2025-12</div>
               <div class="item">网易燕云官方资讯 · 小程序</div>
-              <div class="item">前端开发工程师</div>
+              <div class="item">前端组长</div>
             </div>
             <div class="sub-context">
               <div class="sub-label">项目描述</div>
               <div class="sub-list">
                 <div class="item">
-                  该资讯小程序服务于百万级《燕云十六声》玩家。核心功能包括：账号绑定与游戏数据实时查询（时长/探索度）、万相集作品收藏同步；集成攻略资讯、福利礼包及社区活动，有效承接游戏外流量，打造玩家一站式聚集地。
+                  该资讯小程序<span
+                    class="high">服务于百万级</span>《燕云十六声》玩家。核心功能包括：账号绑定与游戏数据实时查询（时长/探索度）、万相集作品收藏同步；集成攻略资讯、福利礼包及社区活动，有效承接游戏外流量，打造玩家一站式聚集地。
                 </div>
               </div>
             </div>
@@ -193,7 +194,7 @@
               <div class="sub-label">技术栈</div>
               <div class="sub-list">
                 <div class="item">
-                  微信小程序原生框架、WxParse、Pica
+                  微信小程序框架、WxParse、Pica
                 </div>
               </div>
             </div>
@@ -277,21 +278,21 @@
             <div class="context-top-line">
               <div class="item">2022-12 ~ 至今</div>
               <div class="item">网易游戏活动专题 H5</div>
-              <div class="item">前端开发工程师</div>
+              <div class="item">前端开发</div>
             </div>
             <div class="sub-context">
               <div class="sub-label">项目描述</div>
               <div class="sub-list">
                 <div class="item">
                   深度负责多款网易头部游戏的营销专题迭代，覆盖节日大促、版本上线、互动玩法、拉新活动等移动端 H5
-                  场景，支撑高频、高并发的运营需求，保障活动 快速交付与稳定运行。
+                  场景，<span class="high">支撑高频、高并发的运营需求</span>，保障活动快速交付与稳定运行。
                 </div>
               </div>
             </div>
             <div class="sub-context">
               <div class="sub-label">技术栈</div>
               <div class="sub-list">
-                <div class="item">Vue3、TypeScript、Pinia、Vant4、GSAP、Swiper、Html2Canvas、Less、Vite
+                <div class="item">Vue3、TypeScript、Pinia、Vant4、jQuery、GSAP、Swiper、Html2Canvas、Vite
                 </div>
               </div>
             </div>
@@ -336,12 +337,12 @@
                 </div> -->
                 <div class="item">
                   <span class="point">3.</span>针对弱网/网络抖动问题，开发 Vite
-                  构建插件，<span class="high">实现生产环境脚本自动重试 + 阻塞式加载保护</span>，失败达到阈值后展示<span
-                    class="high">纯静态兜底页面</span>，确保核心脚本加载成功后再执行页面逻辑，<span
-                    class="high">彻底避免因资源加载失败导致的白屏问题</span>，大幅提升活动稳定性与可用性。
+                  构建插件，实现生产环境脚本<span class="high">自动重试 + 阻塞式加载保护</span>，失败达到阈值后展示<span
+                    class="high">纯静态兜底页面</span>，确保核心脚本加载成功后再执行页面逻辑，彻底避免<span
+                    class="high">因资源加载失败导致的白屏问题</span>，大幅提升活动稳定性与可用性。
                 </div>
-                <div class="item"><span class="point">4.</span>攻克复杂粘贴板技术难点，参考<span class="high">飞书</span>的技术方案，实现<span
-                    class="high"> DOM 到 Clipboard 的数据链路转换</span>，并沉淀至企业通用库，服务于公司 4+ 个业务产品。
+                <div class="item"><span class="point">4.</span>攻克复杂粘贴板技术难点，参考飞书的技术方案，实现从<span class="high"> DOM 元素到
+                    Clipboard 的端到端转换</span>，封装为<span class="high"> npm 包并版本化发布</span>，服务于公司 4+ 个业务产品。
                 </div>
                 <div class="item">
                   <span class="point">5.</span>基于网易项目搭建 Vue 通用业务模板，通过 User-Agent 解析与响应式适配，实现<span class="high"> PC、移动 H5
@@ -360,7 +361,7 @@
             <div class="context-top-line">
               <div class="item">2022-06 ~ 2022-12</div>
               <div class="item">江南优政智控平台</div>
-              <div class="item">前端开发工程师</div>
+              <div class="item">前端开发</div>
             </div>
             <div class="sub-context">
               <div class="sub-label">项目描述</div>
@@ -460,15 +461,13 @@
 
         <div class="context-item icon-education">
           <div class="name">教育经历</div>
-          <!-- <div class="context-top-line">
-          <div class="item">2019-09 ~ 2022-06</div>
-          <div class="item">浙江工贸职业技术学院</div>
-          <div class="item">软件技术</div>
-        </div> -->
           <div class="context-top-line">
             <div class="item">2019-09 ~ 2023-06</div>
             <div class="item">温州大学</div>
             <div class="item">软件工程</div>
+            <!-- <div class="item">2019-09 ~ 2022-06</div>
+            <div class="item">浙江工贸职业技术学院</div>
+            <div class="item">软件技术</div> -->
           </div>
           <!-- <div class="context-type type-list">
             <div class="item">主修课程包括：前端框架应用开发、Web应用开发、数据库应用技术、Node.js应用开发、PHP应用开发、计算机数学。</div>
