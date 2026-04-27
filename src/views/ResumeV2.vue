@@ -214,7 +214,8 @@
                 <!-- <div class="item"><span class="point">1.</span>上线 3 个月<span class="high">日活突破 10
                     万</span>，日均用户互动量超过<span class="high"> 20 万次</span>，成为游戏外官方资讯核心入口，快速积累高粘性用户群体，有效承接游戏外流量。</div> -->
                 <div class="item">
-                  <span class="point">1.</span>上线 3 个月日活突破<span class="high"> 10 万</span>，日均用户互动量超<span class="high"> 20
+                  <span class="point">1.</span>基于微信原生框架独立开发，上线 3 个月日活<span class="high">突破 10 万</span>，日均用户互动量<span
+                    class="high">超 20
                     万次</span>，作为游戏外官方资讯核心入口，快速积累高粘性用户，有效承接游戏外公域流量。
                 </div>
 
@@ -266,9 +267,9 @@
                 </div>
                 <div class="item">
                   <span class="point">5.</span>封装小程序 Canvas
-                  通用海报绘制库，构建<span class="high">声明式渲染管线</span>，统一图片与文字的布局计算模型，支持几何变换（Cover/圆角/旋转/灰度）、高级排版（多行换行/字间距/对齐），内置
-                  <span class="high">内存级图片缓存池</span> 与
-                  <span class="high">加载异常降级策略</span>，兼容 98% 机型，大幅降低海报开发维护成本。
+                  通用海报绘制库，攻克原生画布双尺寸配置冲突、绘制错位、高清模糊等固有问题，<span
+                    class="high">采用声明式渲染设计</span>，统一图文布局计算模型，支持几何变换（Cover/圆角/旋转/灰度）、高级排版（多行换行/字间距/对齐），内置
+                  <span class="high">内存级图片缓存池、资源加载降级机制、抹平机型兼容差异</span>，标准化海报绘制流程，大幅提升业务开发效率。
                 </div>
               </div>
             </div>
@@ -462,12 +463,12 @@
         <div class="context-item icon-education">
           <div class="name">教育经历</div>
           <div class="context-top-line">
-            <div class="item">2019-09 ~ 2023-06</div>
+            <!-- <div class="item">2019-09 ~ 2023-06</div>
             <div class="item">温州大学</div>
-            <div class="item">软件工程</div>
-            <!-- <div class="item">2019-09 ~ 2022-06</div>
+            <div class="item">软件工程</div> -->
+            <div class="item">2019-09 ~ 2022-06</div>
             <div class="item">浙江工贸职业技术学院</div>
-            <div class="item">软件技术</div> -->
+            <div class="item">软件技术</div>
           </div>
           <!-- <div class="context-type type-list">
             <div class="item">主修课程包括：前端框架应用开发、Web应用开发、数据库应用技术、Node.js应用开发、PHP应用开发、计算机数学。</div>
