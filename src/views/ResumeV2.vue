@@ -117,14 +117,14 @@
           <div class="project-wrap">
             <div class="context-top-line">
               <div class="item">2022-12 ~ 至今</div>
-              <div class="item">游戏营销活动专题 H5</div>
+              <div class="item">品牌营销活动专题 H5</div>
               <div class="item">前端开发</div>
             </div>
             <div class="sub-context">
               <div class="sub-label">项目描述</div>
               <div class="sub-list">
                 <div class="item">
-                  深度负责多款网易头部游戏的营销专题迭代，覆盖节日大促、版本上线、互动玩法、拉新活动等移动端 H5
+                  深度负责多款头部品牌的营销专题迭代，覆盖节日大促、版本上线、互动玩法、拉新活动等移动端 H5
                   场景，<span class="high">支撑高频、高并发的运营需求</span>，保障活动快速交付与稳定运行。
                 </div>
               </div>
@@ -132,7 +132,7 @@
             <div class="sub-context">
               <div class="sub-label">技术栈</div>
               <div class="sub-list">
-                <div class="item">Vue3、TypeScript、Pinia、Vant4、jQuery、GSAP、Swiper、Html2Canvas、Vite
+                <div class="item">Vue3、TypeScript、Pinia、React 18、Vant4、jQuery、GSAP、Swiper、Html2Canvas、Vite
                 </div>
               </div>
             </div>
@@ -238,7 +238,7 @@
                 <div class="item">
                   <span class="point">1.</span>基于微信原生框架独立开发，上线 3 个月日活<span class="high">突破 10 万</span>，日均用户互动量<span
                     class="high">超 20
-                    万次</span>，作为游戏外官方资讯核心入口，快速积累高粘性用户，有效承接游戏外公域流量。
+                    万次</span>，作为客户端外官方资讯核心入口，快速积累高粘性用户，有效承接游戏外公域流量。
                 </div>
 
                 <!-- <div class="item"><span class="point">2.</span>使用WebAssembly技术实现前端图像处理，结合Web
@@ -300,14 +300,14 @@
           <div class="project-wrap">
             <div class="context-top-line">
               <div class="item">2025-04 ~ 至今</div>
-              <div class="item">游戏官网及运营管理平台</div>
+              <div class="item">品牌官网及运营管理平台</div>
               <div class="item">前端开发</div>
             </div>
             <div class="sub-context">
               <div class="sub-label">项目描述</div>
               <div class="sub-list">
                 <div class="item">
-                  网易游戏 PC
+                  网易游戏品牌 PC
                   官网、运营管理平台及活动配置后台的开发与优化，包含品牌展示、数据看板、表单表格等核心模块，支撑官方对外展示与内部运营效率提升。
                 </div>
               </div>
