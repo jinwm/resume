@@ -69,7 +69,8 @@
           </div> -->
           <div class="context-type type-list">
             <!-- <div class="item">精通 Vue 全生态，熟练 React 与跨端开发，具备工程化构建及 Node 应用能力，熟悉 AI Agent 原理与 LLM 应用集成。</div> -->
-            <div class="item">精通 Vue 全生态与跨端开发，具备工程化构建及 Node 应用能力，熟悉 AI Agent 原理与 LLM 应用集成，掌握 wujie 微前端框架核心原理。</div>
+            <div class="item">精通 Vue 全生态、UniApp 跨端开发，熟练 React ，具备工程化构建及 Node.JS 应用能力，熟悉 AI Agent 原理与 LLM 应用集成，掌握 Wujie
+              微前端框架。</div>
           </div>
         </div>
 
@@ -466,12 +467,12 @@
         <div class="context-item icon-education">
           <div class="name">教育经历</div>
           <div class="context-top-line">
-            <!-- <div class="item">2019-09 ~ 2023-06</div>
+            <div class="item">2019-09 ~ 2023-06</div>
             <div class="item">温州大学</div>
-            <div class="item">软件工程</div> -->
-            <div class="item">2019-09 ~ 2022-06</div>
+            <div class="item">软件工程</div>
+            <!-- <div class="item">2019-09 ~ 2022-06</div>
             <div class="item">浙江工贸职业技术学院</div>
-            <div class="item">软件技术</div>
+            <div class="item">软件技术</div> -->
           </div>
           <!-- <div class="context-type type-list">
             <div class="item">主修课程包括：前端框架应用开发、Web应用开发、数据库应用技术、Node.js应用开发、PHP应用开发、计算机数学。</div>
