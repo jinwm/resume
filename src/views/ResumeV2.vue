@@ -68,7 +68,8 @@
             </div>
           </div> -->
           <div class="context-type type-list">
-            <div class="item">精通 Vue 全生态与跨端开发，具备工程化构建及 Node 与 MySQL 应用能力，熟悉 AI Agent 原理与 LLM 应用集成。</div>
+            <!-- <div class="item">精通 Vue 全生态，熟练 React 与跨端开发，具备工程化构建及 Node 应用能力，熟悉 AI Agent 原理与 LLM 应用集成。</div> -->
+            <div class="item">精通 Vue 全生态与跨端开发，具备工程化构建及 Node 应用能力，熟悉 AI Agent 原理与 LLM 应用集成，掌握 wujie 微前端框架核心原理。</div>
           </div>
         </div>
 
@@ -114,62 +115,82 @@
 
           <div class="project-wrap">
             <div class="context-top-line">
-              <div class="item">2025-04 ~ 至今</div>
-              <div class="item">网易游戏 PC 官网及运营管理平台</div>
+              <div class="item">2022-12 ~ 至今</div>
+              <div class="item">游戏营销活动专题 H5</div>
               <div class="item">前端开发</div>
             </div>
             <div class="sub-context">
               <div class="sub-label">项目描述</div>
               <div class="sub-list">
                 <div class="item">
-                  网易游戏 PC
-                  官网、运营管理平台及活动配置后台的开发与优化，包含品牌展示、数据看板、表单表格、活动编排等核心模块，支撑官方对外展示与内部运营效率提升。
+                  深度负责多款网易头部游戏的营销专题迭代，覆盖节日大促、版本上线、互动玩法、拉新活动等移动端 H5
+                  场景，<span class="high">支撑高频、高并发的运营需求</span>，保障活动快速交付与稳定运行。
                 </div>
               </div>
             </div>
             <div class="sub-context">
               <div class="sub-label">技术栈</div>
               <div class="sub-list">
-                <div class="item">Vue3、TypeScript、Pinia、Element Plus、Tailwind CSS、ECharts、jsPDF、Vite</div>
+                <div class="item">Vue3、TypeScript、Pinia、Vant4、jQuery、GSAP、Swiper、Html2Canvas、Vite
+                </div>
               </div>
             </div>
             <div class="sub-context">
               <div class="sub-label">项目职责</div>
               <div class="sub-list sub-list-point">
-                <div class="item"><span class="point">1.</span>负责 PC 官网页面、运营管理平台的开发与维护，完成页面布局与交互实现。</div>
-                <div class="item"><span class="point">2.</span>参与平台权限设计、路由控制、表单与表格等通用业务模块开发。</div>
-                <div class="item"><span class="point">3.</span>对接后端接口，完成数据渲染、状态管理与复杂业务逻辑实现。</div>
-                <div class="item"><span class="point">4.</span>负责 PC 端性能优化、兼容适配与线上问题排查。</div>
-                <div class="item"><span class="point">5.</span>参与团队组件库建设，提升项目复用性与开发效率。</div>
+                <div class="item"><span class="point">1.</span>负责移动端 H5 活动页、专题页、互动页面的开发与交互实现。</div>
+                <div class="item"><span class="point">2.</span>完成多设备适配、动效实现、页面还原与体验优化。</div>
+                <div class="item"><span class="point">3.</span>对接后端接口，实现数据渲染、表单提交、抽奖逻辑等业务功能。</div>
+                <div class="item"><span class="point">4.</span>参与需求评审、开发联调、测试验收与活动上线全流程。</div>
+                <div class="item"><span class="point">5.</span>负责通用工具、组件封装及性能优化，提升迭代速度。</div>
               </div>
             </div>
             <div class="sub-context">
               <div class="sub-label">项目业绩</div>
               <div class="sub-list sub-list-point">
-                <div class="item">
-                  <span class="point">1.</span>基于监控平台的数据反馈优化首页白屏问题，通过 defer 延迟加载结合组件优先级调度实现<span
-                    class="high">首屏切片化渲染</span>，优化后<span class="high"> FCP 提升约 35%，LCP
-                    提升约 30%</span>，页面加载体验显著改善。
-                </div>
-                <!-- <div class="item">
-                  <span class="point">2.</span>基于<span class="high"> Formily </span>实现 PC 运营平台表单中心化设计，通过<span
-                    class="high"> schema 驱动与字段联动逻辑抽象</span>，统一全平台表单规范，<span
-                    class="high">降低复杂表单开发成本</span>，提升后台系统扩展性与维护性。
+                <!-- <div class="item"><span class="point">1.</span><span class="high">3 年深耕</span>网易游戏营销领域，累计完成并上线 <span
+                    class="high">200+ 个专题页开发</span>，覆盖多个网易头部游戏，支撑版本推广、节日运营等高频业务需求，并同步为部分活动开发<span
+                    class="high">轻量级管理后台</span>。
                 </div> -->
                 <div class="item">
-                  <span class="point">3.</span>团队反馈基于 EventBus 的通信机制报错难以排查且<span class="high">“一错全停”</span>。通过
-                  <span class="high">调整监听器执行时序与调用栈隔离</span>，实现错误不阻塞且堆栈直达，<span class="high">排查效率提升
-                    90%</span>，该方案已广泛应用于多个项目。
+                  <span class="point">1.</span>多年深耕移动端应用开发，基于<span class="high"> Vue + TS +
+                    Less </span>技术栈，累计完成并上线<span class="high"> 200+
+                  </span>H5 专题页，覆盖多款头部游戏，支撑版本推广、节日运营等高频业务需求。
+                </div>
+                <!-- <div class="item"><span
+                    class="point">2.</span>使用计时器劫持模拟，并通过线程通信，封装通用的解决浏览器页标签计时器节流问题。减少开发期间的心智负担，并收录到企业通用库，服务于公司相关业务产品。
+                </div> -->
+
+                <div class="item">
+                  <span class="point">2.</span>采用 <span class="high">计时器劫持模拟</span> 及 <span class="high">线程通信</span>
+                  技术，封装了一套解决浏览器标签页计时器节流问题的 <span class="high">通用模块</span>，显著减少开发过程中的心智负担。该方案已纳入企业通用库，并应用于公司多个业务产品。
+                </div>
+                <!-- <div class="item"><span class="point">3.</span>针对首页白屏问题，通过defer方案，配合自行研发的元素嗅探工具，完成的首屏切片化渲染。FCP提升<span
+                    class="high">99%</span>，LCP提升<span class="high">95%</span>，RR提升<span class="high">12%</span>。</div> -->
+                <!-- <div class="item">
+                  <span class="point">4.</span>基于监控平台的数据反馈优化首页白屏问题，<span class="high">通过 defer
+                    方案</span>配合<span class="high">自研的</span>组件优先级调度工具，实现<span class="high">首屏的切片化渲染。优化后 FCP 提升 99%，LCP
+                    提升
+                    95%，RR
+                    提升 12%。</span>
+                </div> -->
+                <div class="item">
+                  <span class="point">3.</span>针对弱网/网络抖动问题，开发 Vite
+                  构建插件，实现生产环境脚本<span class="high">自动重试 + 阻塞式加载保护</span>，失败达到阈值后展示<span
+                    class="high">纯静态兜底页面</span>，确保核心脚本加载成功后再执行页面逻辑，彻底避免<span
+                    class="high">因资源加载失败导致的白屏问题</span>，大幅提升活动稳定性与可用性。
+                </div>
+                <div class="item"><span class="point">4.</span>攻克复杂粘贴板技术难点，参考飞书的技术方案，实现从<span class="high"> DOM 元素到
+                    Clipboard 的端到端转换</span>，封装为<span class="high"> npm 包并版本化发布</span>，服务于公司 4+ 个业务产品。
                 </div>
                 <div class="item">
-                  <span class="point">4.</span>实现<span class="high">虚拟列表</span>与<span
-                    class="high">缓冲区渲染优化</span>，提升长列表滚动流畅度与渲染效率，降低大数据量下的卡顿现象，该方案已在多个平台项目中复用，有效解决<span
-                    class="high">高数据量场景</span>的性能问题。
+                  <span class="point">5.</span>基于网易项目搭建 Vue 通用业务模板，通过 User-Agent 解析与响应式适配，实现<span class="high"> PC、移动 H5
+                    及游戏内嵌横屏三端代码复用</span>；核心业务逻辑统一维护，同类需求开发耗时平均节省 4-7 人时 / 次。
                 </div>
                 <div class="item">
-                  <span class="point">5.</span>梳理多业务线数据流转逻辑，基于 Fetch 构建请求调度层，通过<span class="high"> Promise Batching
-                  </span>优化并发请求，结合<span class="high"> LRU
-                    缓存策略</span>减少 70% 以上的重复请求开销，显著提升系统响应效率与稳定性。
+                  <span class="point">6.</span>抽象封装项目通用 JS 工具库，收敛高频底层逻辑；涵盖<span class="high">端型判断</span>、<span
+                    class="high">社媒授权登录</span>及<span class="high">文件上传 Token
+                    加密流程</span>等模块；统一团队调用规范，累计复用<span class="high"> 20+ </span>业务场景，预计减少重复开发与调试耗时约 15 人时/月。
                 </div>
               </div>
             </div>
@@ -178,15 +199,15 @@
           <div class="project-wrap">
             <div class="context-top-line">
               <div class="item">2024-04 ~ 2025-12</div>
-              <div class="item">网易燕云官方资讯 · 小程序</div>
+              <div class="item">燕云官方资讯平台</div>
               <div class="item">前端组长</div>
             </div>
             <div class="sub-context">
               <div class="sub-label">项目描述</div>
               <div class="sub-list">
                 <div class="item">
-                  该资讯小程序<span
-                    class="high">服务于百万级</span>《燕云十六声》玩家。核心功能包括：账号绑定与游戏数据实时查询（时长/探索度）、万相集作品收藏同步；集成攻略资讯、福利礼包及社区活动，有效承接游戏外流量，打造玩家一站式聚集地。
+                  该资讯平台<span
+                    class="high">服务于百万级</span>《燕云十六声》用户。核心功能包括：账号绑定与游戏数据实时查询（时长/探索度）、万相集作品收藏同步；集成攻略资讯、福利礼包及社区活动，有效承接游戏外流量，打造用户一站式聚集地。
                 </div>
               </div>
             </div>
@@ -245,7 +266,7 @@
                     class="high">渲染耗时大幅降低</span>，滚动体验顺滑无卡顿。该方案已在多个项目中推广，有效攻克高数据量场景的性能瓶颈。
                 </div> -->
                 <div class="item">
-                  <span class="point">3.</span>针对小程序原生图像处理性能不足的问题，通过WebView嵌入H5，利用<span class="high"> WebAssembly
+                  <span class="point">3.</span>针对小程序原生图像处理性能不足的问题，通过 WebView 嵌入 H5 ，利用<span class="high"> WebAssembly
                   </span>与<span class="high"> Web Worker </span>
                   技术实现前端图像加速，处理速度<span class="high">提升约 1 倍</span>，延迟
                   <span class="high">降低 50% </span>，日均处理图像超<span class="high"> 6000 张</span>，并通过<span class="high">
@@ -277,86 +298,68 @@
 
           <div class="project-wrap">
             <div class="context-top-line">
-              <div class="item">2022-12 ~ 至今</div>
-              <div class="item">网易游戏活动专题 H5</div>
+              <div class="item">2025-04 ~ 至今</div>
+              <div class="item">游戏官网及运营管理平台</div>
               <div class="item">前端开发</div>
             </div>
             <div class="sub-context">
               <div class="sub-label">项目描述</div>
               <div class="sub-list">
                 <div class="item">
-                  深度负责多款网易头部游戏的营销专题迭代，覆盖节日大促、版本上线、互动玩法、拉新活动等移动端 H5
-                  场景，<span class="high">支撑高频、高并发的运营需求</span>，保障活动快速交付与稳定运行。
+                  网易游戏 PC
+                  官网、运营管理平台及活动配置后台的开发与优化，包含品牌展示、数据看板、表单表格等核心模块，支撑官方对外展示与内部运营效率提升。
                 </div>
               </div>
             </div>
             <div class="sub-context">
               <div class="sub-label">技术栈</div>
               <div class="sub-list">
-                <div class="item">Vue3、TypeScript、Pinia、Vant4、jQuery、GSAP、Swiper、Html2Canvas、Vite
-                </div>
+                <!-- <div class="item">Vue3、TypeScript、Pinia、React、Zustand、Element Plus、Tailwind CSS、ECharts、jsPDF、Vite</div> -->
+                <div class="item">Vue3、TypeScript、Pinia、Element Plus、Tailwind CSS、ECharts、jsPDF、Vite</div>
               </div>
             </div>
             <div class="sub-context">
               <div class="sub-label">项目职责</div>
               <div class="sub-list sub-list-point">
-                <div class="item"><span class="point">1.</span>负责移动端 H5 活动页、专题页、互动页面的开发与交互实现。</div>
-                <div class="item"><span class="point">2.</span>完成多设备适配、动效实现、页面还原与体验优化。</div>
-                <div class="item"><span class="point">3.</span>对接后端接口，实现数据渲染、表单提交、抽奖逻辑等业务功能。</div>
-                <div class="item"><span class="point">4.</span>参与需求评审、开发联调、测试验收与活动上线全流程。</div>
-                <div class="item"><span class="point">5.</span>负责通用工具、组件封装及性能优化，提升迭代速度。</div>
+                <div class="item"><span class="point">1.</span>负责 PC 官网页面、运营管理平台的开发与维护，完成页面布局与交互实现。</div>
+                <div class="item"><span class="point">2.</span>参与平台权限设计、路由控制、表单与表格等通用业务模块开发。</div>
+                <div class="item"><span class="point">3.</span>对接后端接口，完成数据渲染、状态管理与复杂业务逻辑实现。</div>
+                <div class="item"><span class="point">4.</span>负责 PC 端性能优化、兼容适配与线上问题排查。</div>
+                <div class="item"><span class="point">5.</span>参与团队组件库建设，提升项目复用性与开发效率。</div>
               </div>
             </div>
             <div class="sub-context">
               <div class="sub-label">项目业绩</div>
               <div class="sub-list sub-list-point">
-                <!-- <div class="item"><span class="point">1.</span><span class="high">3 年深耕</span>网易游戏营销领域，累计完成并上线 <span
-                    class="high">200+ 个专题页开发</span>，覆盖多个网易头部游戏，支撑版本推广、节日运营等高频业务需求，并同步为部分活动开发<span
-                    class="high">轻量级管理后台</span>。
-                </div> -->
                 <div class="item">
-                  <span class="point">1.</span>3 年深耕网易游戏营销领域，基于<span class="high"> Vue + TS +
-                    Less </span>技术栈，累计完成并上线<span class="high"> 200+
-                  </span>专题页开发，覆盖多款头部游戏，支撑版本推广、节日运营等高频业务需求。
+                  <span class="point">1.</span>基于监控平台的数据反馈优化首页白屏问题，通过 defer 延迟加载结合组件优先级调度实现<span
+                    class="high">首屏切片化渲染</span>，优化后<span class="high"> FCP 提升约 35%，LCP
+                    提升约 30%</span>，页面加载体验显著改善。
                 </div>
-                <!-- <div class="item"><span
-                    class="point">2.</span>使用计时器劫持模拟，并通过线程通信，封装通用的解决浏览器页标签计时器节流问题。减少开发期间的心智负担，并收录到企业通用库，服务于公司相关业务产品。
-                </div> -->
-
-                <div class="item">
-                  <span class="point">2.</span>采用 <span class="high">计时器劫持模拟</span> 及 <span class="high">线程通信</span>
-                  技术，封装了一套解决浏览器标签页计时器节流问题的 <span class="high">通用模块</span>，显著减少开发过程中的心智负担。该方案已纳入企业通用库，并应用于公司多个业务产品。
-                </div>
-                <!-- <div class="item"><span class="point">3.</span>针对首页白屏问题，通过defer方案，配合自行研发的元素嗅探工具，完成的首屏切片化渲染。FCP提升<span
-                    class="high">99%</span>，LCP提升<span class="high">95%</span>，RR提升<span class="high">12%</span>。</div> -->
                 <!-- <div class="item">
-                  <span class="point">4.</span>基于监控平台的数据反馈优化首页白屏问题，<span class="high">通过 defer
-                    方案</span>配合<span class="high">自研的</span>组件优先级调度工具，实现<span class="high">首屏的切片化渲染。优化后 FCP 提升 99%，LCP
-                    提升
-                    95%，RR
-                    提升 12%。</span>
+                  <span class="point">2.</span>基于<span class="high"> Formily </span>实现 PC 运营平台表单中心化设计，通过<span
+                    class="high"> schema 驱动与字段联动逻辑抽象</span>，统一全平台表单规范，<span
+                    class="high">降低复杂表单开发成本</span>，提升后台系统扩展性与维护性。
                 </div> -->
                 <div class="item">
-                  <span class="point">3.</span>针对弱网/网络抖动问题，开发 Vite
-                  构建插件，实现生产环境脚本<span class="high">自动重试 + 阻塞式加载保护</span>，失败达到阈值后展示<span
-                    class="high">纯静态兜底页面</span>，确保核心脚本加载成功后再执行页面逻辑，彻底避免<span
-                    class="high">因资源加载失败导致的白屏问题</span>，大幅提升活动稳定性与可用性。
-                </div>
-                <div class="item"><span class="point">4.</span>攻克复杂粘贴板技术难点，参考飞书的技术方案，实现从<span class="high"> DOM 元素到
-                    Clipboard 的端到端转换</span>，封装为<span class="high"> npm 包并版本化发布</span>，服务于公司 4+ 个业务产品。
+                  <span class="point">3.</span>团队反馈基于 EventBus 的通信机制报错难以排查且<span class="high">“一错全停”</span>。通过
+                  <span class="high">调整监听器执行时序与调用栈隔离</span>，实现错误不阻塞且堆栈直达，<span class="high">排查效率提升
+                    90%</span>，该方案已广泛应用于多个项目。
                 </div>
                 <div class="item">
-                  <span class="point">5.</span>基于网易项目搭建 Vue 通用业务模板，通过 User-Agent 解析与响应式适配，实现<span class="high"> PC、移动 H5
-                    及游戏内嵌横屏三端代码复用</span>；核心业务逻辑统一维护，同类需求开发耗时平均节省 4-7 人时 / 次。
+                  <span class="point">4.</span>实现<span class="high">虚拟列表</span>与<span
+                    class="high">缓冲区渲染优化</span>，提升长列表滚动流畅度与渲染效率，降低大数据量下的卡顿现象，该方案已在多个平台项目中复用，有效解决<span
+                    class="high">高数据量场景</span>的性能问题。
                 </div>
                 <div class="item">
-                  <span class="point">6.</span>抽象封装项目通用 JS 工具库，收敛高频底层逻辑；涵盖<span class="high">端型判断</span>、<span
-                    class="high">社媒授权登录</span>及<span class="high">文件上传 Token
-                    加密流程</span>等模块；统一团队调用规范，累计复用<span class="high"> 20+ </span>业务场景，预计减少重复开发与调试耗时约 15 人时/月。
+                  <span class="point">5.</span>梳理多业务线数据流转逻辑，基于 Fetch 构建请求调度层，通过<span class="high"> Promise Batching
+                  </span>优化并发请求，结合<span class="high"> LRU
+                    缓存策略</span>减少 70% 以上的重复请求开销，显著提升系统响应效率与稳定性。
                 </div>
               </div>
             </div>
           </div>
+
 
           <div class="project-wrap" v-if="false">
             <div class="context-top-line">
