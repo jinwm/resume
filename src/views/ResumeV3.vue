@@ -36,7 +36,7 @@
         <div class="left-line"></div>
 
         <div class="context-item icon-technology">
-          <div class="name">技术栈</div>
+          <div class="name">个人优势</div>
           <!-- <div class="context-type type-list">
             <div class="item">
               <span class="label">框架方面：</span>精通 Vue/3 等现代前端框架，理解其核心原理以及差异，拥有 Vue
@@ -68,8 +68,8 @@
             </div>
           </div> -->
           <div class="context-type type-list">
-            <div class="item">精通 Vue 全生态、UniApp 跨端开发，熟练 React ，具备工程化构建及 Node.JS 应用能力，熟悉 AI Agent 原理与 LLM 应用集成，掌握 Wujie
-              微前端框架。</div>
+            <div class="item">精通 Vue 全生态、UniApp 跨端开发，熟练 React，具备工程化构建与 Node.js 开发能力，熟悉 AI Agent、LLM 集成及 Wujie
+              微前端，有代码洁癖、审美尚可，注重细节、善于发现问题。</div>
           </div>
         </div>
 
@@ -80,7 +80,7 @@
             <!-- <div class="item">杭州鑫烨科技有限公司 · 网易游戏网站部</div> -->
             <!-- <div class="item">网易（杭州）网络有限公司 · 网易游戏网站部</div> -->
             <!-- <div class="item">网易游戏 · 网站部</div> -->
-            <div class="item">网易游戏 · 网站部</div>
+            <div class="item">杭州鑫烨科技</div>
             <div class="item">前端开发 & 组长</div>
           </div>
           <div class="sub-context">
@@ -180,12 +180,12 @@
         <div class="context-item icon-education">
           <div class="name">教育经历</div>
           <div class="context-top-line">
-            <!-- <div class="item">2019-09 ~ 2022-06</div>
+            <div class="item">2019-09 ~ 2022-06</div>
             <div class="item">浙江工贸职业技术学院</div>
-            <div class="item">软件技术</div> -->
-            <div class="item">2019-09 ~ 2023-06</div>
+            <div class="item">软件技术</div>
+            <!-- <div class="item">2019-09 ~ 2023-06</div>
             <div class="item">温州大学</div>
-            <div class="item">软件工程</div>
+            <div class="item">软件工程</div> -->
           </div>
           <!-- <div class="context-type type-list">
             <div class="item">主修课程包括：前端框架应用开发、Web应用开发、数据库应用技术、Node.js应用开发、PHP应用开发、计算机数学。</div>
@@ -257,7 +257,7 @@ const topBaseInfo = ref([
   { key: 'age', name: '年龄', value: '25岁' },
   { key: 'sex', name: '性别', value: '男' },
   // { key: 'position', name: '籍贯', value: '温州' },
-  { key: 'duration', name: '工作年限', value: '4年经验' },
+  { key: 'duration', name: '工作年限', value: '4.5年经验' },
   { key: 'telephone', name: '电话', value: '180 7212 7956' },
   { key: 'email', name: '邮箱', value: 'jinwming@qq.com' },
   // { key: 'qq', name: 'QQ', value: '1327354592' },

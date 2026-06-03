@@ -36,7 +36,7 @@
         <div class="left-line"></div>
 
         <div class="context-item icon-technology">
-          <div class="name">技术栈</div>
+          <div class="name">个人优势</div>
           <!-- <div class="context-type type-list">
             <div class="item">
               <span class="label">框架方面：</span>精通 Vue/3 等现代前端框架，理解其核心原理以及差异，拥有 Vue
@@ -69,8 +69,8 @@
           </div> -->
           <div class="context-type type-list">
             <!-- <div class="item">精通 Vue 全生态，熟练 React 与跨端开发，具备工程化构建及 Node 应用能力，熟悉 AI Agent 原理与 LLM 应用集成。</div> -->
-            <div class="item">精通 Vue 全生态、UniApp 跨端开发，熟练 React ，具备工程化构建及 Node.JS 应用能力，熟悉 AI Agent 原理与 LLM 应用集成，掌握 Wujie
-              微前端框架。</div>
+            <div class="item">精通 Vue 全生态、UniApp 跨端开发，熟练 React，具备工程化构建与 Node.js 开发能力，熟悉 AI Agent、LLM 集成及 Wujie
+              微前端，有代码洁癖、审美尚可，注重细节、善于发现问题。</div>
           </div>
         </div>
 
